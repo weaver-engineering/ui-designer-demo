@@ -5,6 +5,8 @@
   [data-view="POSSIBLE-MATCH"] [data-component="PROVIDER"] { font-weight: 600; }
   [data-view="POSSIBLE-MATCH"] [data-component="REASON"] { font-size: var(--text-sm); color: var(--text-secondary); }
   [data-view="POSSIBLE-MATCH"] .actions { display: flex; gap: var(--space-xs); }
+  [data-view="POSSIBLE-MATCH"] .status { font-size: var(--text-sm); font-weight: 600; color: var(--accent); }
+  [data-view="POSSIBLE-MATCH"] .status.late { color: var(--caution); }
   @media (max-width: 600px) {
     [data-view="POSSIBLE-MATCH"] { grid-template-columns: 4px 1fr; }
     [data-view="POSSIBLE-MATCH"] .actions { grid-column: 2; }
@@ -15,7 +17,9 @@
   <div>
     <div class="top"><span data-component="PROVIDER">Provider</span><span class="chip caution">Possible match</span></div>
     <div data-component="REASON">Why the provider is not sure.</div>
+    <div class="status" data-component="CHECKING" hidden>Checking your claim · answer by <span data-component="ANSWER-BY">date</span></div>
+    <div class="status late" data-component="LATE" hidden>Late: the provider hasn't answered when it said</div>
     <div class="as-of">answered <span data-component="RECEIVED">date</span></div>
   </div>
-  <div class="actions"><button data-component="CLAIM">Claim it</button><button class="quiet" data-component="NOT-MINE">Not mine</button></div>
+  <div class="actions"><button data-component="CLAIM">Claim it</button><button class="quiet" data-component="NOT-MINE">Not mine</button><button class="secondary" data-component="SEE-CLAIM" hidden>See the claim</button></div>
 </section>

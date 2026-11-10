@@ -17,7 +17,7 @@ Describes [Find My Pensions](../../../use-cases/find-my-pensions/USE-CASE.md).
 * [03a Decline the search](03a-declined/STEP.phone.md): ends the walkthrough
 * [04 See the search start](04-started/STEP.phone.md)
 * [05 See pensions arrive](05-pensions-arrive/STEP.phone.md)
-* [05a Receive a possible match](05a-possible-match/STEP.phone.md): the walkthrough `analysis/ui/walkthroughs/claim-a-possible-match`, *not written yet*
+* [05a Receive a possible match](05a-possible-match/STEP.phone.md): the walkthrough [Claim a possible match](../claim-a-possible-match/WALKTHROUGH.phone.md)
 * [05b Receive a pension with no value yet](05b-no-value-yet/STEP.phone.md)
 * [05c Find a pension already added](05c-already-added/STEP.phone.md)
 * [06 Be told the search has finished](06-finished/STEP.phone.md): ends the walkthrough

@@ -5,12 +5,17 @@ state:
   as-of: { type: string, description: The date the total is as of. }
   stale-count: { type: number, default: 0, description: "How many pots' values could not be brought up to date." }
   search: { type: string, description: "While a pension search runs, how many it has found so far, in words." }
+  waiting-count: { type: number, default: 0, description: "How many possible matches are waiting for the saver." }
   found-since: { type: string, description: "On signing in, how many pensions the search found since the saver was last there, in words." }
 slots:
   POTS:
     views: [POT-ROW]
     many: true
     description: A row for each pot.
+  WAITING:
+    views: [POSSIBLE-MATCH]
+    many: true
+    description: "Each possible match waiting for the saver to claim it, or being claimed."
 components:
   SUMMARY: { visible: pot-count > 0, description: "What every pot adds up to, and when, once there are pots." }
   TOTAL: { text: total, description: "What every pot adds up to." }
@@ -26,3 +31,4 @@ components:
   SEE-SEARCH: { description: Goes to the running pension search. }
   SINCE: { visible: found-since != "", description: "On signing in, says how many pensions the search found since the saver was last there." }
   FOUND-SINCE: { text: found-since, description: "How many pensions the search found since the saver was last there." }
+  WAITING-HEAD: { visible: waiting-count > 0, description: "Heads the possible matches waiting for the saver." }

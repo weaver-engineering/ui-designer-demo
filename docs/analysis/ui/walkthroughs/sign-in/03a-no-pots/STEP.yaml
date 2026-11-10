@@ -2,6 +2,7 @@ root: APP
 slots:
   APP.SHOWS: SHELL
   SHELL.MAIN: OVERVIEW
+  OVERVIEW.WAITING: null
   OVERVIEW.POTS: null
 state:
   APP: { state: signed-in }

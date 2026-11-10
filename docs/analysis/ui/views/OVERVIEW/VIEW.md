@@ -10,6 +10,7 @@ Every one of the saver's pots, each with its value and when that was, and what t
 | Slot | Holds | How many | Description |
 |---|---|---|---|
 | `POTS` | [POT-ROW](../POT-ROW/VIEW.md) | any number | A row for each pot. |
+| `WAITING` | [POSSIBLE-MATCH](../POSSIBLE-MATCH/VIEW.md) | any number | Each possible match waiting for the saver to claim it, or being claimed. |
 
 **Components**
 
@@ -29,11 +30,18 @@ Every one of the saver's pots, each with its value and when that was, and what t
 | `SEE-SEARCH` |  | Goes to the running pension search. |
 | `SINCE` | visible: `found-since != ""` | On signing in, says how many pensions the search found since the saver was last there. |
 | `FOUND-SINCE` | text: `found-since` | How many pensions the search found since the saver was last there. |
+| `WAITING-HEAD` | visible: `waiting-count > 0` | Heads the possible matches waiting for the saver. |
 <!-- ui-walkthrough: view end -->
 
 <!-- ui-walkthrough: begin. Generated from VIEW.html and VIEW.yaml; edit those, not this block. -->
 **Used by**
 
+* Claim a possible match: 01 Choose a possible match ([desk](../../walkthroughs/claim-a-possible-match/01-choose/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/01-choose/STEP.phone.md))
+* Claim a possible match: 01a Say it is not theirs ([desk](../../walkthroughs/claim-a-possible-match/01a-not-mine/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/01a-not-mine/STEP.phone.md))
+* Claim a possible match: 02a Leave it for now ([desk](../../walkthroughs/claim-a-possible-match/02a-leave/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/02a-leave/STEP.phone.md))
+* Claim a possible match: 04 Be told the provider is checking ([desk](../../walkthroughs/claim-a-possible-match/04-checking/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/04-checking/STEP.phone.md))
+* Claim a possible match: 05 See it confirmed as theirs ([desk](../../walkthroughs/claim-a-possible-match/05-confirmed/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/05-confirmed/STEP.phone.md))
+* Claim a possible match: 05c Be told the provider is late ([desk](../../walkthroughs/claim-a-possible-match/05c-late/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/05c-late/STEP.phone.md))
 * Find my pensions: 01 Ask to find their pensions ([desk](../../walkthroughs/find-my-pensions/01-ask/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/01-ask/STEP.phone.md))
 * Find my pensions: 06 Be told the search has finished ([desk](../../walkthroughs/find-my-pensions/06-finished/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/06-finished/STEP.phone.md))
 * Find my pensions: 06b Be told what was found while away ([desk](../../walkthroughs/find-my-pensions/06b-told-on-sign-in/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/06b-told-on-sign-in/STEP.phone.md))

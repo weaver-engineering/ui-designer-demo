@@ -6,6 +6,7 @@
   [data-view="OVERVIEW"] [data-component="TOTAL"] { font-size: var(--text-figure); }
   [data-view="OVERVIEW"] .actions { display: flex; gap: var(--space-sm); }
   [data-view="OVERVIEW"] [data-component="STALE"] { padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); background: var(--caution-soft); color: var(--caution); font-size: var(--text-sm); }
+  [data-view="OVERVIEW"] [data-slot="WAITING"] { display: flex; flex-direction: column; gap: var(--space-sm); }
   [data-view="OVERVIEW"] [data-slot="POTS"] { display: flex; flex-direction: column; gap: var(--space-sm); }
   [data-view="OVERVIEW"] [data-component="START"] { padding: var(--space-2xl); text-align: center; display: flex; flex-direction: column; gap: var(--space-md); align-items: center; }
   [data-view="OVERVIEW"] [data-component="START"] p { margin: 0; color: var(--text-secondary); max-width: 460px; }
@@ -34,6 +35,8 @@
     <div class="banner" data-component="SINCE" hidden><span>Since you were last here, your pension search found <strong data-component="FOUND-SINCE">2 pensions</strong>.</span></div>
     <div class="banner" data-component="SEARCHING" hidden><span>Your pension search is running: <strong data-component="SEARCH-FOUND">2 found so far</strong>.</span><a data-component="SEE-SEARCH">See the search</a></div>
     <div data-component="STALE" hidden>Some values couldn't be brought up to date. They show the value last known, and when that was.</div>
+    <h2 data-component="WAITING-HEAD" hidden>Waiting for you</h2>
+    <div data-slot="WAITING"></div>
     <div data-slot="POTS"></div>
     <div class="card" data-component="START" hidden>
       <h2>Bring your pots together</h2>

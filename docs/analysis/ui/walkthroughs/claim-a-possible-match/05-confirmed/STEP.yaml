@@ -1,0 +1,26 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: CLAIM
+  CLAIM.POT: POT-ROW
+state:
+  APP: { state: signed-in }
+  CLAIM: { stage: confirmed, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours." }
+  POT-ROW: { colour: pot-5, found: new, pot: { name: Ardmore Foods pension, provider: Ferris & Lowe, kind: "pot of money, from Ardmore Foods", value: "£9,840", as-of: 24 Nov 2026 } }
+caption: "Told it is confirmed, and is one of their pots"
+highlight: [CLAIM.CONFIRMED]
+screens:
+  - caption: "On the overview, a pot, and the possible match gone"
+    slots:
+      SHELL.MAIN: OVERVIEW
+      OVERVIEW.WAITING: null
+      OVERVIEW.POTS: [POT-ROW, POT-ROW, POT-ROW, POT-ROW, POT-ROW]
+    state:
+      OVERVIEW: { pot-count: 5, total: "£194,070", as-of: 24 November 2026, waiting-count: 0 }
+      POT-ROW#1: { colour: pot-1, found: new, pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: "pot of money, from Northfield Retail", value: "£62,410", as-of: 24 Nov 2026 } }
+      POT-ROW#2: { colour: pot-2, pot: { name: My ISA, provider: Brightvest, kind: stocks and shares ISA, value: "£38,905", as-of: 24 Nov 2026 } }
+      POT-ROW#3: { colour: pot-3, found: new, pot: { name: Kestrel Engineering pension, provider: Castlegate Life, kind: "pot of money, from Kestrel Engineering", value: "£21,120", as-of: 24 Nov 2026 } }
+      POT-ROW#4: { colour: pot-4, pot: { name: My SIPP, provider: Brightvest, kind: self-invested personal pension, value: "£61,795", as-of: 24 Nov 2026 } }
+      POT-ROW#5: { colour: pot-5, found: new, pot: { name: Ardmore Foods pension, provider: Ferris & Lowe, kind: "pot of money, from Ardmore Foods", value: "£9,840", as-of: 24 Nov 2026 } }
+    describe: [OVERVIEW.TOTAL]
+    highlight: [POT-ROW#5]

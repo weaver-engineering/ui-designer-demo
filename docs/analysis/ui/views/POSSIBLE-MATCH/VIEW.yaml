@@ -6,12 +6,18 @@ types:
     received: string
 state:
   match: { type: Match, description: The possible match. }
+  progress: { type: "enum[waiting, checking, late]", default: waiting, description: "waiting for the saver to claim it; checking once they have sent the provider what it asked for; late when the provider has not answered by when it said." }
+  answer-by: { type: string, description: "When the provider says it will answer a claim." }
 components:
   PROVIDER: { text: match.provider, description: The provider that may hold the pension. }
   REASON: { text: match.reason, description: "Why the provider is not sure, in its own words." }
   RECEIVED: { text: match.received, description: When the provider answered. }
-  CLAIM: { description: "Starts claiming the pension: giving the provider what it needs to be sure." }
-  NOT-MINE: { description: "Says the pension is not the saver's, so the possible match is dropped." }
+  CHECKING: { visible: progress == checking, description: "Says the provider is checking the saver's claim, and by when it will answer." }
+  ANSWER-BY: { text: answer-by, description: When the provider says it will answer. }
+  LATE: { visible: progress == late, description: "Says the provider has not answered by when it said." }
+  SEE-CLAIM: { visible: progress != waiting, description: Goes to the claim. }
+  CLAIM: { visible: progress == waiting, description: "Starts claiming the pension: giving the provider what it needs to be sure." }
+  NOT-MINE: { visible: progress == waiting, description: "Says the pension is not the saver's, so the possible match is dropped." }
 image:
   width: 720
   state: { match: { provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at a different address.", received: 11 Nov 2026 } }

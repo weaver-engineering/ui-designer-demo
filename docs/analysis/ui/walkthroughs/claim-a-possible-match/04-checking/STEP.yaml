@@ -1,0 +1,25 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: CLAIM
+  CLAIM.POT: null
+state:
+  APP: { state: signed-in }
+  CLAIM: { stage: checking, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", answer-by: 25 November 2026 }
+caption: Told the provider is checking
+describe: [CLAIM.BACK]
+highlight: [CLAIM.CHECKING]
+screens:
+  - caption: "Back on the overview, the claim shows as being checked"
+    slots:
+      SHELL.MAIN: OVERVIEW
+      OVERVIEW.WAITING: [POSSIBLE-MATCH]
+      OVERVIEW.POTS: [POT-ROW, POT-ROW, POT-ROW, POT-ROW]
+    state:
+      OVERVIEW: { pot-count: 4, total: "£184,230", as-of: 24 November 2026, waiting-count: 1 }
+      POT-ROW#1: { colour: pot-1, found: new, pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: "pot of money, from Northfield Retail", value: "£62,410", as-of: 24 Nov 2026 } }
+      POT-ROW#2: { colour: pot-2, pot: { name: My ISA, provider: Brightvest, kind: stocks and shares ISA, value: "£38,905", as-of: 24 Nov 2026 } }
+      POT-ROW#3: { colour: pot-3, found: new, pot: { name: Kestrel Engineering pension, provider: Castlegate Life, kind: "pot of money, from Kestrel Engineering", value: "£21,120", as-of: 24 Nov 2026 } }
+      POT-ROW#4: { colour: pot-4, pot: { name: My SIPP, provider: Brightvest, kind: self-invested personal pension, value: "£61,795", as-of: 24 Nov 2026 } }
+      POSSIBLE-MATCH: { match: { provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", received: 11 Nov 2026 }, progress: checking, answer-by: 25 Nov 2026 }
+    highlight: [POSSIBLE-MATCH.CHECKING]

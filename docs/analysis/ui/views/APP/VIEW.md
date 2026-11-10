@@ -15,6 +15,17 @@ The root of the UI. Signed out, it shows the sign-in, signing up, or resetting a
 <!-- ui-walkthrough: begin. Generated from VIEW.html and VIEW.yaml; edit those, not this block. -->
 **Used by**
 
+* Claim a possible match: 01 Choose a possible match ([desk](../../walkthroughs/claim-a-possible-match/01-choose/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/01-choose/STEP.phone.md))
+* Claim a possible match: 01a Say it is not theirs ([desk](../../walkthroughs/claim-a-possible-match/01a-not-mine/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/01a-not-mine/STEP.phone.md))
+* Claim a possible match: 02 Be asked what the provider needs ([desk](../../walkthroughs/claim-a-possible-match/02-claim/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/02-claim/STEP.phone.md))
+* Claim a possible match: 02a Leave it for now ([desk](../../walkthroughs/claim-a-possible-match/02a-leave/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/02a-leave/STEP.phone.md))
+* Claim a possible match: 03 Give what they know ([desk](../../walkthroughs/claim-a-possible-match/03-give/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/03-give/STEP.phone.md))
+* Claim a possible match: 03a Not know the membership number ([desk](../../walkthroughs/claim-a-possible-match/03a-dont-know/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/03a-dont-know/STEP.phone.md))
+* Claim a possible match: 04 Be told the provider is checking ([desk](../../walkthroughs/claim-a-possible-match/04-checking/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/04-checking/STEP.phone.md))
+* Claim a possible match: 05 See it confirmed as theirs ([desk](../../walkthroughs/claim-a-possible-match/05-confirmed/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/05-confirmed/STEP.phone.md))
+* Claim a possible match: 05a Answer a further question ([desk](../../walkthroughs/claim-a-possible-match/05a-further-question/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/05a-further-question/STEP.phone.md))
+* Claim a possible match: 05b Be told it could not be matched ([desk](../../walkthroughs/claim-a-possible-match/05b-not-matched/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/05b-not-matched/STEP.phone.md))
+* Claim a possible match: 05c Be told the provider is late ([desk](../../walkthroughs/claim-a-possible-match/05c-late/STEP.desk.md) · [phone](../../walkthroughs/claim-a-possible-match/05c-late/STEP.phone.md))
 * Find my pensions: 01 Ask to find their pensions ([desk](../../walkthroughs/find-my-pensions/01-ask/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/01-ask/STEP.phone.md))
 * Find my pensions: 01a Search again within the year ([desk](../../walkthroughs/find-my-pensions/01a-searched-before/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/01a-searched-before/STEP.phone.md))
 * Find my pensions: 02 Prove who they are ([desk](../../walkthroughs/find-my-pensions/02-prove/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/02-prove/STEP.phone.md))

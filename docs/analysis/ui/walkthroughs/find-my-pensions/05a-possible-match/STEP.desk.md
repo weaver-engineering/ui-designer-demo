@@ -9,11 +9,13 @@
 
 [![Where 05a Receive a possible match sits in Find my pensions](FLOW.desk.svg)](../WALKTHROUGH.desk.md)
 
+[![Claim a possible match, the walkthrough this step is](../../claim-a-possible-match/FLOW.desk.svg)](../../claim-a-possible-match/WALKTHROUGH.desk.md)
+
 | Previous | Next |
 |:---|---:|
 | ← *A provider may hold a pension* (when `provider-finds-possible-match` happens) from [04 See the search start](../04-started/STEP.desk.md) | *Every provider has answered* (when `search-finished` happens): [06 Be told the search has finished](../06-finished/STEP.desk.md) → |
 
-**This step is the walkthrough** `analysis/ui/walkthroughs/claim-a-possible-match`, not written yet.
+**This step is the walkthrough** [Claim a possible match](../../claim-a-possible-match/WALKTHROUGH.desk.md).
 
 A provider can only say it may hold a pension for the saver. It is listed as a possible match, not a pot, with the
 provider's reason for not being sure, for the saver to claim when they choose. The search carries on.

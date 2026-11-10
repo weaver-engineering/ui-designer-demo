@@ -1,0 +1,49 @@
+description: "The saver claims a pension a provider may hold for them: why the provider is not sure, giving it what it asks for to be sure, and its answer, which can take days. What they give goes to that provider only."
+state:
+  stage: { type: "enum[review, ask, checking, further, not-matched, late, confirmed, dropped]", default: review, description: "review what the provider said; ask for what it needs; checking while it does; further when it asks another question; not-matched when it cannot match the pension to the saver; late when it has not answered by when it said; confirmed when it has shared the pension; dropped when the saver said it is not theirs." }
+  provider: { type: string, description: The provider that may hold the pension. }
+  reason: { type: string, description: "Why the provider is not sure, in its own words." }
+  employer: { type: string, description: "The employer the saver gives, as typed." }
+  when: { type: string, description: "When the saver worked there, as typed." }
+  address: { type: string, description: "The address the saver lived at then, as typed." }
+  membership: { type: string, description: "The membership number the saver gives, if they have one." }
+  dont-know: { type: boolean, default: false, description: "The saver does not know their membership number." }
+  answer-by: { type: string, description: "When the provider says it will answer." }
+  question: { type: string, description: "The provider's further question." }
+  answer: { type: string, description: "The saver's answer to it, as typed." }
+  why: { type: string, description: "Why the provider could not match the pension to the saver, if it says." }
+slots:
+  POT:
+    views: [POT-ROW]
+    empty: true
+    description: "The pension, once the provider has confirmed it and it is one of the saver's pots."
+components:
+  PROVIDER: { text: provider, description: The provider that may hold the pension. }
+  REVIEW: { visible: stage == review, description: "What the provider has said: that it may hold a pension for the saver, and why it is not sure." }
+  REASON: { text: reason, description: "Why the provider is not sure." }
+  CLAIM: { visible: stage == review, description: "Claims the pension: goes on to what the provider needs to be sure." }
+  NOT-MINE: { visible: stage == review, description: "Says the pension is not the saver's: the possible match is dropped, and the provider told." }
+  ASK: { visible: stage == ask, description: "What the provider needs to be sure. The provider decides what that is." }
+  EMPLOYER: { text: employer, description: The employer the saver worked for while a member. }
+  WHEN: { text: when, description: "When they worked there." }
+  ADDRESS: { text: address, description: The address they lived at then. }
+  MEMBERSHIP: { text: membership, enabled: not dont-know, description: "Their membership number, if they have one." }
+  DONT-KNOW: { description: "Says the saver does not know their membership number, so the rest is sent without it." }
+  PRIVATE: { visible: "stage in [ask, further]", description: "Says what the saver gives goes to the provider only, and Pot Tracker does not keep it." }
+  SEND: { visible: stage == ask, description: Sends what the saver gave to the provider. }
+  CHECKING: { visible: stage == checking, description: "Says the provider is checking, and when it says it will answer." }
+  ANSWER-BY: { text: answer-by, description: When the provider says it will answer. }
+  LATE: { visible: stage == late, description: "Says the provider has not answered by when it said it would." }
+  LATE-BY: { text: answer-by, description: "When the provider said it would answer." }
+  REMIND: { visible: stage == late, description: Reminds the provider to answer. }
+  FURTHER: { visible: stage == further, description: "The provider's further question, for the saver to answer." }
+  QUESTION: { text: question, description: The provider's question. }
+  ANSWER: { text: answer, description: "The saver's answer." }
+  SEND-ANSWER: { visible: stage == further, description: Sends the answer to the provider. }
+  NOT-MATCHED: { visible: stage == not-matched, description: "Says the provider could not match the pension to the saver, and why if it says." }
+  WHY: { text: why, description: "Why, in the provider's words." }
+  TRY-AGAIN: { visible: stage == not-matched, description: "Goes back to giving the provider what it asks for, to try different details." }
+  CONFIRMED: { visible: stage == confirmed, description: "Says the provider has confirmed the pension is the saver's, and shows it as one of their pots." }
+  DROPPED: { visible: stage == dropped, description: "Says the possible match has been dropped and the provider told." }
+  LEAVE: { visible: "stage in [review, ask, not-matched, late]", description: "Leaves it for now: the possible match waits for the saver." }
+  BACK: { visible: "stage in [checking, confirmed, dropped]", description: Goes back to the overview of every pot. }

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1312" height="1969" viewBox="0 0 1312 1969" font-family="sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1312" height="1953" viewBox="0 0 1312 1953" font-family="sans-serif">
 <metadata>{"version":1,"kind":"overview","config":"../../../../ui-walkthrough.yaml","walkthrough":"WALKTHROUGH.yaml","viewport":"phone"}</metadata>
 <defs>
 <marker id="arrow-in" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a4c"/></marker>
@@ -15,7 +15,7 @@
 <marker id="arrow-p8" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ff7f0e"/></marker>
 <marker id="arrow-p9" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4a5162"/></marker>
 </defs>
-<rect width="1312" height="1969" fill="#ffffff"/>
+<rect width="1312" height="1953" fill="#ffffff"/>
 <g transform="translate(-24,-18)">
 <path d="M205,261 L205,362" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p0)"/>
 <path d="M211.5,100 L211.5,50 L535,50 L535,100" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p0)"/>
@@ -29,12 +29,12 @@
 <path d="M218,1222 L218,1266 L535,1266 L535,1362" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
 <path d="M244,1222 L244,1279 L865,1279 L865,1362" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
 <path d="M270,1222 L270,1292 L1195,1292 L1195,1362" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
-<path d="M231,1222 L231,1305 L370,1305 L370,1639 L528.5,1639 L528.5,1735" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
-<path d="M257,1222 L257,1318 L700,1318 L700,1665 L858.5,1665 L858.5,1735" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
-<path d="M205,1595 L205,1735" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p7)"/>
-<path d="M541.5,1595 L541.5,1652 L218,1652 L218,1735" fill="none" stroke="#ff7f0e" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p8)"/>
-<path d="M871.5,1595 L871.5,1678 L231,1678 L231,1735" fill="none" stroke="#4a5162" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p9)"/>
-<path d="M1195,1595 L1195,1691 L244,1691 L244,1735" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p0)"/>
+<path d="M231,1222 L231,1305 L370,1305 L370,1623 L528.5,1623 L528.5,1719" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M257,1222 L257,1318 L700,1318 L700,1649 L858.5,1649 L858.5,1719" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M205,1579 L205,1719" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p7)"/>
+<path d="M541.5,1579 L541.5,1636 L218,1636 L218,1719" fill="none" stroke="#ff7f0e" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p8)"/>
+<path d="M871.5,1579 L871.5,1662 L231,1662 L231,1719" fill="none" stroke="#4a5162" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p9)"/>
+<path d="M1195,1579 L1195,1675 L244,1675 L244,1719" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p0)"/>
 <circle cx="198.5" cy="64" r="3.5" fill="#9aa1ad"/>
 <path d="M198.5,64 L198.5,100" fill="none" stroke="#9aa1ad" stroke-width="1.6" marker-end="url(#arrow-line)"/>
 <rect x="80" y="100" width="250" height="161" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
@@ -106,7 +106,7 @@
 <text x="92" y="1178" font-size="12" fill="#1d2330">that providers answer over days,</text>
 <text x="92" y="1194" font-size="12" fill="#1d2330">that they need not stay, and that</text>
 <text x="92" y="1210" font-size="12" fill="#1d2330">they will be told what is found.</text>
-<rect x="80" y="1362" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<rect x="80" y="1362" width="250" height="217" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
 <text x="92" y="1386" font-size="12" font-weight="bold" fill="#6b7385">05</text>
 <text x="92" y="1407" font-size="14" font-weight="bold" fill="#1d2330">See pensions arrive</text>
 <text x="92" y="1431" font-size="12" fill="#1d2330">As each provider answers, its</text>
@@ -117,8 +117,8 @@
 <text x="92" y="1511" font-size="12" fill="#1d2330">with its date. Each is marked as</text>
 <text x="92" y="1527" font-size="12" fill="#1d2330">found by the search, and the count</text>
 <text x="92" y="1543" font-size="12" fill="#1d2330">goes up.</text>
-<rect x="410" y="1362" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
-<rect x="413" y="1365" width="244" height="227" rx="4" fill="none" stroke="#9aa1ad" stroke-width="1"/>
+<rect x="410" y="1362" width="250" height="217" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<rect x="413" y="1365" width="244" height="211" rx="4" fill="none" stroke="#9aa1ad" stroke-width="1"/>
 <text x="422" y="1386" font-size="12" font-weight="bold" fill="#6b7385">05a</text>
 <text x="422" y="1407" font-size="14" font-weight="bold" fill="#1d2330">Receive a possible match</text>
 <text x="422" y="1431" font-size="12" fill="#1d2330">A provider can only say it may hold</text>
@@ -128,10 +128,9 @@
 <text x="422" y="1495" font-size="12" fill="#1d2330">not being sure, for the saver to</text>
 <text x="422" y="1511" font-size="12" fill="#1d2330">claim when they choose. The search</text>
 <text x="422" y="1527" font-size="12" fill="#1d2330">carries on.</text>
-<text x="422" y="1551" font-size="12" font-style="italic" fill="#1d2330">The walkthrough</text>
-<text x="422" y="1567" font-size="12" font-style="italic" fill="#1d2330">analysis/ui/walkthroughs/claim-a-pos</text>
-<text x="422" y="1583" font-size="12" font-style="italic" fill="#1d2330">sible-match (not written yet)</text>
-<rect x="740" y="1362" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="422" y="1551" font-size="12" font-style="italic" fill="#1d2330">The walkthrough Claim a possible</text>
+<text x="422" y="1567" font-size="12" font-style="italic" fill="#1d2330">match</text>
+<rect x="740" y="1362" width="250" height="217" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
 <text x="752" y="1386" font-size="12" font-weight="bold" fill="#6b7385">05b</text>
 <text x="752" y="1407" font-size="14" font-weight="bold" fill="#1d2330">Receive a pension with no</text>
 <text x="752" y="1426" font-size="14" font-weight="bold" fill="#1d2330">value yet</text>
@@ -139,7 +138,7 @@
 <text x="752" y="1466" font-size="12" fill="#1d2330">cannot give its value yet. It is</text>
 <text x="752" y="1482" font-size="12" fill="#1d2330">added as a pot with no value, saying</text>
 <text x="752" y="1498" font-size="12" fill="#1d2330">when one is expected.</text>
-<rect x="1070" y="1362" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<rect x="1070" y="1362" width="250" height="217" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
 <text x="1082" y="1386" font-size="12" font-weight="bold" fill="#6b7385">05c</text>
 <text x="1082" y="1407" font-size="14" font-weight="bold" fill="#1d2330">Find a pension already added</text>
 <text x="1082" y="1431" font-size="12" fill="#1d2330">The search finds the SIPP the saver</text>
@@ -147,41 +146,41 @@
 <text x="1082" y="1463" font-size="12" fill="#1d2330">portfolio. It is not added twice:</text>
 <text x="1082" y="1479" font-size="12" fill="#1d2330">the pot they added is marked as</text>
 <text x="1082" y="1495" font-size="12" fill="#1d2330">found by the search too.</text>
-<rect x="80" y="1735" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
-<text x="92" y="1759" font-size="12" font-weight="bold" fill="#6b7385">06 · end</text>
-<text x="92" y="1780" font-size="14" font-weight="bold" fill="#1d2330">Be told the search has</text>
-<text x="92" y="1799" font-size="14" font-weight="bold" fill="#1d2330">finished</text>
-<text x="92" y="1823" font-size="12" fill="#1d2330">Every provider has answered. The</text>
-<text x="92" y="1839" font-size="12" fill="#1d2330">saver is told the search has</text>
-<text x="92" y="1855" font-size="12" fill="#1d2330">finished and how many pensions it</text>
-<text x="92" y="1871" font-size="12" fill="#1d2330">found, and back on the overview the</text>
-<text x="92" y="1887" font-size="12" fill="#1d2330">pots it found are among their pots,</text>
-<text x="92" y="1903" font-size="12" fill="#1d2330">each marked so.</text>
-<text x="92" y="1927" font-size="12" font-style="italic" fill="#1d2330">End: every pension found is one of</text>
-<text x="92" y="1943" font-size="12" font-style="italic" fill="#1d2330">the saver's pots.</text>
-<rect x="410" y="1735" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
-<text x="422" y="1759" font-size="12" font-weight="bold" fill="#6b7385">06a · end</text>
-<text x="422" y="1780" font-size="14" font-weight="bold" fill="#1d2330">Find no pensions</text>
-<text x="422" y="1804" font-size="12" fill="#1d2330">Every provider answered with</text>
-<text x="422" y="1820" font-size="12" fill="#1d2330">nothing. The saver is told no</text>
-<text x="422" y="1836" font-size="12" fill="#1d2330">pension was found, and offered</text>
-<text x="422" y="1852" font-size="12" fill="#1d2330">adding an ISA or investment account</text>
-<text x="422" y="1868" font-size="12" fill="#1d2330">instead.</text>
-<text x="422" y="1892" font-size="12" font-style="italic" fill="#1d2330">End: no pension was found, and</text>
-<text x="422" y="1908" font-size="12" font-style="italic" fill="#1d2330">adding a portfolio is offered.</text>
-<rect x="740" y="1735" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
-<text x="752" y="1759" font-size="12" font-weight="bold" fill="#6b7385">06b · end</text>
-<text x="752" y="1780" font-size="14" font-weight="bold" fill="#1d2330">Be told what was found while</text>
-<text x="752" y="1799" font-size="14" font-weight="bold" fill="#1d2330">away</text>
-<text x="752" y="1823" font-size="12" fill="#1d2330">The saver signed out while the</text>
-<text x="752" y="1839" font-size="12" fill="#1d2330">search ran. Answers kept arriving,</text>
-<text x="752" y="1855" font-size="12" fill="#1d2330">and when they next sign in the</text>
-<text x="752" y="1871" font-size="12" fill="#1d2330">overview tells them how many</text>
-<text x="752" y="1887" font-size="12" fill="#1d2330">pensions were found since they were</text>
-<text x="752" y="1903" font-size="12" fill="#1d2330">last there, and that the search is</text>
-<text x="752" y="1919" font-size="12" fill="#1d2330">still running.</text>
-<text x="752" y="1943" font-size="12" font-style="italic" fill="#1d2330">End: the saver knows what the search</text>
-<text x="752" y="1959" font-size="12" font-style="italic" fill="#1d2330">found while they were away.</text>
+<rect x="80" y="1719" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="92" y="1743" font-size="12" font-weight="bold" fill="#6b7385">06 · end</text>
+<text x="92" y="1764" font-size="14" font-weight="bold" fill="#1d2330">Be told the search has</text>
+<text x="92" y="1783" font-size="14" font-weight="bold" fill="#1d2330">finished</text>
+<text x="92" y="1807" font-size="12" fill="#1d2330">Every provider has answered. The</text>
+<text x="92" y="1823" font-size="12" fill="#1d2330">saver is told the search has</text>
+<text x="92" y="1839" font-size="12" fill="#1d2330">finished and how many pensions it</text>
+<text x="92" y="1855" font-size="12" fill="#1d2330">found, and back on the overview the</text>
+<text x="92" y="1871" font-size="12" fill="#1d2330">pots it found are among their pots,</text>
+<text x="92" y="1887" font-size="12" fill="#1d2330">each marked so.</text>
+<text x="92" y="1911" font-size="12" font-style="italic" fill="#1d2330">End: every pension found is one of</text>
+<text x="92" y="1927" font-size="12" font-style="italic" fill="#1d2330">the saver's pots.</text>
+<rect x="410" y="1719" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="422" y="1743" font-size="12" font-weight="bold" fill="#6b7385">06a · end</text>
+<text x="422" y="1764" font-size="14" font-weight="bold" fill="#1d2330">Find no pensions</text>
+<text x="422" y="1788" font-size="12" fill="#1d2330">Every provider answered with</text>
+<text x="422" y="1804" font-size="12" fill="#1d2330">nothing. The saver is told no</text>
+<text x="422" y="1820" font-size="12" fill="#1d2330">pension was found, and offered</text>
+<text x="422" y="1836" font-size="12" fill="#1d2330">adding an ISA or investment account</text>
+<text x="422" y="1852" font-size="12" fill="#1d2330">instead.</text>
+<text x="422" y="1876" font-size="12" font-style="italic" fill="#1d2330">End: no pension was found, and</text>
+<text x="422" y="1892" font-size="12" font-style="italic" fill="#1d2330">adding a portfolio is offered.</text>
+<rect x="740" y="1719" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="752" y="1743" font-size="12" font-weight="bold" fill="#6b7385">06b · end</text>
+<text x="752" y="1764" font-size="14" font-weight="bold" fill="#1d2330">Be told what was found while</text>
+<text x="752" y="1783" font-size="14" font-weight="bold" fill="#1d2330">away</text>
+<text x="752" y="1807" font-size="12" fill="#1d2330">The saver signed out while the</text>
+<text x="752" y="1823" font-size="12" fill="#1d2330">search ran. Answers kept arriving,</text>
+<text x="752" y="1839" font-size="12" fill="#1d2330">and when they next sign in the</text>
+<text x="752" y="1855" font-size="12" fill="#1d2330">overview tells them how many</text>
+<text x="752" y="1871" font-size="12" fill="#1d2330">pensions were found since they were</text>
+<text x="752" y="1887" font-size="12" fill="#1d2330">last there, and that the search is</text>
+<text x="752" y="1903" font-size="12" fill="#1d2330">still running.</text>
+<text x="752" y="1927" font-size="12" font-style="italic" fill="#1d2330">End: the saver knows what the search</text>
+<text x="752" y="1943" font-size="12" font-style="italic" fill="#1d2330">found while they were away.</text>
 <text x="205" y="300.35" font-size="12" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="3" paint-order="stroke">Asks to find their pensions</text>
 <text x="373.25" y="46" font-size="12" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="3" paint-order="stroke">Asks, having searched within the…</text>
 <text x="129" y="1007" font-size="12" text-anchor="middle" fill="#d62728" stroke="#ffffff" stroke-width="3" paint-order="stroke">Searches again</text>
@@ -194,12 +193,12 @@
 <text x="376.5" y="1262" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">A provider may hold a pension</text>
 <text x="647.6500000000001" y="1275" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">A provider finds a pension, with…</text>
 <text x="1010" y="1288" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">A provider finds a pension alread…</text>
-<text x="425.475" y="1635" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider answers with nothi…</text>
-<text x="755.475" y="1661" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">Signs out, and signs in days later</text>
-<text x="205" y="1648" font-size="12" text-anchor="middle" fill="#b8860b" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
-<text x="541.5" y="1618.95" font-size="12" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
-<text x="359.1" y="1674" font-size="12" text-anchor="middle" fill="#4a5162" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
-<text x="1004.8" y="1687" font-size="12" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="425.475" y="1619" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider answers with nothi…</text>
+<text x="755.475" y="1645" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">Signs out, and signs in days later</text>
+<text x="205" y="1632" font-size="12" text-anchor="middle" fill="#b8860b" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="541.5" y="1602.95" font-size="12" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="359.1" y="1658" font-size="12" text-anchor="middle" fill="#4a5162" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="1004.8" y="1671" font-size="12" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
 <text x="192.5" y="68" font-size="12" text-anchor="end" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Start</text>
 </g>
 </svg>

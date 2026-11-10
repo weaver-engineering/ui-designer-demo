@@ -15,6 +15,7 @@ screens:
   - caption: "Back on the overview, the pensions found are among their pots"
     slots:
       SHELL.MAIN: OVERVIEW
+      OVERVIEW.WAITING: null
       OVERVIEW.POTS: [POT-ROW, POT-ROW, POT-ROW, POT-ROW]
     state:
       OVERVIEW: { pot-count: 4, total: "£184,230", as-of: 14 November 2026 }

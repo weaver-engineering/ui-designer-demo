@@ -1,0 +1,81 @@
+<style>
+  [data-view="CLAIM"] { height: 100%; box-sizing: border-box; overflow: auto; padding: var(--space-2xl) var(--space-xl); }
+  [data-view="CLAIM"] .inner { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-lg); }
+  [data-view="CLAIM"] .head { display: flex; flex-direction: column; gap: var(--space-xs); align-items: flex-start; }
+  [data-view="CLAIM"] .panel { padding: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-lg); }
+  [data-view="CLAIM"] .panel p { margin: 0; color: var(--text-secondary); }
+  [data-view="CLAIM"] blockquote { margin: 0; padding: var(--space-md) var(--space-lg); border-left: 3px solid var(--caution); background: var(--caution-soft); border-radius: var(--radius-sm); }
+  [data-view="CLAIM"] .field { display: flex; flex-direction: column; gap: var(--space-xs); }
+  [data-view="CLAIM"] .input { min-height: 1.45em; padding: var(--space-sm) var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--canvas); }
+  [data-view="CLAIM"] .input:empty::before { content: "\00a0"; }
+  [data-view="CLAIM"][data-dont-know] [data-component="MEMBERSHIP"] { background: var(--canvas-subtle); color: var(--text-tertiary); }
+  [data-view="CLAIM"] .tick { display: flex; gap: var(--space-sm); align-items: center; font-size: var(--text-sm); }
+  [data-view="CLAIM"] .box { width: 16px; height: 16px; border: 1.5px solid var(--border); border-radius: 4px; background: var(--canvas); color: var(--on-accent); font-size: 12px; line-height: 16px; text-align: center; }
+  [data-view="CLAIM"][data-dont-know] [data-component="DONT-KNOW"] .box { background: var(--accent); border-color: var(--accent); }
+  [data-view="CLAIM"][data-dont-know] [data-component="DONT-KNOW"] .box::after { content: "✓"; }
+  [data-view="CLAIM"] [data-component="PRIVATE"] { font-size: var(--text-sm); color: var(--text-secondary); }
+  [data-view="CLAIM"] .waiting { display: flex; gap: var(--space-md); align-items: center; }
+  [data-view="CLAIM"] .dot { width: 10px; height: 10px; border-radius: var(--radius-pill); background: var(--accent); flex: none; box-shadow: 0 0 0 4px var(--accent-soft); }
+  [data-view="CLAIM"] .notice { padding: var(--space-md); border-radius: var(--radius-sm); font-size: var(--text-sm); }
+  [data-view="CLAIM"] .notice.caution { background: var(--caution-soft); color: var(--caution); }
+  [data-view="CLAIM"] .notice.error { background: var(--error-soft); color: var(--error); }
+  [data-view="CLAIM"] .notice.done { background: var(--gain-soft); color: var(--gain); }
+  [data-view="CLAIM"][data-stage="confirmed"] .head .chip, [data-view="CLAIM"][data-stage="dropped"] .head .chip { display: none; }
+  [data-view="CLAIM"] .actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
+  @media (max-width: 600px) {
+    [data-view="CLAIM"] { padding: var(--space-lg); }
+    [data-view="CLAIM"] .panel { padding: var(--space-lg); }
+    [data-view="CLAIM"] .actions { flex-direction: column; align-items: stretch; }
+  }
+</style>
+<section data-view="CLAIM">
+  <div class="inner">
+    <div class="head"><span class="chip caution">Possible match</span><h1 data-component="PROVIDER">Provider</h1></div>
+    <div class="panel card" data-component="REVIEW">
+      <p>This provider may hold a pension for you, but isn't sure it's yours. It says:</p>
+      <blockquote data-component="REASON">Why the provider is not sure.</blockquote>
+      <p>Claim it to give the provider what it needs to be sure. If it isn't yours, say so and we'll tell the provider.</p>
+      <div class="actions"><button data-component="CLAIM">Claim it</button><button class="secondary" data-component="NOT-MINE">It's not mine</button></div>
+    </div>
+    <div class="panel card" data-component="ASK" hidden>
+      <h2>What the provider needs to be sure</h2>
+      <div class="field"><label>Who did you work for while you were a member?</label><div class="input" data-component="EMPLOYER"></div></div>
+      <div class="field"><label>When did you work there?</label><div class="input" data-component="WHEN"></div></div>
+      <div class="field"><label>Your address while you worked there</label><div class="input" data-component="ADDRESS"></div></div>
+      <div class="field"><label>Your membership number, if you have one</label><div class="input" data-component="MEMBERSHIP"></div>
+        <span class="tick" data-component="DONT-KNOW"><span class="box"></span>I don't know it</span></div>
+      <div class="actions"><button data-component="SEND">Send to the provider</button></div>
+    </div>
+    <div class="panel card" data-component="FURTHER" hidden>
+      <h2>The provider has a further question</h2>
+      <blockquote data-component="QUESTION">The provider's question.</blockquote>
+      <div class="field"><label>Your answer</label><div class="input" data-component="ANSWER"></div></div>
+      <div class="actions"><button data-component="SEND-ANSWER">Send your answer</button></div>
+    </div>
+    <div data-component="PRIVATE" hidden>What you give goes to this provider only, through the pension-finding service. Pot Tracker doesn't keep it.</div>
+    <div class="panel card" data-component="CHECKING" hidden>
+      <div class="waiting"><span class="dot"></span><h2>The provider is checking</h2></div>
+      <p>It says it will answer by <strong data-component="ANSWER-BY">date</strong>. We'll tell you when it does; you don't need to wait here.</p>
+    </div>
+    <div class="panel card" data-component="LATE" hidden>
+      <div class="notice caution">The provider said it would answer by <strong data-component="LATE-BY">date</strong>, and hasn't yet.</div>
+      <p>You can remind it, or leave it to answer in its own time.</p>
+      <div class="actions"><button data-component="REMIND">Remind the provider</button></div>
+    </div>
+    <div class="panel card" data-component="NOT-MATCHED" hidden>
+      <div class="notice error">The provider couldn't match this pension to you from what you gave.</div>
+      <blockquote data-component="WHY">Why, if the provider says.</blockquote>
+      <p>You can try again with different details, such as another address you lived at.</p>
+      <div class="actions"><button data-component="TRY-AGAIN">Try again</button></div>
+    </div>
+    <div class="panel card" data-component="CONFIRMED" hidden>
+      <div class="notice done">The provider has confirmed this pension is yours. It's now one of your pots.</div>
+      <div data-slot="POT"></div>
+    </div>
+    <div class="panel card" data-component="DROPPED" hidden>
+      <h2>Dropped</h2>
+      <p>We've told the provider this pension isn't yours. It won't be shown again.</p>
+    </div>
+    <div class="actions"><button class="secondary" data-component="BACK" hidden>Back to your pots</button><button class="quiet" data-component="LEAVE">Leave it for now</button></div>
+  </div>
+</section>

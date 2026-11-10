@@ -1,0 +1,10 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: CLAIM
+  CLAIM.POT: null
+state:
+  APP: { state: signed-in }
+  CLAIM: { stage: further, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", question: "Our records show this member left the scheme at the end of March 2014. Is that when you left Ardmore Foods?", answer: "Yes, at the end of March 2014." }
+describe: [CLAIM.QUESTION, CLAIM.ANSWER]
+highlight: [CLAIM.SEND-ANSWER]

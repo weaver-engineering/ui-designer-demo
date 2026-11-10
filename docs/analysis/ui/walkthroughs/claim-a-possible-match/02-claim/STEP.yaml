@@ -1,0 +1,10 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: CLAIM
+  CLAIM.POT: null
+state:
+  APP: { state: signed-in }
+  CLAIM: { stage: ask, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", employer: "", when: "", address: "", membership: "" }
+describe: [CLAIM.PRIVATE, CLAIM.LEAVE]
+highlight: [CLAIM.ASK]

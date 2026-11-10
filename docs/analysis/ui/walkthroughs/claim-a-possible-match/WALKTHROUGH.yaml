@@ -1,0 +1,87 @@
+title: Claim a possible match
+describes:
+  - title: Claim A Possible Match
+    path: analysis/use-cases/claim-a-possible-match/USE-CASE.md
+viewports: [desk, phone]
+steps:
+  01-choose:
+    title: Choose a possible match
+    narrative: |
+      A possible match waits for the saver on the overview, above their pots, as it does in the search that found it.
+      They choose it, and see what the provider has told them: its name, and why it is not sure the pension is theirs.
+    next:
+      - { step: 02-claim, label: Claims it, via: { click: CLAIM.CLAIM } }
+      - { step: 01a-not-mine, label: Knows it is not theirs, via: { click: CLAIM.NOT-MINE } }
+  01a-not-mine:
+    title: Say it is not theirs
+    narrative: |
+      The saver knows the pension is not theirs, and says so. The possible match is dropped, the provider is told, and it
+      is gone from the overview.
+    end: the possible match is dropped and the provider told.
+  02-claim:
+    title: Be asked what the provider needs
+    narrative: |
+      The saver claims it, and is asked for what the provider needs to be sure. The provider decides what that is: here
+      the employer they worked for and when, the address they lived at then, and a membership number if they have one.
+      They are told what they give goes to that provider only, and Pot Tracker does not keep it.
+    next:
+      - { step: 03-give, label: Gives what they know, via: { type: CLAIM.EMPLOYER } }
+      - { step: 02a-leave, label: "Doesn't have it to hand", via: { click: CLAIM.LEAVE } }
+  02a-leave:
+    title: Leave it for now
+    narrative: |
+      The saver does not have what the provider asks for to hand, and leaves it. The possible match waits for them, and is
+      still on the overview when they next sign in.
+    end: the possible match waits for the saver.
+  03-give:
+    title: Give what they know
+    narrative: |
+      The saver gives the employer, when they worked there and their address then, and sends it to the provider.
+    next:
+      - { step: 04-checking, label: Sends it, via: { click: CLAIM.SEND } }
+      - { step: 03a-dont-know, label: "Doesn't know their membership number", via: { click: CLAIM.DONT-KNOW } }
+  03a-dont-know:
+    title: Not know the membership number
+    narrative: |
+      The saver does not know their membership number. They say so, and send the rest.
+    next:
+      - { step: 04-checking, label: Sends the rest, via: { click: CLAIM.SEND } }
+  04-checking:
+    title: Be told the provider is checking
+    narrative: |
+      The saver is told the provider is checking, and when it says it will answer, typically within ten working days. They
+      need not wait: back on the overview the possible match says it is being checked, and until when.
+    next:
+      - { step: 05-confirmed, label: The provider confirms it is theirs, via: { event: provider-confirms-match } }
+      - { step: 05a-further-question, label: The provider asks something more, via: { event: provider-asks-further-question } }
+      - { step: 05b-not-matched, label: The provider cannot match it, via: { event: provider-cannot-match } }
+      - { step: 05c-late, label: The provider does not answer in time, via: { event: answer-date-passes } }
+  05-confirmed:
+    title: See it confirmed as theirs
+    narrative: |
+      The provider confirms the pension is the saver's, and shares it. They are told so, and it is one of their pots, with
+      its value, marked as found by the search. The possible match is gone.
+    end: the pension is one of the saver's pots.
+  05a-further-question:
+    title: Answer a further question
+    narrative: |
+      The provider needs more, and asks a further question: here, to confirm when the saver left. They are told, and
+      answer it, and the provider checks again.
+    next:
+      - { step: 04-checking, label: Sends the answer, via: { click: CLAIM.SEND-ANSWER } }
+  05b-not-matched:
+    title: Be told it could not be matched
+    narrative: |
+      The provider cannot match the pension to the saver from what they gave. They are told so, and why, as the provider
+      says, and may try again with different details, such as another address, or leave it.
+    next:
+      - { step: 02-claim, label: Tries again with a different address, via: { click: CLAIM.TRY-AGAIN } }
+    end: the possible match waits for the saver.
+  05c-late:
+    title: Be told the provider is late
+    narrative: |
+      The provider has not answered by when it said. The possible match on the overview says it is late, and on the claim
+      the saver may remind the provider, or leave it to answer in its own time.
+    next:
+      - { step: 04-checking, label: Reminds the provider, via: { click: CLAIM.REMIND } }
+    end: the claim waits on the provider.
