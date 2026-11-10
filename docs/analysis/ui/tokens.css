@@ -1,0 +1,152 @@
+/* The look of Pot Tracker's UI: every colour, the type, the spacing and the shape. Nothing else in the design names a
+   colour, so the look can change without the design changing. look-and-feel.html shows it in use.
+   The fonts are system stacks, so a rendering does not depend on a font only some machines have. */
+:root {
+  /* Surfaces and text */
+  --canvas: #ffffff;
+  --canvas-subtle: #f4f7f6;
+  --border: #d5dcd9;
+  --border-subtle: #e6ebe9;
+  --text: #1b2420;
+  --text-secondary: #53615b;
+  --text-tertiary: #74817b;
+
+  /* The one accent: actions, links, what is chosen */
+  --accent: #0b6e5f;
+  --accent-hover: #08574b;
+  --accent-soft: rgba(11, 110, 95, 0.12);
+  --on-accent: #ffffff;
+
+  /* Meaning */
+  --gain: #1d7a3e;
+  --gain-soft: rgba(29, 122, 62, 0.12);
+  --loss: #b42318;
+  --loss-soft: rgba(180, 35, 24, 0.1);
+  --caution: #9a6200;                 /* late, waiting on the saver, a possible match */
+  --caution-soft: rgba(154, 98, 0, 0.12);
+  --error: #b42318;
+  --error-soft: #fde8e6;
+
+  /* A pot's own colour, the same wherever it is shown (Principles §1.7), given to pots in order. All pots together is
+     drawn in --pot-all, dashed. */
+  --pot-1: #0b6e5f;
+  --pot-2: #3b5bcc;
+  --pot-3: #c46a00;
+  --pot-4: #8a46b0;
+  --pot-5: #c2185b;
+  --pot-6: #4f6f7c;
+  --pot-all: #1b2420;
+
+  /* Charts */
+  --chart-grid: #e6ebe9;
+  --chart-axis: #74817b;
+  --chart-baseline: #1b2420;          /* growth's 1, and money moved's nothing */
+
+  --mask: rgba(18, 26, 23, 0.5);
+  --shadow-raised: 0 1px 2px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.05);
+  --shadow-overlay: 0 12px 28px -4px rgba(0, 0, 0, 0.18);
+
+  /* Type */
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-figures: var(--font-body);   /* with tabular numbers: see .figure */
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-md: 15px;
+  --text-lg: 18px;
+  --text-xl: 24px;
+  --text-figure: 32px;                /* a pot's value, a total */
+
+  /* Space and shape */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+
+  /* The walkthrough's own: the highlight on what a step points at, and an undrawn slot */
+  --walkthrough-highlight: #ff5a1f;
+  --walkthrough-placeholder: #9aa5a0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--canvas-subtle);
+}
+
+h1, h2, h3 { margin: 0; font-weight: 600; }
+h1 { font-size: var(--text-xl); }
+h2 { font-size: var(--text-lg); }
+h3 { font-size: var(--text-md); }
+
+a { color: var(--accent); text-decoration: none; }
+
+.figure {
+  font-family: var(--font-figures);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.as-of { font-size: var(--text-xs); color: var(--text-tertiary); }
+
+button {
+  font: inherit;
+  font-weight: 600;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+button.secondary { background: var(--canvas); color: var(--accent); border-color: var(--border); }
+button.quiet { background: transparent; color: var(--accent); border-color: transparent; }
+
+button[disabled], button[data-disabled] {
+  background: var(--border-subtle);
+  border-color: var(--border-subtle);
+  color: var(--text-tertiary);
+}
+
+input, select {
+  font: inherit;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--canvas);
+  color: var(--text);
+}
+
+label { font-size: var(--text-sm); color: var(--text-secondary); }
+
+.card {
+  background: var(--canvas);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-raised);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 2px var(--space-sm);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  background: var(--canvas-subtle);
+  color: var(--text-secondary);
+}
+
+.chip.gain { background: var(--gain-soft); color: var(--gain); }
+.chip.loss { background: var(--loss-soft); color: var(--loss); }
+.chip.caution { background: var(--caution-soft); color: var(--caution); }
+.chip.accent { background: var(--accent-soft); color: var(--accent); }
