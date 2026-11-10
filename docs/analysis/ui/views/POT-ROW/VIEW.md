@@ -21,5 +21,5 @@ One pot in a list: its colour, its name, its provider and kind, and its value wi
 **Used by**
 
 * Sign in: 03 See where their pots stand ([desk](../../walkthroughs/sign-in/03-overview/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03-overview/STEP.phone.md))
-* Sign in: 03d See a value that is not up to date ([desk](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.phone.md))
+* Sign in: 03b See a value that is not up to date ([desk](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.phone.md))
 <!-- ui-walkthrough: end -->

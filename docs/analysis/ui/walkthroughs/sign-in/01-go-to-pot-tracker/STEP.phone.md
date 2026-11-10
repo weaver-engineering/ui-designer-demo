@@ -13,7 +13,7 @@
 |:---|---:|
 | *Start* | *Types their email address* (types in `SIGN-IN.EMAIL`): [02 Identify themselves](../02-identify/STEP.phone.md) → |
 |  | *Chooses Google* (clicks `SIGN-IN.GOOGLE`): [02a Choose Google](../02a-google/STEP.phone.md) → |
-|  | *Has forgotten their password* (clicks `SIGN-IN.FORGOTTEN`): [03b Reset a forgotten password](../03b-forgotten-password/STEP.phone.md) → |
+|  | *Has forgotten their password* (clicks `SIGN-IN.FORGOTTEN`): [02c Reset a forgotten password](../02c-forgotten-password/STEP.phone.md) → |
 
 The saver goes to Pot Tracker. They are not signed in, so it shows only the sign-in: nothing of anyone's pots is on
 the screen until they have identified themselves.

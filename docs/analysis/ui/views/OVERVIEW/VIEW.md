@@ -30,6 +30,6 @@ Every one of the saver's pots, each with its value and when that was, and what t
 **Used by**
 
 * Sign in: 03 See where their pots stand ([desk](../../walkthroughs/sign-in/03-overview/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03-overview/STEP.phone.md))
-* Sign in: 03c Start with no pots ([desk](../../walkthroughs/sign-in/03c-no-pots/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03c-no-pots/STEP.phone.md))
-* Sign in: 03d See a value that is not up to date ([desk](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.phone.md))
+* Sign in: 03a Start with no pots ([desk](../../walkthroughs/sign-in/03a-no-pots/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03a-no-pots/STEP.phone.md))
+* Sign in: 03b See a value that is not up to date ([desk](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.phone.md))
 <!-- ui-walkthrough: end -->

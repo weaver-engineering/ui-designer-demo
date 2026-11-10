@@ -12,8 +12,8 @@ Describes [Sign In](../../../use-cases/sign-in/USE-CASE.md).
 * [01 Go to Pot Tracker](01-go-to-pot-tracker/STEP.phone.md): a way in, *Start*
 * [02 Identify themselves](02-identify/STEP.phone.md)
 * [02a Choose Google](02a-google/STEP.phone.md)
+* [02b Cannot be identified](02b-not-identified/STEP.phone.md)
+* [02c Reset a forgotten password](02c-forgotten-password/STEP.phone.md)
 * [03 See where their pots stand](03-overview/STEP.phone.md): ends the walkthrough
-* [03a Cannot be identified](03a-not-identified/STEP.phone.md)
-* [03b Reset a forgotten password](03b-forgotten-password/STEP.phone.md)
-* [03c Start with no pots](03c-no-pots/STEP.phone.md): ends the walkthrough
-* [03d See a value that is not up to date](03d-not-up-to-date/STEP.phone.md): ends the walkthrough
+* [03a Start with no pots](03a-no-pots/STEP.phone.md): ends the walkthrough
+* [03b See a value that is not up to date](03b-not-up-to-date/STEP.phone.md): ends the walkthrough

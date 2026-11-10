@@ -25,5 +25,5 @@ The saver identifies themselves to Pot Tracker, with an email address and passwo
 * Sign in: 01 Go to Pot Tracker ([desk](../../walkthroughs/sign-in/01-go-to-pot-tracker/STEP.desk.md) · [phone](../../walkthroughs/sign-in/01-go-to-pot-tracker/STEP.phone.md))
 * Sign in: 02 Identify themselves ([desk](../../walkthroughs/sign-in/02-identify/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02-identify/STEP.phone.md))
 * Sign in: 02a Choose Google ([desk](../../walkthroughs/sign-in/02a-google/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02a-google/STEP.phone.md))
-* Sign in: 03a Cannot be identified ([desk](../../walkthroughs/sign-in/03a-not-identified/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03a-not-identified/STEP.phone.md))
+* Sign in: 02b Cannot be identified ([desk](../../walkthroughs/sign-in/02b-not-identified/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02b-not-identified/STEP.phone.md))
 <!-- ui-walkthrough: end -->

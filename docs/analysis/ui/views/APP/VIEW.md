@@ -18,9 +18,9 @@ The root of the UI. Signed out, it shows the sign-in, signing up, or resetting a
 * Sign in: 01 Go to Pot Tracker ([desk](../../walkthroughs/sign-in/01-go-to-pot-tracker/STEP.desk.md) · [phone](../../walkthroughs/sign-in/01-go-to-pot-tracker/STEP.phone.md))
 * Sign in: 02 Identify themselves ([desk](../../walkthroughs/sign-in/02-identify/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02-identify/STEP.phone.md))
 * Sign in: 02a Choose Google ([desk](../../walkthroughs/sign-in/02a-google/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02a-google/STEP.phone.md))
+* Sign in: 02b Cannot be identified ([desk](../../walkthroughs/sign-in/02b-not-identified/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02b-not-identified/STEP.phone.md))
+* Sign in: 02c Reset a forgotten password ([desk](../../walkthroughs/sign-in/02c-forgotten-password/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02c-forgotten-password/STEP.phone.md))
 * Sign in: 03 See where their pots stand ([desk](../../walkthroughs/sign-in/03-overview/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03-overview/STEP.phone.md))
-* Sign in: 03a Cannot be identified ([desk](../../walkthroughs/sign-in/03a-not-identified/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03a-not-identified/STEP.phone.md))
-* Sign in: 03b Reset a forgotten password ([desk](../../walkthroughs/sign-in/03b-forgotten-password/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03b-forgotten-password/STEP.phone.md))
-* Sign in: 03c Start with no pots ([desk](../../walkthroughs/sign-in/03c-no-pots/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03c-no-pots/STEP.phone.md))
-* Sign in: 03d See a value that is not up to date ([desk](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.phone.md))
+* Sign in: 03a Start with no pots ([desk](../../walkthroughs/sign-in/03a-no-pots/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03a-no-pots/STEP.phone.md))
+* Sign in: 03b See a value that is not up to date ([desk](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.phone.md))
 <!-- ui-walkthrough: end -->

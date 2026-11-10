@@ -12,9 +12,9 @@
 | Previous | Next |
 |:---|---:|
 | ← *Types their email address* (types in `SIGN-IN.EMAIL`) from [01 Go to Pot Tracker](../01-go-to-pot-tracker/STEP.desk.md) | *Pot Tracker identifies them* (when `saver-identified` happens): [03 See where their pots stand](../03-overview/STEP.desk.md) → |
-| ← *Tries again* (types in `SIGN-IN.PASSWORD`) from [03a Cannot be identified](../03a-not-identified/STEP.desk.md) | *Pot Tracker cannot identify them* (when `saver-not-identified` happens): [03a Cannot be identified](../03a-not-identified/STEP.desk.md) → |
-| ← *Saves the new password and signs in* (clicks `RESET-PASSWORD.SAVE`) from [03b Reset a forgotten password](../03b-forgotten-password/STEP.desk.md) | *Identified, with no pots yet* (when `saver-identified-with-no-pots` happens): [03c Start with no pots](../03c-no-pots/STEP.desk.md) → |
-|  | *Identified, but a pot could not be brought up to date* (when `pot-not-brought-up-to-date` happens): [03d See a value that is not up to date](../03d-not-up-to-date/STEP.desk.md) → |
+| ← *Tries again* (types in `SIGN-IN.PASSWORD`) from [02b Cannot be identified](../02b-not-identified/STEP.desk.md) | *Pot Tracker cannot identify them* (when `saver-not-identified` happens): [02b Cannot be identified](../02b-not-identified/STEP.desk.md) → |
+| ← *Saves the new password and signs in* (clicks `RESET-PASSWORD.SAVE`) from [02c Reset a forgotten password](../02c-forgotten-password/STEP.desk.md) | *Identified, with no pots yet* (when `saver-identified-with-no-pots` happens): [03a Start with no pots](../03a-no-pots/STEP.desk.md) → |
+|  | *Identified, but a pot could not be brought up to date* (when `pot-not-brought-up-to-date` happens): [03b See a value that is not up to date](../03b-not-up-to-date/STEP.desk.md) → |
 
 The saver gives their email address and password, and signs in. The password is typed and sent, never held by the
 UI.

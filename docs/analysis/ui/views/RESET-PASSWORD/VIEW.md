@@ -22,5 +22,5 @@ The saver resets a forgotten password: asks for a link, is told it has been sent
 <!-- ui-walkthrough: begin. Generated from VIEW.html and VIEW.yaml; edit those, not this block. -->
 **Used by**
 
-* Sign in: 03b Reset a forgotten password ([desk](../../walkthroughs/sign-in/03b-forgotten-password/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03b-forgotten-password/STEP.phone.md))
+* Sign in: 02c Reset a forgotten password ([desk](../../walkthroughs/sign-in/02c-forgotten-password/STEP.desk.md) · [phone](../../walkthroughs/sign-in/02c-forgotten-password/STEP.phone.md))
 <!-- ui-walkthrough: end -->

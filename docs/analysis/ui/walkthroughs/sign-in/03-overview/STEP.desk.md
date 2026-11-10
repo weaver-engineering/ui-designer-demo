@@ -12,7 +12,7 @@
 | Previous | Next |
 |:---|---:|
 | ← *Pot Tracker identifies them* (when `saver-identified` happens) from [02 Identify themselves](../02-identify/STEP.desk.md) | **End:** the saver is signed in, and sees where their pots stand. |
-| ← *Comes back from Google* (when `saver-identified` happens) from [02a Choose Google](../02a-google/STEP.desk.md) |  |
+| ← *Comes back from Google, identified* (when `saver-identified` happens) from [02a Choose Google](../02a-google/STEP.desk.md) |  |
 
 The saver is signed in, and sees an overview of their pots: each one's value and when that was, and what they add up
 to. Each pot carries its own colour, which it keeps wherever it is shown.

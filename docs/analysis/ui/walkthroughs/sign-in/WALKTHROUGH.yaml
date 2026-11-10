@@ -12,7 +12,7 @@ steps:
     next:
       - { step: 02-identify, label: Types their email address, via: { type: SIGN-IN.EMAIL } }
       - { step: 02a-google, label: Chooses Google, via: { click: SIGN-IN.GOOGLE } }
-      - { step: 03b-forgotten-password, label: Has forgotten their password, via: { click: SIGN-IN.FORGOTTEN } }
+      - { step: 02c-forgotten-password, label: Has forgotten their password, via: { click: SIGN-IN.FORGOTTEN } }
   02-identify:
     title: Identify themselves
     narrative: |
@@ -20,31 +20,29 @@ steps:
       UI.
     next:
       - { step: 03-overview, label: Pot Tracker identifies them, via: { event: saver-identified } }
-      - { step: 03a-not-identified, label: Pot Tracker cannot identify them, via: { event: saver-not-identified } }
-      - { step: 03c-no-pots, label: "Identified, with no pots yet", via: { event: saver-identified-with-no-pots } }
-      - { step: 03d-not-up-to-date, label: "Identified, but a pot could not be brought up to date", via: { event: pot-not-brought-up-to-date } }
+      - { step: 02b-not-identified, label: Pot Tracker cannot identify them, via: { event: saver-not-identified } }
+      - { step: 03a-no-pots, label: "Identified, with no pots yet", via: { event: saver-identified-with-no-pots } }
+      - { step: 03b-not-up-to-date, label: "Identified, but a pot could not be brought up to date", via: { event: pot-not-brought-up-to-date } }
   02a-google:
     title: Choose Google
     narrative: |
       The saver chooses to identify themselves with their Google account. Google's own page is not this UI's, so the step
       shows where the saver leaves from; they come back signed in.
     next:
-      - { step: 03-overview, label: Comes back from Google, via: { event: saver-identified } }
-  03-overview:
-    title: See where their pots stand
-    narrative: |
-      The saver is signed in, and sees an overview of their pots: each one's value and when that was, and what they add up
-      to. Each pot carries its own colour, which it keeps wherever it is shown.
-    end: the saver is signed in, and sees where their pots stand.
-  03a-not-identified:
+      - { step: 03-overview, label: "Comes back from Google, identified", via: { event: saver-identified } }
+      - { step: 02b-not-identified, label: "Comes back from Google, not identified", via: { event: saver-not-identified } }
+      - { step: 03a-no-pots, label: "Comes back identified, with no pots yet", via: { event: saver-identified-with-no-pots } }
+      - { step: 03b-not-up-to-date, label: "Comes back identified, but a pot could not be brought up to date", via: { event: pot-not-brought-up-to-date } }
+  02b-not-identified:
     title: Cannot be identified
     narrative: |
-      Pot Tracker cannot identify the saver from what they gave: the password is wrong, or the address is not one of its
-      users. They are told so without being told which, and offered signing up. The address they typed is kept; the
-      password is not.
+      Pot Tracker cannot identify the saver from what they gave: the password is wrong, or the address, or the Google
+      account they came back with, is not one of its users. They are told so without being told which, and offered
+      signing up. An address they typed is kept; the password is not.
     next:
       - { step: 02-identify, label: Tries again, via: { type: SIGN-IN.PASSWORD } }
-  03b-forgotten-password:
+      - { step: 02a-google, label: Tries Google, via: { click: SIGN-IN.GOOGLE } }
+  02c-forgotten-password:
     title: Reset a forgotten password
     narrative: |
       The saver has forgotten their password. They give their email address and are sent a link, told only that one has
@@ -52,13 +50,19 @@ steps:
       back at signing in.
     next:
       - { step: 02-identify, label: Saves the new password and signs in, via: { click: RESET-PASSWORD.SAVE } }
-  03c-no-pots:
+  03-overview:
+    title: See where their pots stand
+    narrative: |
+      The saver is signed in, and sees an overview of their pots: each one's value and when that was, and what they add up
+      to. Each pot carries its own colour, which it keeps wherever it is shown.
+    end: the saver is signed in, and sees where their pots stand.
+  03a-no-pots:
     title: Start with no pots
     narrative: |
       The saver has no pots yet, so there is nothing to add up. They are offered the two ways to start, as on signing up:
       finding their pensions, and adding an investment portfolio.
     end: the saver is signed in, and offered the two ways to start.
-  03d-not-up-to-date:
+  03b-not-up-to-date:
     title: See a value that is not up to date
     narrative: |
       One provider could not be reached, so one pot's value could not be brought up to date. It is shown as the value last
