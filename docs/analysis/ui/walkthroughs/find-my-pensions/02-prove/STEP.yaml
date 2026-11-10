@@ -5,5 +5,17 @@ slots:
   FIND-PENSIONS.FOUND: null
 state:
   APP: { state: signed-in }
-  FIND-PENSIONS: { stage: proving }
-highlight: [FIND-PENSIONS.PROVING]
+  FIND-PENSIONS: { stage: explain }
+caption: "Told what will happen, before anything does"
+describe: [FIND-PENSIONS.EXPLAIN]
+highlight: [FIND-PENSIONS.PROVE]
+screens:
+  - caption: "Taken to the service in a new tab, with a link if it does not open"
+    state:
+      FIND-PENSIONS: { stage: redirecting }
+    describe: [FIND-PENSIONS.REDIRECTING]
+    highlight: [FIND-PENSIONS.OPEN-SERVICE]
+  - caption: "Proving who they are in the service's tab, while Pot Tracker waits"
+    state:
+      FIND-PENSIONS: { stage: proving }
+    highlight: [FIND-PENSIONS.PROVING]

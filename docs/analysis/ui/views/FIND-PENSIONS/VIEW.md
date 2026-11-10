@@ -20,6 +20,8 @@ Finding the saver's pensions through the pension-finding service: what will happ
 | `AGAIN` | visible: `stage == again` | For a saver whose consent has not ended: says when they agreed and until when, so they need not prove who they are or agree again. |
 | `CONSENT-FROM` | text: `consent-from` | When the saver agreed. |
 | `SEARCH-AGAIN` | visible: `stage == again` | Starts the search again under the consent already given. |
+| `REDIRECTING` | visible: `stage == redirecting` | Says the saver is being taken to the pension-finding service in a new tab to prove who they are, with a link to follow if it does not open. |
+| `OPEN-SERVICE` |  | Opens the pension-finding service's tab, for a saver whose tab did not open by itself. |
 | `PROVING` | visible: `stage == proving` | Says the saver is proving who they are in the service's window, and that Pot Tracker carries on when they have. |
 | `NOT-PROVED` | visible: `stage == not-proved` | Says the search cannot start because the service could not confirm who the saver is, why that can happen, and how to try again. |
 | `TRY-AGAIN` | visible: `stage == not-proved` | Goes back to the service to prove who the saver is again. |
@@ -38,14 +40,13 @@ Finding the saver's pensions through the pension-finding service: what will happ
 | `FINISHED` | visible: `stage == finished` | Says the search has finished. |
 | `NONE` | visible: `stage == finished and found-count == 0` | Says no pension was found, and offers adding an investment portfolio instead. |
 | `ADD-PORTFOLIO` |  | Starts adding an investment portfolio, when no pension was found. |
-| `CANCEL` | visible: `stage in [explain, proving, not-proved]` | Leaves without searching, back to the overview. |
+| `CANCEL` | visible: `stage in [explain, redirecting, proving, not-proved]` | Leaves without searching, back to the overview. |
 | `BACK` | visible: `stage in [declined, searching, finished]` | Goes back to the overview of every pot. |
 <!-- ui-walkthrough: view end -->
 
 <!-- ui-walkthrough: begin. Generated from VIEW.html and VIEW.yaml; edit those, not this block. -->
 **Used by**
 
-* Find my pensions: 01 Ask to find their pensions ([desk](../../walkthroughs/find-my-pensions/01-ask/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/01-ask/STEP.phone.md))
 * Find my pensions: 01a Search again within the year ([desk](../../walkthroughs/find-my-pensions/01a-searched-before/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/01a-searched-before/STEP.phone.md))
 * Find my pensions: 02 Prove who they are ([desk](../../walkthroughs/find-my-pensions/02-prove/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/02-prove/STEP.phone.md))
 * Find my pensions: 02a Cannot prove who they are ([desk](../../walkthroughs/find-my-pensions/02a-not-proved/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/02a-not-proved/STEP.phone.md))

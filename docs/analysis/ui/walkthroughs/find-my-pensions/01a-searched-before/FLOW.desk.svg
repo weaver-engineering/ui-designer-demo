@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1866" height="501" viewBox="0 0 1866 501" font-family="sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1825" height="501" viewBox="0 0 1825 501" font-family="sans-serif">
 <metadata>{"version":1,"kind":"flow","config":"../../../../../ui-walkthrough.yaml","walkthrough":"../WALKTHROUGH.yaml","step":"01a-searched-before","viewport":"desk"}</metadata>
 <defs>
 <marker id="arrow-in" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a4c"/></marker>
 <marker id="arrow-out" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d9480f"/></marker>
 <marker id="arrow-line" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9aa1ad"/></marker>
 </defs>
-<rect width="1866" height="501" fill="#ffffff"/>
-<g transform="translate(62,5)">
+<rect width="1825" height="501" fill="#ffffff"/>
+<g transform="translate(21,5)">
 <path d="M298,97 L426,97" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M596,97 L724,97" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M426,104 L358.5,104 L358.5,216.5 L426,216.5" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
@@ -23,11 +23,10 @@
 <path d="M1490,223.5 L1547,223.5 L1547,104 L1618,104" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1490,327.5 L1561,327.5 L1561,111 L1618,111" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1490,428 L1568,428 L1568,118 L1618,118" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
+<path d="M128,100.5 L64,100.5 L64,220 L128,220" fill="none" stroke="#1f8a4c" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow-in)"/>
 <path d="M298,223.5 L365.5,223.5 L365.5,26 L958,26 L958,104 L1022,104" fill="none" stroke="#d9480f" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow-out)"/>
-<circle cx="92" cy="97" r="3.5" fill="#9aa1ad"/>
-<path d="M92,97 L128,97" fill="none" stroke="#9aa1ad" stroke-width="1.25" marker-end="url(#arrow-line)"/>
-<circle cx="92" cy="220" r="3.5" fill="#1f8a4c"/>
-<path d="M92,220 L128,220" fill="none" stroke="#1f8a4c" stroke-width="2.5" marker-end="url(#arrow-in)"/>
+<circle cx="92" cy="93.5" r="3.5" fill="#9aa1ad"/>
+<path d="M92,93.5 L128,93.5" fill="none" stroke="#9aa1ad" stroke-width="1.25" marker-end="url(#arrow-line)"/>
 <rect x="128" y="71" width="170" height="52" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.25"/>
 <text x="138" y="91" font-size="12" font-weight="bold" fill="#1d2330">01</text>
 <text x="138" y="109" font-size="12" fill="#1d2330">Ask to find their pensi…</text>
@@ -71,7 +70,7 @@
 <rect x="1618" y="298" width="170" height="52" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.25"/>
 <text x="1628" y="318" font-size="12" font-weight="bold" fill="#1d2330">06b · end</text>
 <text x="1628" y="336" font-size="12" fill="#1d2330">Be told what was found…</text>
-<text x="362" y="93" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Goes to prove who the…</text>
+<text x="362" y="93" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Asks to find their pe…</text>
 <text x="660" y="93" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">The service confirms…</text>
 <text x="358.5" y="164.25" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">The service cannot co…</text>
 <text x="663.5" y="164.25" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Tries again</text>
@@ -87,9 +86,9 @@
 <text x="1547" y="167.75" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has an…</text>
 <text x="1561" y="190.775" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has an…</text>
 <text x="1568" y="370" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has an…</text>
+<text x="64" y="164.25" font-size="11" text-anchor="middle" fill="#1f8a4c" stroke="#ffffff" stroke-width="3" paint-order="stroke">Asks, having searched…</text>
 <text x="661.75" y="22" font-size="11" text-anchor="middle" fill="#d9480f" stroke="#ffffff" stroke-width="3" paint-order="stroke">Searches again</text>
-<text x="86" y="101" font-size="11" text-anchor="end" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Start</text>
-<text x="86" y="224" font-size="11" text-anchor="end" fill="#1f8a4c" stroke="#ffffff" stroke-width="3" paint-order="stroke">Has searched before,…</text>
+<text x="86" y="97.5" font-size="11" text-anchor="end" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Start</text>
 </g>
 <path d="M16,481 L44,481" stroke="#1f8a4c" stroke-width="2.5" marker-end="url(#arrow-in)"/><text x="52" y="485" font-size="11" fill="#6b7385">into this step</text>
 <path d="M166,481 L194,481" stroke="#d9480f" stroke-width="2.5" marker-end="url(#arrow-out)"/><text x="202" y="485" font-size="11" fill="#6b7385">out of this step</text>

@@ -11,15 +11,12 @@
 
 | Previous | Next |
 |:---|---:|
-| *Start* | *Goes to prove who they are* (clicks `FIND-PENSIONS.PROVE`): [02 Prove who they are](../02-prove/STEP.desk.md) → |
+| *Start* | *Asks to find their pensions* (clicks `OVERVIEW.FIND-PENSIONS`): [02 Prove who they are](../02-prove/STEP.desk.md) → |
+|  | *Asks, having searched within the year* (clicks `OVERVIEW.FIND-PENSIONS`): [01a Search again within the year](../01a-searched-before/STEP.desk.md) → |
 
-From the overview of their pots, the saver asks to find their pensions. Before anything happens they are told what
-will: every UK pension provider is searched, through the pension-finding service; they prove who they are to the
-service, not to Pot Tracker; and providers answer over days, not seconds.
+From the overview of their pots, the saver asks to find their pensions.
 
-### 1. From the overview of their pots
-
-![01 Ask to find their pensions, 1. From the overview of their pots](STEP.desk.png)
+![01 Ask to find their pensions](STEP.desk.png)
 
 **Views**
 
@@ -28,17 +25,6 @@ service, not to Pot Tracker; and providers answer over days, not seconds.
     * *main*: [OVERVIEW](../../../views/OVERVIEW/VIEW.md)
       * *pots*: [POT-ROW](../../../views/POT-ROW/VIEW.md) × 2
 
+## In this step
+
 * **OVERVIEW.FIND-PENSIONS** (highlighted): Starts finding the saver's pensions, or more of them.
-
-### 2. Told what will happen, before anything does
-
-![01 Ask to find their pensions, 2. Told what will happen, before anything does](STEP-2.desk.png)
-
-**Views**
-
-* [APP](../../../views/APP/VIEW.md)
-  * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
-    * *main*: [FIND-PENSIONS](../../../views/FIND-PENSIONS/VIEW.md)
-
-* **FIND-PENSIONS.PROVE** (highlighted): Goes to the pension-finding service, in a window of its own, to prove who the saver is.
-* **FIND-PENSIONS.EXPLAIN**: Says what will happen: who is searched, what is shared and with whom, and that answers take days.

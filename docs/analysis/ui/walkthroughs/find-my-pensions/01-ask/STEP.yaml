@@ -10,12 +10,3 @@ state:
   POT-ROW#2: { colour: pot-4, pot: { name: My SIPP, provider: Brightvest, kind: self-invested personal pension, value: "£61,795", as-of: 10 Nov 2026 } }
 caption: From the overview of their pots
 highlight: [OVERVIEW.FIND-PENSIONS]
-screens:
-  - caption: "Told what will happen, before anything does"
-    slots:
-      SHELL.MAIN: FIND-PENSIONS
-      FIND-PENSIONS.FOUND: null
-    state:
-      FIND-PENSIONS: { stage: explain }
-    describe: [FIND-PENSIONS.EXPLAIN]
-    highlight: [FIND-PENSIONS.PROVE]

@@ -11,14 +11,18 @@
 
 | Previous | Next |
 |:---|---:|
-| ← *Goes to prove who they are* (clicks `FIND-PENSIONS.PROVE`) from [01 Ask to find their pensions](../01-ask/STEP.desk.md) | *The service confirms who they are* (when `identity-confirmed` happens): [03 Agree to the search](../03-agree/STEP.desk.md) → |
+| ← *Asks to find their pensions* (clicks `OVERVIEW.FIND-PENSIONS`) from [01 Ask to find their pensions](../01-ask/STEP.desk.md) | *The service confirms who they are* (when `identity-confirmed` happens): [03 Agree to the search](../03-agree/STEP.desk.md) → |
 | ← *Tries again* (clicks `FIND-PENSIONS.TRY-AGAIN`) from [02a Cannot prove who they are](../02a-not-proved/STEP.desk.md) | *The service cannot confirm who they are* (when `identity-not-confirmed` happens): [02a Cannot prove who they are](../02a-not-proved/STEP.desk.md) → |
 
-The saver proves who they are to the pension-finding service, in its own window: its identity check is not this
-UI's. Pot Tracker waits, saying what the service will ask for and that it never sees it, and carries on when the
-service says whether it succeeded.
+Before anything happens the saver is told what will: every UK pension provider is searched, through the
+pension-finding service; they prove who they are to the service, not to Pot Tracker; and providers answer over days,
+not seconds. Going on, they are told the service is opening in a new tab, with a link to follow if it does not. Its
+identity check is not this UI's: Pot Tracker waits, saying what the service will ask for and that it never sees it,
+and carries on when the service says whether it succeeded.
 
-![02 Prove who they are](STEP.desk.png)
+### 1. Told what will happen, before anything does
+
+![02 Prove who they are, 1. Told what will happen, before anything does](STEP.desk.png)
 
 **Views**
 
@@ -26,6 +30,30 @@ service says whether it succeeded.
   * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
     * *main*: [FIND-PENSIONS](../../../views/FIND-PENSIONS/VIEW.md)
 
-## In this step
+* **FIND-PENSIONS.PROVE** (highlighted): Goes to the pension-finding service, in a window of its own, to prove who the saver is.
+* **FIND-PENSIONS.EXPLAIN**: Says what will happen: who is searched, what is shared and with whom, and that answers take days.
+
+### 2. Taken to the service in a new tab, with a link if it does not open
+
+![02 Prove who they are, 2. Taken to the service in a new tab, with a link if it does not open](STEP-2.desk.png)
+
+**Views**
+
+* [APP](../../../views/APP/VIEW.md)
+  * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
+    * *main*: [FIND-PENSIONS](../../../views/FIND-PENSIONS/VIEW.md)
+
+* **FIND-PENSIONS.OPEN-SERVICE** (highlighted): Opens the pension-finding service's tab, for a saver whose tab did not open by itself.
+* **FIND-PENSIONS.REDIRECTING**: Says the saver is being taken to the pension-finding service in a new tab to prove who they are, with a link to follow if it does not open.
+
+### 3. Proving who they are in the service's tab, while Pot Tracker waits
+
+![02 Prove who they are, 3. Proving who they are in the service's tab, while Pot Tracker waits](STEP-3.desk.png)
+
+**Views**
+
+* [APP](../../../views/APP/VIEW.md)
+  * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
+    * *main*: [FIND-PENSIONS](../../../views/FIND-PENSIONS/VIEW.md)
 
 * **FIND-PENSIONS.PROVING** (highlighted): Says the saver is proving who they are in the service's window, and that Pot Tracker carries on when they have.

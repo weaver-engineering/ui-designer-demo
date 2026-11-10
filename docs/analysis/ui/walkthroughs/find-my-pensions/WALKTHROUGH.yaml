@@ -7,14 +7,12 @@ steps:
   01-ask:
     title: Ask to find their pensions
     narrative: |
-      From the overview of their pots, the saver asks to find their pensions. Before anything happens they are told what
-      will: every UK pension provider is searched, through the pension-finding service; they prove who they are to the
-      service, not to Pot Tracker; and providers answer over days, not seconds.
+      From the overview of their pots, the saver asks to find their pensions.
     next:
-      - { step: 02-prove, label: Goes to prove who they are, via: { click: FIND-PENSIONS.PROVE } }
+      - { step: 02-prove, label: Asks to find their pensions, via: { click: OVERVIEW.FIND-PENSIONS } }
+      - { step: 01a-searched-before, label: "Asks, having searched within the year", via: { click: OVERVIEW.FIND-PENSIONS } }
   01a-searched-before:
     title: Search again within the year
-    entry: Has searched before, and their consent has not ended
     narrative: |
       The saver searched before, and the consent they gave then has not ended. They are told when they agreed and until
       when, and search again without proving who they are or agreeing again.
@@ -23,9 +21,11 @@ steps:
   02-prove:
     title: Prove who they are
     narrative: |
-      The saver proves who they are to the pension-finding service, in its own window: its identity check is not this
-      UI's. Pot Tracker waits, saying what the service will ask for and that it never sees it, and carries on when the
-      service says whether it succeeded.
+      Before anything happens the saver is told what will: every UK pension provider is searched, through the
+      pension-finding service; they prove who they are to the service, not to Pot Tracker; and providers answer over days,
+      not seconds. Going on, they are told the service is opening in a new tab, with a link to follow if it does not. Its
+      identity check is not this UI's: Pot Tracker waits, saying what the service will ask for and that it never sees it,
+      and carries on when the service says whether it succeeded.
     next:
       - { step: 03-agree, label: The service confirms who they are, via: { event: identity-confirmed } }
       - { step: 02a-not-proved, label: The service cannot confirm who they are, via: { event: identity-not-confirmed } }

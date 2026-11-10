@@ -10,7 +10,7 @@ Describes [Find My Pensions](../../../use-cases/find-my-pensions/USE-CASE.md).
 ## Steps
 
 * [01 Ask to find their pensions](01-ask/STEP.desk.md): a way in, *Start*
-* [01a Search again within the year](01a-searched-before/STEP.desk.md): a way in, *Has searched before, and their consent has not ended*
+* [01a Search again within the year](01a-searched-before/STEP.desk.md)
 * [02 Prove who they are](02-prove/STEP.desk.md)
 * [02a Cannot prove who they are](02a-not-proved/STEP.desk.md): may end the walkthrough
 * [03 Agree to the search](03-agree/STEP.desk.md)

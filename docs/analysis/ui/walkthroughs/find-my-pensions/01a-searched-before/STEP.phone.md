@@ -11,7 +11,7 @@
 
 | Previous | Next |
 |:---|---:|
-| *Has searched before, and their consent has not ended* | *Searches again* (clicks `FIND-PENSIONS.SEARCH-AGAIN`): [04 See the search start](../04-started/STEP.phone.md) → |
+| ← *Asks, having searched within the year* (clicks `OVERVIEW.FIND-PENSIONS`) from [01 Ask to find their pensions](../01-ask/STEP.phone.md) | *Searches again* (clicks `FIND-PENSIONS.SEARCH-AGAIN`): [04 See the search start](../04-started/STEP.phone.md) → |
 
 The saver searched before, and the consent they gave then has not ended. They are told when they agreed and until
 when, and search again without proving who they are or agreeing again.
