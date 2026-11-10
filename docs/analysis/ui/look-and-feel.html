@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pot Tracker: look and feel</title>
+  <!-- The tokens in use. Open this file in a browser beside tokens.css. It illustrates the look only: it is not a view,
+       and no view is drawn from it. -->
+  <link rel="stylesheet" href="tokens.css">
+  <style>
+    main { max-width: 1040px; margin: 0 auto; padding: var(--space-2xl) var(--space-lg); display: grid; gap: var(--space-xl); }
+    section.card { padding: var(--space-xl); display: grid; gap: var(--space-lg); }
+    .lede { color: var(--text-secondary); margin: 0; }
+    .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: var(--space-md); }
+    .swatch { display: grid; gap: var(--space-xs); font-size: var(--text-xs); color: var(--text-secondary); }
+    .swatch i { display: block; height: 44px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); }
+    .row { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-md); }
+    .field { display: grid; gap: var(--space-xs); min-width: 240px; }
+    .pot { display: grid; grid-template-columns: 4px 1fr auto; gap: var(--space-md); align-items: center; padding: var(--space-md) var(--space-lg); }
+    .pot .bar { align-self: stretch; border-radius: var(--radius-pill); }
+    .pot .name { font-weight: 600; }
+    .pot .provider { font-size: var(--text-sm); color: var(--text-secondary); }
+    .pot .value { text-align: right; }
+    .total { font-size: var(--text-figure); }
+    .assumptions { font-size: var(--text-sm); color: var(--text-secondary); border-left: 3px solid var(--border); padding-left: var(--space-md); }
+    .stages { display: flex; gap: var(--space-xs); align-items: center; font-size: var(--text-sm); }
+    .stages span { padding: var(--space-xs) var(--space-md); border-radius: var(--radius-pill); background: var(--canvas-subtle); color: var(--text-tertiary); }
+    .stages span.done { background: var(--accent-soft); color: var(--accent); }
+    .stages span.now { background: var(--accent); color: var(--on-accent); }
+    svg text { font-family: var(--font-body); font-size: 11px; fill: var(--chart-axis); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Pot Tracker: look and feel</h1>
+    <p class="lede">The design tokens in <code>tokens.css</code>, in use. Calm, plain and exact: the figures carry the page.</p>
+  </header>
+
+  <section class="card">
+    <h2>Colour</h2>
+    <div class="swatches">
+      <div class="swatch"><i style="background: var(--accent)"></i>--accent: actions, links, chosen</div>
+      <div class="swatch"><i style="background: var(--gain)"></i>--gain: grew</div>
+      <div class="swatch"><i style="background: var(--loss)"></i>--loss: fell</div>
+      <div class="swatch"><i style="background: var(--caution)"></i>--caution: late, waiting on you</div>
+      <div class="swatch"><i style="background: var(--canvas-subtle)"></i>--canvas-subtle: the page</div>
+      <div class="swatch"><i style="background: var(--canvas)"></i>--canvas: cards</div>
+    </div>
+    <h3>Each pot's own colour</h3>
+    <div class="swatches">
+      <div class="swatch"><i style="background: var(--pot-1)"></i>--pot-1</div>
+      <div class="swatch"><i style="background: var(--pot-2)"></i>--pot-2</div>
+      <div class="swatch"><i style="background: var(--pot-3)"></i>--pot-3</div>
+      <div class="swatch"><i style="background: var(--pot-4)"></i>--pot-4</div>
+      <div class="swatch"><i style="background: var(--pot-5)"></i>--pot-5</div>
+      <div class="swatch"><i style="background: var(--pot-6)"></i>--pot-6</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Figures, with their dates</h2>
+    <div>
+      <div class="figure total">£184,230</div>
+      <div class="as-of">All your pots, as of 10 November 2026</div>
+    </div>
+    <div class="card pot">
+      <span class="bar" style="background: var(--pot-1)"></span>
+      <div><div class="name">Northfield Retail pension</div><div class="provider">Harbourline Pensions · workplace pension</div></div>
+      <div class="value"><div class="figure">£62,410</div><div class="as-of">10 Nov 2026</div></div>
+    </div>
+    <div class="card pot">
+      <span class="bar" style="background: var(--pot-2)"></span>
+      <div><div class="name">My ISA</div><div class="provider">Brightvest · stocks and shares ISA</div></div>
+      <div class="value"><div class="figure">£38,905</div><div class="as-of">10 Nov 2026</div></div>
+    </div>
+    <div class="card pot">
+      <span class="bar" style="background: var(--pot-3)"></span>
+      <div><div class="name">Old engineering job</div><div class="provider">Castlegate Life · workplace pension</div></div>
+      <div class="value"><div class="figure">£21,120</div><div class="as-of">last known 2 Oct 2026</div></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>A projection, never a promise</h2>
+    <div class="row">
+      <div><div class="figure total">£14,800 a year</div><div class="as-of">at 67, in today's money: an illustration</div></div>
+      <span class="chip">Lower £10,900</span><span class="chip">Higher £20,600</span>
+    </div>
+    <div class="assumptions">Assumes you pay in £350 a month until 67, growth of 4% a year after charges, and inflation of 2.5%.</div>
+  </section>
+
+  <section class="card">
+    <h2>Growth, and money moved</h2>
+    <svg viewBox="0 0 640 260" width="100%" role="img" aria-label="Three pots' growth from 1, and the money moved beneath">
+      <line x1="40" y1="20" x2="40" y2="160" stroke="var(--chart-axis)"/>
+      <line x1="40" y1="120" x2="620" y2="120" stroke="var(--chart-baseline)" stroke-width="1"/>
+      <line x1="40" y1="70" x2="620" y2="70" stroke="var(--chart-grid)"/>
+      <line x1="40" y1="20" x2="620" y2="20" stroke="var(--chart-grid)"/>
+      <text x="8" y="124">1.0</text><text x="8" y="74">1.1</text><text x="8" y="24">1.2</text>
+      <polyline fill="none" stroke="var(--pot-1)" stroke-width="2.5" points="40,120 120,112 200,104 280,96 360,90 440,78 520,70 620,62"/>
+      <polyline fill="none" stroke="var(--pot-2)" stroke-width="2.5" points="40,120 120,118 200,100 280,104 360,84 440,66 520,52 620,40"/>
+      <polyline fill="none" stroke="var(--pot-3)" stroke-width="2.5" points="280,98 360,100 440,94 520,90 620,86"/>
+      <polyline fill="none" stroke="var(--pot-all)" stroke-width="2" stroke-dasharray="6 4" points="40,120 120,114 200,102 280,98 360,88 440,76 520,66 620,58"/>
+      <line x1="40" y1="215" x2="620" y2="215" stroke="var(--chart-baseline)"/>
+      <rect x="114" y="195" width="12" height="20" fill="var(--pot-2)"/>
+      <rect x="274" y="175" width="12" height="40" fill="var(--pot-3)"/>
+      <rect x="274" y="215" width="12" height="40" fill="var(--pot-1)" opacity="0.85"/>
+      <rect x="434" y="200" width="12" height="15" fill="var(--pot-2)"/>
+      <text x="8" y="190">in</text><text x="8" y="250">out</text>
+    </svg>
+    <div class="row"><span class="chip gain">4.0% a year</span><span class="chip loss">−2.1% a year</span><span class="chip accent">109% of staying</span></div>
+  </section>
+
+  <section class="card">
+    <h2>Things that take days</h2>
+    <div class="stages"><span class="done">Asked for</span><span class="done">Agreed</span><span class="now">Money moving</span><span>Done</span></div>
+    <div class="row"><span class="chip caution">Late: waiting on Castlegate Life</span><span class="chip caution">Possible match: Ferris &amp; Lowe</span></div>
+  </section>
+
+  <section class="card">
+    <h2>Actions and fields</h2>
+    <div class="row">
+      <button>Find my pensions</button>
+      <button class="secondary">Add a portfolio</button>
+      <button class="quiet">Not now</button>
+      <button disabled>Confirm transfer</button>
+    </div>
+    <div class="row">
+      <label class="field">Email address<input value="sam@example.com"></label>
+      <label class="field">Retirement age<select><option>67</option></select></label>
+    </div>
+  </section>
+</main>
+</body>
+</html>

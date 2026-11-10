@@ -1,0 +1,12 @@
+views: analysis/ui/views
+tokens: analysis/ui/tokens.css
+walkthroughs: analysis/ui/walkthroughs/*/WALKTHROUGH.yaml
+image-viewport: desk
+viewports:
+  desk: 1440x900
+  tablet: 1024x768
+  phone: 390x844
+publish:
+  # Your own organisation and project on the demo, as Weaver Engineering gave them to you (see the README).
+  project: your-organisation/your-project
+  service: https://viewer.weaverengineering.co.uk
