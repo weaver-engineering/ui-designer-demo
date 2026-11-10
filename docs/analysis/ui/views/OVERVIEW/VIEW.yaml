@@ -4,6 +4,8 @@ state:
   total: { type: string, description: "What every pot adds up to, in pounds." }
   as-of: { type: string, description: The date the total is as of. }
   stale-count: { type: number, default: 0, description: "How many pots' values could not be brought up to date." }
+  search: { type: string, description: "While a pension search runs, how many it has found so far, in words." }
+  found-since: { type: string, description: "On signing in, how many pensions the search found since the saver was last there, in words." }
 slots:
   POTS:
     views: [POT-ROW]
@@ -19,3 +21,8 @@ components:
   START: { visible: pot-count == 0, description: "With no pots yet, explains the two ways to start: finding pensions and adding a portfolio." }
   START-FIND: { description: "Starts finding the saver's pensions, from the explanation shown with no pots." }
   START-ADD: { description: "Starts adding an investment portfolio, from the explanation shown with no pots." }
+  SEARCHING: { visible: search != "", description: "Says a pension search is running and how many it has found so far, and goes to it." }
+  SEARCH-FOUND: { text: search, description: "How many pensions the running search has found so far." }
+  SEE-SEARCH: { description: Goes to the running pension search. }
+  SINCE: { visible: found-since != "", description: "On signing in, says how many pensions the search found since the saver was last there." }
+  FOUND-SINCE: { text: found-since, description: "How many pensions the search found since the saver was last there." }

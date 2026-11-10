@@ -24,11 +24,19 @@ Every one of the saver's pots, each with its value and when that was, and what t
 | `START` | visible: `pot-count == 0` | With no pots yet, explains the two ways to start: finding pensions and adding a portfolio. |
 | `START-FIND` |  | Starts finding the saver's pensions, from the explanation shown with no pots. |
 | `START-ADD` |  | Starts adding an investment portfolio, from the explanation shown with no pots. |
+| `SEARCHING` | visible: `search != ""` | Says a pension search is running and how many it has found so far, and goes to it. |
+| `SEARCH-FOUND` | text: `search` | How many pensions the running search has found so far. |
+| `SEE-SEARCH` |  | Goes to the running pension search. |
+| `SINCE` | visible: `found-since != ""` | On signing in, says how many pensions the search found since the saver was last there. |
+| `FOUND-SINCE` | text: `found-since` | How many pensions the search found since the saver was last there. |
 <!-- ui-walkthrough: view end -->
 
 <!-- ui-walkthrough: begin. Generated from VIEW.html and VIEW.yaml; edit those, not this block. -->
 **Used by**
 
+* Find my pensions: 01 Ask to find their pensions ([desk](../../walkthroughs/find-my-pensions/01-ask/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/01-ask/STEP.phone.md))
+* Find my pensions: 06 Be told the search has finished ([desk](../../walkthroughs/find-my-pensions/06-finished/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/06-finished/STEP.phone.md))
+* Find my pensions: 06b Be told what was found while away ([desk](../../walkthroughs/find-my-pensions/06b-told-on-sign-in/STEP.desk.md) · [phone](../../walkthroughs/find-my-pensions/06b-told-on-sign-in/STEP.phone.md))
 * Sign in: 03 See where their pots stand ([desk](../../walkthroughs/sign-in/03-overview/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03-overview/STEP.phone.md))
 * Sign in: 03a Start with no pots ([desk](../../walkthroughs/sign-in/03a-no-pots/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03a-no-pots/STEP.phone.md))
 * Sign in: 03b See a value that is not up to date ([desk](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03b-not-up-to-date/STEP.phone.md))

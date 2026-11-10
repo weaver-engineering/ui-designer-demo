@@ -1,0 +1,22 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: FIND-PENSIONS
+  FIND-PENSIONS.FOUND: [POT-ROW]
+state:
+  APP: { state: signed-in }
+  FIND-PENSIONS: { stage: searching, started: 10 November 2026, found-count: 1, found: 1 pension found }
+  POT-ROW: { colour: pot-1, found: new, pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: "pot of money, from Northfield Retail", value: "£62,410", as-of: 10 Nov 2026 } }
+caption: The first provider answers the same day
+describe: [FIND-PENSIONS.FOUND-COUNT]
+highlight: [POT-ROW]
+screens:
+  - caption: Another answers two days later
+    slots:
+      FIND-PENSIONS.FOUND: [POT-ROW, POT-ROW]
+    state:
+      FIND-PENSIONS: { found-count: 2, found: 2 pensions found }
+      POT-ROW#1: { colour: pot-3, found: new, pot: { name: Kestrel Engineering pension, provider: Castlegate Life, kind: "pot of money, from Kestrel Engineering", value: "£21,120", as-of: 12 Nov 2026 } }
+      POT-ROW#2: { colour: pot-1, found: new, pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: "pot of money, from Northfield Retail", value: "£62,410", as-of: 10 Nov 2026 } }
+    describe: [FIND-PENSIONS.FOUND-COUNT]
+    highlight: [POT-ROW#1]

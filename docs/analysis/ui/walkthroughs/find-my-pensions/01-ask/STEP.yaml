@@ -1,0 +1,21 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: OVERVIEW
+  OVERVIEW.POTS: [POT-ROW, POT-ROW]
+state:
+  APP: { state: signed-in }
+  OVERVIEW: { pot-count: 2, total: "£100,700", as-of: 10 November 2026 }
+  POT-ROW#1: { colour: pot-2, pot: { name: My ISA, provider: Brightvest, kind: stocks and shares ISA, value: "£38,905", as-of: 10 Nov 2026 } }
+  POT-ROW#2: { colour: pot-4, pot: { name: My SIPP, provider: Brightvest, kind: self-invested personal pension, value: "£61,795", as-of: 10 Nov 2026 } }
+caption: From the overview of their pots
+highlight: [OVERVIEW.FIND-PENSIONS]
+screens:
+  - caption: "Told what will happen, before anything does"
+    slots:
+      SHELL.MAIN: FIND-PENSIONS
+      FIND-PENSIONS.FOUND: null
+    state:
+      FIND-PENSIONS: { stage: explain }
+    describe: [FIND-PENSIONS.EXPLAIN]
+    highlight: [FIND-PENSIONS.PROVE]

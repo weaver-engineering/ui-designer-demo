@@ -1,0 +1,21 @@
+<style>
+  [data-view="POSSIBLE-MATCH"] { display: grid; grid-template-columns: 4px 1fr auto; gap: var(--space-md); align-items: center; padding: var(--space-md) var(--space-lg); border-style: dashed; border-color: var(--caution); }
+  [data-view="POSSIBLE-MATCH"] .colour { align-self: stretch; border-radius: var(--radius-pill); background: var(--caution-soft); }
+  [data-view="POSSIBLE-MATCH"] .top { display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap; }
+  [data-view="POSSIBLE-MATCH"] [data-component="PROVIDER"] { font-weight: 600; }
+  [data-view="POSSIBLE-MATCH"] [data-component="REASON"] { font-size: var(--text-sm); color: var(--text-secondary); }
+  [data-view="POSSIBLE-MATCH"] .actions { display: flex; gap: var(--space-xs); }
+  @media (max-width: 600px) {
+    [data-view="POSSIBLE-MATCH"] { grid-template-columns: 4px 1fr; }
+    [data-view="POSSIBLE-MATCH"] .actions { grid-column: 2; }
+  }
+</style>
+<section data-view="POSSIBLE-MATCH" class="card">
+  <span class="colour"></span>
+  <div>
+    <div class="top"><span data-component="PROVIDER">Provider</span><span class="chip caution">Possible match</span></div>
+    <div data-component="REASON">Why the provider is not sure.</div>
+    <div class="as-of">answered <span data-component="RECEIVED">date</span></div>
+  </div>
+  <div class="actions"><button data-component="CLAIM">Claim it</button><button class="quiet" data-component="NOT-MINE">Not mine</button></div>
+</section>

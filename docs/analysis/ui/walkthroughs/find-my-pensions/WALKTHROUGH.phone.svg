@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1361.2" height="1882" viewBox="0 0 1361.2 1882" font-family="sans-serif">
+<metadata>{"version":1,"kind":"overview","config":"../../../../ui-walkthrough.yaml","walkthrough":"WALKTHROUGH.yaml","viewport":"phone"}</metadata>
+<defs>
+<marker id="arrow-in" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f8a4c"/></marker>
+<marker id="arrow-out" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d9480f"/></marker>
+<marker id="arrow-line" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9aa1ad"/></marker>
+<marker id="arrow-p0" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1f77b4"/></marker>
+<marker id="arrow-p1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#d62728"/></marker>
+<marker id="arrow-p2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2ca02c"/></marker>
+<marker id="arrow-p3" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#9467bd"/></marker>
+<marker id="arrow-p4" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8c564b"/></marker>
+<marker id="arrow-p5" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e377c2"/></marker>
+<marker id="arrow-p6" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#17a2b8"/></marker>
+<marker id="arrow-p7" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b8860b"/></marker>
+<marker id="arrow-p8" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ff7f0e"/></marker>
+<marker id="arrow-p9" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#4a5162"/></marker>
+</defs>
+<rect width="1361.2" height="1882" fill="#ffffff"/>
+<g transform="translate(25.199999999999996,-41)">
+<path d="M205,309 L205,410" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p0)"/>
+<path d="M541.5,309 L541.5,366 L40,366 L40,947 L218,947 L218,997" fill="none" stroke="#d62728" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p1)"/>
+<path d="M205,603 L205,704" fill="none" stroke="#2ca02c" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p2)"/>
+<path d="M218,410 L218,353 L528.5,353 L528.5,410" fill="none" stroke="#2ca02c" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p2)"/>
+<path d="M528.5,603 L528.5,660 L218,660 L218,603" fill="none" stroke="#9467bd" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p3)"/>
+<path d="M205,897 L205,997" fill="none" stroke="#8c564b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p4)"/>
+<path d="M231,704 L231,647 L541.5,647 L541.5,704" fill="none" stroke="#8c564b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p4)"/>
+<path d="M205,1158 L205,1298" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M218,1158 L218,1202 L535,1202 L535,1298" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M244,1158 L244,1215 L865,1215 L865,1298" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M270,1158 L270,1228 L1195,1228 L1195,1298" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M231,1158 L231,1241 L370,1241 L370,1575 L528.5,1575 L528.5,1671" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M257,1158 L257,1254 L700,1254 L700,1601 L858.5,1601 L858.5,1671" fill="none" stroke="#17a2b8" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p6)"/>
+<path d="M205,1531 L205,1671" fill="none" stroke="#b8860b" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p7)"/>
+<path d="M541.5,1531 L541.5,1588 L218,1588 L218,1671" fill="none" stroke="#ff7f0e" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p8)"/>
+<path d="M871.5,1531 L871.5,1614 L231,1614 L231,1671" fill="none" stroke="#4a5162" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p9)"/>
+<path d="M1195,1531 L1195,1627 L244,1627 L244,1671" fill="none" stroke="#1f77b4" stroke-width="1.6" stroke-linejoin="round" marker-end="url(#arrow-p0)"/>
+<circle cx="205" cy="64" r="3.5" fill="#9aa1ad"/>
+<path d="M205,64 L205,100" fill="none" stroke="#9aa1ad" stroke-width="1.6" marker-end="url(#arrow-line)"/>
+<circle cx="535" cy="64" r="3.5" fill="#9aa1ad"/>
+<path d="M535,64 L535,100" fill="none" stroke="#9aa1ad" stroke-width="1.6" marker-end="url(#arrow-line)"/>
+<rect x="80" y="100" width="250" height="209" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="92" y="124" font-size="12" font-weight="bold" fill="#6b7385">01</text>
+<text x="92" y="145" font-size="14" font-weight="bold" fill="#1d2330">Ask to find their pensions</text>
+<text x="92" y="169" font-size="12" fill="#1d2330">From the overview of their pots, the</text>
+<text x="92" y="185" font-size="12" fill="#1d2330">saver asks to find their pensions.</text>
+<text x="92" y="201" font-size="12" fill="#1d2330">Before anything happens they are</text>
+<text x="92" y="217" font-size="12" fill="#1d2330">told what will: every UK pension</text>
+<text x="92" y="233" font-size="12" fill="#1d2330">provider is searched, through the</text>
+<text x="92" y="249" font-size="12" fill="#1d2330">pension-finding service; they prove</text>
+<text x="92" y="265" font-size="12" fill="#1d2330">who they are to the service, not to</text>
+<text x="92" y="281" font-size="12" fill="#1d2330">Pot Tracker; and providers answer</text>
+<text x="92" y="297" font-size="12" fill="#1d2330">over days, not seconds.</text>
+<rect x="410" y="100" width="250" height="209" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="422" y="124" font-size="12" font-weight="bold" fill="#6b7385">01a</text>
+<text x="422" y="145" font-size="14" font-weight="bold" fill="#1d2330">Search again within the year</text>
+<text x="422" y="169" font-size="12" fill="#1d2330">The saver searched before, and the</text>
+<text x="422" y="185" font-size="12" fill="#1d2330">consent they gave then has not</text>
+<text x="422" y="201" font-size="12" fill="#1d2330">ended. They are told when they</text>
+<text x="422" y="217" font-size="12" fill="#1d2330">agreed and until when, and search</text>
+<text x="422" y="233" font-size="12" fill="#1d2330">again without proving who they are</text>
+<text x="422" y="249" font-size="12" fill="#1d2330">or agreeing again.</text>
+<rect x="80" y="410" width="250" height="193" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="92" y="434" font-size="12" font-weight="bold" fill="#6b7385">02</text>
+<text x="92" y="455" font-size="14" font-weight="bold" fill="#1d2330">Prove who they are</text>
+<text x="92" y="479" font-size="12" fill="#1d2330">The saver proves who they are to the</text>
+<text x="92" y="495" font-size="12" fill="#1d2330">pension-finding service, in its own</text>
+<text x="92" y="511" font-size="12" fill="#1d2330">window: its identity check is not</text>
+<text x="92" y="527" font-size="12" fill="#1d2330">this UI's. Pot Tracker waits, saying</text>
+<text x="92" y="543" font-size="12" fill="#1d2330">what the service will ask for and</text>
+<text x="92" y="559" font-size="12" fill="#1d2330">that it never sees it, and carries</text>
+<text x="92" y="575" font-size="12" fill="#1d2330">on when the service says whether it</text>
+<text x="92" y="591" font-size="12" fill="#1d2330">succeeded.</text>
+<rect x="410" y="410" width="250" height="193" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="422" y="434" font-size="12" font-weight="bold" fill="#6b7385">02a · end</text>
+<text x="422" y="455" font-size="14" font-weight="bold" fill="#1d2330">Cannot prove who they are</text>
+<text x="422" y="479" font-size="12" fill="#1d2330">The service could not confirm who</text>
+<text x="422" y="495" font-size="12" fill="#1d2330">the saver is. Pot Tracker sees only</text>
+<text x="422" y="511" font-size="12" fill="#1d2330">that, not why, so it says what</text>
+<text x="422" y="527" font-size="12" fill="#1d2330">commonly causes it and how to try</text>
+<text x="422" y="543" font-size="12" fill="#1d2330">again. No search starts.</text>
+<text x="422" y="567" font-size="12" font-style="italic" fill="#1d2330">End: the search has not started.</text>
+<rect x="80" y="704" width="250" height="193" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="92" y="728" font-size="12" font-weight="bold" fill="#6b7385">03</text>
+<text x="92" y="749" font-size="14" font-weight="bold" fill="#1d2330">Agree to the search</text>
+<text x="92" y="773" font-size="12" fill="#1d2330">The saver agrees to two things,</text>
+<text x="92" y="789" font-size="12" fill="#1d2330">separately: that the service may</text>
+<text x="92" y="805" font-size="12" fill="#1d2330">search for their pensions, and that</text>
+<text x="92" y="821" font-size="12" fill="#1d2330">Pot Tracker may receive what it</text>
+<text x="92" y="837" font-size="12" fill="#1d2330">finds. They are told the agreement</text>
+<text x="92" y="853" font-size="12" fill="#1d2330">lasts a year, and until when. The</text>
+<text x="92" y="869" font-size="12" fill="#1d2330">search starts only once both are</text>
+<text x="92" y="885" font-size="12" fill="#1d2330">agreed.</text>
+<rect x="410" y="704" width="250" height="193" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="422" y="728" font-size="12" font-weight="bold" fill="#6b7385">03a · end</text>
+<text x="422" y="749" font-size="14" font-weight="bold" fill="#1d2330">Decline the search</text>
+<text x="422" y="773" font-size="12" fill="#1d2330">The saver does not agree. No search</text>
+<text x="422" y="789" font-size="12" fill="#1d2330">is made and nothing is shared, and</text>
+<text x="422" y="805" font-size="12" fill="#1d2330">they are told so.</text>
+<text x="422" y="829" font-size="12" font-style="italic" fill="#1d2330">End: no search was made and nothing</text>
+<text x="422" y="845" font-size="12" font-style="italic" fill="#1d2330">was shared.</text>
+<rect x="80" y="997" width="250" height="161" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="92" y="1021" font-size="12" font-weight="bold" fill="#6b7385">04</text>
+<text x="92" y="1042" font-size="14" font-weight="bold" fill="#1d2330">See the search start</text>
+<text x="92" y="1066" font-size="12" fill="#1d2330">The search starts, and the saver is</text>
+<text x="92" y="1082" font-size="12" fill="#1d2330">told it has, and when. It is not a</text>
+<text x="92" y="1098" font-size="12" fill="#1d2330">wait on a spinner: they are told</text>
+<text x="92" y="1114" font-size="12" fill="#1d2330">that providers answer over days,</text>
+<text x="92" y="1130" font-size="12" fill="#1d2330">that they need not stay, and that</text>
+<text x="92" y="1146" font-size="12" fill="#1d2330">they will be told what is found.</text>
+<rect x="80" y="1298" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="92" y="1322" font-size="12" font-weight="bold" fill="#6b7385">05</text>
+<text x="92" y="1343" font-size="14" font-weight="bold" fill="#1d2330">See pensions arrive</text>
+<text x="92" y="1367" font-size="12" fill="#1d2330">As each provider answers, its</text>
+<text x="92" y="1383" font-size="12" fill="#1d2330">pension is added to the saver's</text>
+<text x="92" y="1399" font-size="12" fill="#1d2330">pots, newest first: the provider,</text>
+<text x="92" y="1415" font-size="12" fill="#1d2330">the employer it came from, that it</text>
+<text x="92" y="1431" font-size="12" fill="#1d2330">is a pot of money, and its value</text>
+<text x="92" y="1447" font-size="12" fill="#1d2330">with its date. Each is marked as</text>
+<text x="92" y="1463" font-size="12" fill="#1d2330">found by the search, and the count</text>
+<text x="92" y="1479" font-size="12" fill="#1d2330">goes up.</text>
+<rect x="410" y="1298" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<rect x="413" y="1301" width="244" height="227" rx="4" fill="none" stroke="#9aa1ad" stroke-width="1"/>
+<text x="422" y="1322" font-size="12" font-weight="bold" fill="#6b7385">05a</text>
+<text x="422" y="1343" font-size="14" font-weight="bold" fill="#1d2330">Receive a possible match</text>
+<text x="422" y="1367" font-size="12" fill="#1d2330">A provider can only say it may hold</text>
+<text x="422" y="1383" font-size="12" fill="#1d2330">a pension for the saver. It is</text>
+<text x="422" y="1399" font-size="12" fill="#1d2330">listed as a possible match, not a</text>
+<text x="422" y="1415" font-size="12" fill="#1d2330">pot, with the provider's reason for</text>
+<text x="422" y="1431" font-size="12" fill="#1d2330">not being sure, for the saver to</text>
+<text x="422" y="1447" font-size="12" fill="#1d2330">claim when they choose. The search</text>
+<text x="422" y="1463" font-size="12" fill="#1d2330">carries on.</text>
+<text x="422" y="1487" font-size="12" font-style="italic" fill="#1d2330">The walkthrough</text>
+<text x="422" y="1503" font-size="12" font-style="italic" fill="#1d2330">analysis/ui/walkthroughs/claim-a-pos</text>
+<text x="422" y="1519" font-size="12" font-style="italic" fill="#1d2330">sible-match (not written yet)</text>
+<rect x="740" y="1298" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="752" y="1322" font-size="12" font-weight="bold" fill="#6b7385">05b</text>
+<text x="752" y="1343" font-size="14" font-weight="bold" fill="#1d2330">Receive a pension with no</text>
+<text x="752" y="1362" font-size="14" font-weight="bold" fill="#1d2330">value yet</text>
+<text x="752" y="1386" font-size="12" fill="#1d2330">A provider has found the pension but</text>
+<text x="752" y="1402" font-size="12" fill="#1d2330">cannot give its value yet. It is</text>
+<text x="752" y="1418" font-size="12" fill="#1d2330">added as a pot with no value, saying</text>
+<text x="752" y="1434" font-size="12" fill="#1d2330">when one is expected.</text>
+<rect x="1070" y="1298" width="250" height="233" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="1082" y="1322" font-size="12" font-weight="bold" fill="#6b7385">05c</text>
+<text x="1082" y="1343" font-size="14" font-weight="bold" fill="#1d2330">Find a pension already added</text>
+<text x="1082" y="1367" font-size="12" fill="#1d2330">The search finds the SIPP the saver</text>
+<text x="1082" y="1383" font-size="12" fill="#1d2330">had already added by hand as a</text>
+<text x="1082" y="1399" font-size="12" fill="#1d2330">portfolio. It is not added twice:</text>
+<text x="1082" y="1415" font-size="12" fill="#1d2330">the pot they added is marked as</text>
+<text x="1082" y="1431" font-size="12" fill="#1d2330">found by the search too.</text>
+<rect x="80" y="1671" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="92" y="1695" font-size="12" font-weight="bold" fill="#6b7385">06 · end</text>
+<text x="92" y="1716" font-size="14" font-weight="bold" fill="#1d2330">Be told the search has</text>
+<text x="92" y="1735" font-size="14" font-weight="bold" fill="#1d2330">finished</text>
+<text x="92" y="1759" font-size="12" fill="#1d2330">Every provider has answered. The</text>
+<text x="92" y="1775" font-size="12" fill="#1d2330">saver is told the search has</text>
+<text x="92" y="1791" font-size="12" fill="#1d2330">finished and how many pensions it</text>
+<text x="92" y="1807" font-size="12" fill="#1d2330">found, and back on the overview the</text>
+<text x="92" y="1823" font-size="12" fill="#1d2330">pots it found are among their pots,</text>
+<text x="92" y="1839" font-size="12" fill="#1d2330">each marked so.</text>
+<text x="92" y="1863" font-size="12" font-style="italic" fill="#1d2330">End: every pension found is one of</text>
+<text x="92" y="1879" font-size="12" font-style="italic" fill="#1d2330">the saver's pots.</text>
+<rect x="410" y="1671" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="422" y="1695" font-size="12" font-weight="bold" fill="#6b7385">06a · end</text>
+<text x="422" y="1716" font-size="14" font-weight="bold" fill="#1d2330">Find no pensions</text>
+<text x="422" y="1740" font-size="12" fill="#1d2330">Every provider answered with</text>
+<text x="422" y="1756" font-size="12" fill="#1d2330">nothing. The saver is told no</text>
+<text x="422" y="1772" font-size="12" fill="#1d2330">pension was found, and offered</text>
+<text x="422" y="1788" font-size="12" fill="#1d2330">adding an ISA or investment account</text>
+<text x="422" y="1804" font-size="12" fill="#1d2330">instead.</text>
+<text x="422" y="1828" font-size="12" font-style="italic" fill="#1d2330">End: no pension was found, and</text>
+<text x="422" y="1844" font-size="12" font-style="italic" fill="#1d2330">adding a portfolio is offered.</text>
+<rect x="740" y="1671" width="250" height="236" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.6"/>
+<text x="752" y="1695" font-size="12" font-weight="bold" fill="#6b7385">06b · end</text>
+<text x="752" y="1716" font-size="14" font-weight="bold" fill="#1d2330">Be told what was found while</text>
+<text x="752" y="1735" font-size="14" font-weight="bold" fill="#1d2330">away</text>
+<text x="752" y="1759" font-size="12" fill="#1d2330">The saver signed out while the</text>
+<text x="752" y="1775" font-size="12" fill="#1d2330">search ran. Answers kept arriving,</text>
+<text x="752" y="1791" font-size="12" fill="#1d2330">and when they next sign in the</text>
+<text x="752" y="1807" font-size="12" fill="#1d2330">overview tells them how many</text>
+<text x="752" y="1823" font-size="12" fill="#1d2330">pensions were found since they were</text>
+<text x="752" y="1839" font-size="12" fill="#1d2330">last there, and that the search is</text>
+<text x="752" y="1855" font-size="12" fill="#1d2330">still running.</text>
+<text x="752" y="1879" font-size="12" font-style="italic" fill="#1d2330">End: the saver knows what the search</text>
+<text x="752" y="1895" font-size="12" font-style="italic" fill="#1d2330">found while they were away.</text>
+<text x="205" y="348.35" font-size="12" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="3" paint-order="stroke">Goes to prove who they are</text>
+<text x="40" y="660.5" font-size="12" text-anchor="middle" fill="#d62728" stroke="#ffffff" stroke-width="3" paint-order="stroke">Searches again</text>
+<text x="205" y="657.5" font-size="12" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="3" paint-order="stroke">The service confirms who they are</text>
+<text x="419.82500000000005" y="349" font-size="12" text-anchor="middle" fill="#2ca02c" stroke="#ffffff" stroke-width="3" paint-order="stroke">The service cannot confirm who th…</text>
+<text x="528.5" y="635.5" font-size="12" text-anchor="middle" fill="#9467bd" stroke="#ffffff" stroke-width="3" paint-order="stroke">Tries again</text>
+<text x="205" y="936" font-size="12" text-anchor="middle" fill="#8c564b" stroke="#ffffff" stroke-width="3" paint-order="stroke">Starts the search</text>
+<text x="386.25" y="643" font-size="12" text-anchor="middle" fill="#8c564b" stroke="#ffffff" stroke-width="3" paint-order="stroke">Does not agree</text>
+<text x="205" y="1274" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">Providers find pensions</text>
+<text x="376.5" y="1198" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">A provider may hold a pension</text>
+<text x="647.6500000000001" y="1211" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">A provider finds a pension, with…</text>
+<text x="1010" y="1224" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">A provider finds a pension alread…</text>
+<text x="425.475" y="1571" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider answers with nothi…</text>
+<text x="755.475" y="1597" font-size="12" text-anchor="middle" fill="#17a2b8" stroke="#ffffff" stroke-width="3" paint-order="stroke">Signs out, and signs in days later</text>
+<text x="205" y="1584" font-size="12" text-anchor="middle" fill="#b8860b" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="541.5" y="1554.95" font-size="12" text-anchor="middle" fill="#ff7f0e" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="359.1" y="1610" font-size="12" text-anchor="middle" fill="#4a5162" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="1004.8" y="1623" font-size="12" text-anchor="middle" fill="#1f77b4" stroke="#ffffff" stroke-width="3" paint-order="stroke">Every provider has answered</text>
+<text x="199" y="68" font-size="12" text-anchor="end" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Start</text>
+<text x="529" y="68" font-size="12" text-anchor="end" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Has searched before, and their co…</text>
+</g>
+</svg>

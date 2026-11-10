@@ -1,0 +1,10 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: FIND-PENSIONS
+  FIND-PENSIONS.FOUND: null
+state:
+  APP: { state: signed-in }
+  FIND-PENSIONS: { stage: not-proved }
+describe: [FIND-PENSIONS.TRY-AGAIN]
+highlight: [FIND-PENSIONS.NOT-PROVED]

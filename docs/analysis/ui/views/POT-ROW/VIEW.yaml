@@ -10,12 +10,18 @@ state:
   pot: { type: Pot, description: The pot. }
   colour: { type: "enum[pot-1, pot-2, pot-3, pot-4, pot-5, pot-6]", default: pot-1, description: "The pot's own colour, the same wherever it is shown." }
   stale: { type: boolean, default: false, description: "Its value could not be brought up to date, so it is the last known." }
+  found: { type: "enum[no, new, matched]", default: no, description: "Found by the pension search: new, a pot it added; matched, a pot the saver had already added that the search found too." }
+  awaiting: { type: boolean, default: false, description: "Its provider has shared it but has no value yet, so as-of is when one is expected." }
 components:
   NAME: { text: pot.name, description: The name the saver knows the pot by. }
   PROVIDER: { text: pot.provider, description: Who holds the pot. }
   KIND: { text: pot.kind, description: "What kind of pot it is, in plain words." }
   VALUE: { text: pot.value, description: "Its value, in pounds." }
   AS-OF: { text: pot.as-of, description: When the value was brought up to date. }
+  AWAITING: { visible: awaiting, description: "Says the value is still to come, in place of a value." }
+  EXPECTED: { visible: awaiting, description: "Says the date is when a value is expected." }
+  FOUND: { visible: found != no, description: Marks a pot the pension search found. }
+  MATCHED: { visible: found == matched, description: "Says the search found a pot the saver had already added, so it was not added twice." }
   LAST-KNOWN: { visible: stale, description: "Says the value is the last known, because it could not be brought up to date." }
 image:
   width: 720

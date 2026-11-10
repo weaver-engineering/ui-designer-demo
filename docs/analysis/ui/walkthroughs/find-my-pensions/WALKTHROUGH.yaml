@@ -1,0 +1,113 @@
+title: Find my pensions
+describes:
+  - title: Find My Pensions
+    path: analysis/use-cases/find-my-pensions/USE-CASE.md
+viewports: [desk, phone]
+steps:
+  01-ask:
+    title: Ask to find their pensions
+    narrative: |
+      From the overview of their pots, the saver asks to find their pensions. Before anything happens they are told what
+      will: every UK pension provider is searched, through the pension-finding service; they prove who they are to the
+      service, not to Pot Tracker; and providers answer over days, not seconds.
+    next:
+      - { step: 02-prove, label: Goes to prove who they are, via: { click: FIND-PENSIONS.PROVE } }
+  01a-searched-before:
+    title: Search again within the year
+    entry: Has searched before, and their consent has not ended
+    narrative: |
+      The saver searched before, and the consent they gave then has not ended. They are told when they agreed and until
+      when, and search again without proving who they are or agreeing again.
+    next:
+      - { step: 04-started, label: Searches again, via: { click: FIND-PENSIONS.SEARCH-AGAIN } }
+  02-prove:
+    title: Prove who they are
+    narrative: |
+      The saver proves who they are to the pension-finding service, in its own window: its identity check is not this
+      UI's. Pot Tracker waits, saying what the service will ask for and that it never sees it, and carries on when the
+      service says whether it succeeded.
+    next:
+      - { step: 03-agree, label: The service confirms who they are, via: { event: identity-confirmed } }
+      - { step: 02a-not-proved, label: The service cannot confirm who they are, via: { event: identity-not-confirmed } }
+  02a-not-proved:
+    title: Cannot prove who they are
+    narrative: |
+      The service could not confirm who the saver is. Pot Tracker sees only that, not why, so it says what commonly
+      causes it and how to try again. No search starts.
+    next:
+      - { step: 02-prove, label: Tries again, via: { click: FIND-PENSIONS.TRY-AGAIN } }
+    end: the search has not started.
+  03-agree:
+    title: Agree to the search
+    narrative: |
+      The saver agrees to two things, separately: that the service may search for their pensions, and that Pot Tracker may
+      receive what it finds. They are told the agreement lasts a year, and until when. The search starts only once both
+      are agreed.
+    next:
+      - { step: 04-started, label: Starts the search, via: { click: FIND-PENSIONS.AGREE } }
+      - { step: 03a-declined, label: Does not agree, via: { click: FIND-PENSIONS.DECLINE } }
+  03a-declined:
+    title: Decline the search
+    narrative: |
+      The saver does not agree. No search is made and nothing is shared, and they are told so.
+    end: no search was made and nothing was shared.
+  04-started:
+    title: See the search start
+    narrative: |
+      The search starts, and the saver is told it has, and when. It is not a wait on a spinner: they are told that
+      providers answer over days, that they need not stay, and that they will be told what is found.
+    next:
+      - { step: 05-pensions-arrive, label: Providers find pensions, via: { event: provider-finds-pension } }
+      - { step: 05a-possible-match, label: A provider may hold a pension, via: { event: provider-finds-possible-match } }
+      - { step: 05b-no-value-yet, label: "A provider finds a pension, with no value yet", via: { event: provider-finds-pension-without-value } }
+      - { step: 05c-already-added, label: A provider finds a pension already added, via: { event: provider-finds-pension-already-added } }
+      - { step: 06a-none-found, label: Every provider answers with nothing, via: { event: search-finds-nothing } }
+      - { step: 06b-told-on-sign-in, label: "Signs out, and signs in days later", via: { click: SHELL.SIGN-OUT } }
+  05-pensions-arrive:
+    title: See pensions arrive
+    narrative: |
+      As each provider answers, its pension is added to the saver's pots, newest first: the provider, the employer it came
+      from, that it is a pot of money, and its value with its date. Each is marked as found by the search, and the count
+      goes up.
+    next:
+      - { step: 06-finished, label: Every provider has answered, via: { event: search-finished } }
+  05a-possible-match:
+    title: Receive a possible match
+    walkthrough: analysis/ui/walkthroughs/claim-a-possible-match
+    narrative: |
+      A provider can only say it may hold a pension for the saver. It is listed as a possible match, not a pot, with the
+      provider's reason for not being sure, for the saver to claim when they choose. The search carries on.
+    next:
+      - { step: 06-finished, label: Every provider has answered, via: { event: search-finished } }
+  05b-no-value-yet:
+    title: Receive a pension with no value yet
+    narrative: |
+      A provider has found the pension but cannot give its value yet. It is added as a pot with no value, saying when one
+      is expected.
+    next:
+      - { step: 06-finished, label: Every provider has answered, via: { event: search-finished } }
+  05c-already-added:
+    title: Find a pension already added
+    narrative: |
+      The search finds the SIPP the saver had already added by hand as a portfolio. It is not added twice: the pot they
+      added is marked as found by the search too.
+    next:
+      - { step: 06-finished, label: Every provider has answered, via: { event: search-finished } }
+  06-finished:
+    title: Be told the search has finished
+    narrative: |
+      Every provider has answered. The saver is told the search has finished and how many pensions it found, and back on
+      the overview the pots it found are among their pots, each marked so.
+    end: every pension found is one of the saver's pots.
+  06a-none-found:
+    title: Find no pensions
+    narrative: |
+      Every provider answered with nothing. The saver is told no pension was found, and offered adding an ISA or
+      investment account instead.
+    end: no pension was found, and adding a portfolio is offered.
+  06b-told-on-sign-in:
+    title: Be told what was found while away
+    narrative: |
+      The saver signed out while the search ran. Answers kept arriving, and when they next sign in the overview tells
+      them how many pensions were found since they were last there, and that the search is still running.
+    end: the saver knows what the search found while they were away.

@@ -10,16 +10,20 @@
   [data-view="POT-ROW"] .sub { font-size: var(--text-sm); color: var(--text-secondary); }
   [data-view="POT-ROW"] .value { text-align: right; }
   [data-view="POT-ROW"] [data-component="LAST-KNOWN"] { color: var(--caution); }
-  [data-view="POT-ROW"][data-stale="true"] [data-component="VALUE"] { color: var(--text-secondary); }
+  [data-view="POT-ROW"][data-stale] [data-component="VALUE"] { color: var(--text-secondary); }
+  [data-view="POT-ROW"] .top { display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap; }
+  [data-view="POT-ROW"][data-awaiting] [data-component="VALUE"] { display: none; }
+  [data-view="POT-ROW"] [data-component="AWAITING"] { font-weight: 600; color: var(--text-secondary); }
 </style>
 <section data-view="POT-ROW" class="card">
   <span class="colour"></span>
   <div>
-    <div data-component="NAME">Pot name</div>
+    <div class="top"><span data-component="NAME">Pot name</span><span class="chip accent" data-component="FOUND" hidden>Found by search</span><span class="chip" data-component="MATCHED" hidden>Matched to the pot you added</span></div>
     <div class="sub"><span data-component="PROVIDER">Provider</span> · <span data-component="KIND">kind</span></div>
   </div>
   <div class="value">
     <div class="figure" data-component="VALUE">£0</div>
-    <div class="as-of"><span data-component="LAST-KNOWN" hidden>last known </span><span data-component="AS-OF">date</span></div>
+    <div data-component="AWAITING" hidden>Value to come</div>
+    <div class="as-of"><span data-component="LAST-KNOWN" hidden>last known </span><span data-component="EXPECTED" hidden>expected </span><span data-component="AS-OF">date</span></div>
   </div>
 </section>

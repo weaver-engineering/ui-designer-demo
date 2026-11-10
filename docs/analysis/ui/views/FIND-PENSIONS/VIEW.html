@@ -1,0 +1,92 @@
+<style>
+  [data-view="FIND-PENSIONS"] { height: 100%; box-sizing: border-box; overflow: auto; padding: var(--space-2xl) var(--space-xl); }
+  [data-view="FIND-PENSIONS"] .inner { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-lg); }
+  [data-view="FIND-PENSIONS"] .panel { padding: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-lg); }
+  [data-view="FIND-PENSIONS"] .panel p { margin: 0; color: var(--text-secondary); }
+  [data-view="FIND-PENSIONS"] dl { margin: 0; display: grid; gap: var(--space-md); }
+  [data-view="FIND-PENSIONS"] dt { font-weight: 600; }
+  [data-view="FIND-PENSIONS"] dd { margin: 0; color: var(--text-secondary); }
+  [data-view="FIND-PENSIONS"] .actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
+  [data-view="FIND-PENSIONS"] .waiting { display: flex; gap: var(--space-md); align-items: center; }
+  [data-view="FIND-PENSIONS"] .dot { width: 10px; height: 10px; border-radius: var(--radius-pill); background: var(--accent); flex: none; box-shadow: 0 0 0 4px var(--accent-soft); }
+  [data-view="FIND-PENSIONS"] .notice { padding: var(--space-md); border-radius: var(--radius-sm); font-size: var(--text-sm); background: var(--error-soft); color: var(--error); }
+  [data-view="FIND-PENSIONS"] .agree { display: flex; gap: var(--space-md); align-items: flex-start; padding: var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+  [data-view="FIND-PENSIONS"] .box { width: 18px; height: 18px; flex: none; margin-top: 2px; border: 1.5px solid var(--border); border-radius: 4px; background: var(--canvas); color: var(--on-accent); font-size: 13px; line-height: 18px; text-align: center; }
+  [data-view="FIND-PENSIONS"] .box::after { content: ""; }
+  [data-view="FIND-PENSIONS"][data-agreed-search] [data-component="AGREE-SEARCH"] .box,
+  [data-view="FIND-PENSIONS"][data-agreed-share] [data-component="AGREE-SHARE"] .box { background: var(--accent); border-color: var(--accent); }
+  [data-view="FIND-PENSIONS"][data-agreed-search] [data-component="AGREE-SEARCH"] .box::after,
+  [data-view="FIND-PENSIONS"][data-agreed-share] [data-component="AGREE-SHARE"] .box::after { content: "✓"; }
+  [data-view="FIND-PENSIONS"] .search-head { display: flex; justify-content: space-between; align-items: flex-end; gap: var(--space-lg); flex-wrap: wrap; }
+  [data-view="FIND-PENSIONS"] .label { font-size: var(--text-sm); color: var(--text-secondary); }
+  [data-view="FIND-PENSIONS"] [data-component="FOUND-COUNT"] { font-size: var(--text-xl); }
+  [data-view="FIND-PENSIONS"] [data-component="ARRIVING"], [data-view="FIND-PENSIONS"] [data-component="FINISHED"] { font-size: var(--text-sm); color: var(--text-secondary); }
+  [data-view="FIND-PENSIONS"] [data-slot="FOUND"] { display: flex; flex-direction: column; gap: var(--space-sm); }
+  [data-view="FIND-PENSIONS"] [data-component="NONE"] { padding: var(--space-xl); display: flex; flex-direction: column; gap: var(--space-md); align-items: flex-start; }
+  [data-view="FIND-PENSIONS"] [data-component="NONE"] p { margin: 0; color: var(--text-secondary); }
+  @media (max-width: 600px) {
+    [data-view="FIND-PENSIONS"] { padding: var(--space-lg); }
+    [data-view="FIND-PENSIONS"] .panel { padding: var(--space-lg); }
+    [data-view="FIND-PENSIONS"] .actions { flex-direction: column; align-items: stretch; }
+  }
+</style>
+<section data-view="FIND-PENSIONS">
+  <div class="inner">
+    <div class="panel card" data-component="EXPLAIN">
+      <h1>Find my pensions</h1>
+      <p>Pot Tracker can find the pensions you have, including ones from old jobs you've lost track of.</p>
+      <dl>
+        <div><dt>Who is searched</dt><dd>Every UK pension provider, through the pension-finding service.</dd></div>
+        <div><dt>What is shared</dt><dd>You prove who you are to the pension-finding service, not to us. Each provider that finds a pension shares its name, the employer it came from, what kind it is and its value with Pot Tracker. Nothing else.</dd></div>
+        <div><dt>How long it takes</dt><dd>Providers answer in their own time: most within a day, some up to a week. You don't need to wait here; we'll tell you what they find.</dd></div>
+      </dl>
+      <div class="actions"><button data-component="PROVE">Prove who you are</button></div>
+    </div>
+    <div class="panel card" data-component="AGAIN" hidden>
+      <h1>Search again</h1>
+      <p>You agreed to a search on <span data-component="CONSENT-FROM">3 March 2026</span>, and that agreement lasts until <strong><span data-component="CONSENT-UNTIL">3 March 2027</span></strong>. You don't need to prove who you are or agree again.</p>
+      <div class="actions"><button data-component="SEARCH-AGAIN">Search again</button></div>
+    </div>
+    <div class="panel card" data-component="PROVING" hidden>
+      <h1>Prove who you are</h1>
+      <div class="waiting"><span class="dot"></span><p>Finish proving who you are in the pension-finding service's window. We'll carry on here as soon as you have.</p></div>
+      <p>The service asks for your name, date of birth, address and National Insurance number, and a photo of an identity document. Pot Tracker doesn't see them.</p>
+    </div>
+    <div class="panel card" data-component="NOT-PROVED" hidden>
+      <h1>Prove who you are</h1>
+      <div class="notice">The search can't start: the pension-finding service couldn't confirm who you are.</div>
+      <p>That can happen when a photo of your identity document can't be read, or your details don't match its records, for instance an address you've since moved from. Have your identity document to hand, and try again.</p>
+      <div class="actions"><button data-component="TRY-AGAIN">Try again</button></div>
+    </div>
+    <div class="panel card" data-component="CONSENT" hidden>
+      <h1>Agree to the search</h1>
+      <p>The pension-finding service has confirmed who you are. Agree to both to start.</p>
+      <div class="agree" data-component="AGREE-SEARCH"><span class="box"></span><span>The pension-finding service may search every UK pension provider for pensions held for me.</span></div>
+      <div class="agree" data-component="AGREE-SHARE"><span class="box"></span><span>Pot Tracker may receive what the providers find.</span></div>
+      <p>Your agreement lasts a year, until <strong data-component="ENDS">10 November 2027</strong>. Pensions found stay in Pot Tracker after it ends.</p>
+      <div class="actions"><button data-component="AGREE">Start the search</button><button class="quiet" data-component="DECLINE">Don't search</button></div>
+    </div>
+    <div class="panel card" data-component="DECLINED" hidden>
+      <h1>No search was made</h1>
+      <p>Nothing was searched for and nothing was shared. You can find your pensions whenever you choose.</p>
+    </div>
+    <div data-component="SEARCH" hidden>
+      <div class="search-head">
+        <div>
+          <h1>Your pension search</h1>
+          <div class="label">Started <span data-component="STARTED">10 November 2026</span></div>
+        </div>
+        <div class="figure" data-component="FOUND-COUNT">No pensions found yet</div>
+      </div>
+    </div>
+    <div class="waiting" data-component="ARRIVING" hidden><span class="dot"></span><span>Providers are still answering: most within a day, some up to a week. You can leave; we'll tell you what they find.</span></div>
+    <div data-component="FINISHED" hidden>Every provider has answered. The search has finished.</div>
+    <div data-slot="FOUND"></div>
+    <div class="card" data-component="NONE" hidden>
+      <h2>No pensions were found</h2>
+      <p>No provider holds a pension for you. If you have an ISA or an investment account with a platform, you can add it instead.</p>
+      <button class="secondary" data-component="ADD-PORTFOLIO">Add a portfolio</button>
+    </div>
+    <div class="actions"><button class="secondary" data-component="BACK" hidden>Back to your pots</button><button class="quiet" data-component="CANCEL">Not now</button></div>
+  </div>
+</section>

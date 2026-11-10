@@ -1,0 +1,17 @@
+description: "A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and claiming it or saying it is not theirs. It is not a pot until the provider is sure."
+types:
+  Match:
+    provider: string
+    reason: string
+    received: string
+state:
+  match: { type: Match, description: The possible match. }
+components:
+  PROVIDER: { text: match.provider, description: The provider that may hold the pension. }
+  REASON: { text: match.reason, description: "Why the provider is not sure, in its own words." }
+  RECEIVED: { text: match.received, description: When the provider answered. }
+  CLAIM: { description: "Starts claiming the pension: giving the provider what it needs to be sure." }
+  NOT-MINE: { description: "Says the pension is not the saver's, so the possible match is dropped." }
+image:
+  width: 720
+  state: { match: { provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at a different address.", received: 11 Nov 2026 } }

@@ -1,0 +1,12 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: FIND-PENSIONS
+  FIND-PENSIONS.FOUND: [POT-ROW, POT-ROW]
+state:
+  APP: { state: signed-in }
+  FIND-PENSIONS: { stage: searching, started: 10 November 2026, found-count: 2, found: 2 pensions found }
+  POT-ROW#1: { colour: pot-4, found: matched, pot: { name: My SIPP, provider: Brightvest, kind: self-invested personal pension, value: "£61,795", as-of: 10 Nov 2026 } }
+  POT-ROW#2: { colour: pot-1, found: new, pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: "pot of money, from Northfield Retail", value: "£62,410", as-of: 10 Nov 2026 } }
+describe: [POT-ROW#1.FOUND]
+highlight: [POT-ROW#1.MATCHED]

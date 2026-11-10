@@ -1,0 +1,41 @@
+description: "Finding the saver's pensions through the pension-finding service: what will happen, proving who they are to the service, agreeing, and then the search as providers answer, over days. Each pension found is listed as it arrives."
+state:
+  stage: { type: "enum[explain, again, proving, not-proved, consent, declined, searching, finished]", default: explain, description: "explain what will happen; again, for a saver whose consent has not ended; proving who they are, in the service's own window; not-proved when the service could not confirm it; consent to agree; declined when they would not; searching while providers answer; finished once every provider has." }
+  agreed-search: { type: boolean, default: false, description: "The saver has agreed the service may search for their pensions." }
+  agreed-share: { type: boolean, default: false, description: "The saver has agreed Pot Tracker may receive what the service finds." }
+  consent-from: { type: string, description: "When the saver's consent was given." }
+  consent-until: { type: string, description: "When the saver's consent ends, a year after it was given." }
+  started: { type: string, description: "When the search started." }
+  found-count: { type: number, default: 0, description: "How many pensions have been found so far, possible matches included." }
+  found: { type: string, description: "How many pensions have been found so far, in words." }
+slots:
+  FOUND:
+    views: [POT-ROW, POSSIBLE-MATCH]
+    many: true
+    description: "Each pension found, newest first: a pot when its provider is sure, a possible match when it is not."
+components:
+  EXPLAIN: { visible: stage == explain, description: "Says what will happen: who is searched, what is shared and with whom, and that answers take days." }
+  PROVE: { visible: stage == explain, description: "Goes to the pension-finding service, in a window of its own, to prove who the saver is." }
+  AGAIN: { visible: stage == again, description: "For a saver whose consent has not ended: says when they agreed and until when, so they need not prove who they are or agree again." }
+  CONSENT-FROM: { text: consent-from, description: When the saver agreed. }
+  SEARCH-AGAIN: { visible: stage == again, description: Starts the search again under the consent already given. }
+  PROVING: { visible: stage == proving, description: "Says the saver is proving who they are in the service's window, and that Pot Tracker carries on when they have." }
+  NOT-PROVED: { visible: stage == not-proved, description: "Says the search cannot start because the service could not confirm who the saver is, why that can happen, and how to try again." }
+  TRY-AGAIN: { visible: stage == not-proved, description: Goes back to the service to prove who the saver is again. }
+  CONSENT: { visible: stage == consent, description: "Asks for the two agreements, separately, and says how long they last." }
+  AGREE-SEARCH: { description: "The saver agrees the service may search every UK pension provider for their pensions." }
+  AGREE-SHARE: { description: "The saver agrees Pot Tracker may receive what the providers share." }
+  CONSENT-UNTIL: { text: consent-until, description: "When the consent already given ends." }
+  ENDS: { text: consent-until, description: "When the consent being asked for would end, a year from now." }
+  AGREE: { visible: stage == consent, enabled: agreed-search and agreed-share, description: "Starts the search; only once the saver has agreed to both." }
+  DECLINE: { visible: stage == consent, description: "Declines: no search is made and nothing is shared." }
+  DECLINED: { visible: stage == declined, description: "Says no search was made and nothing was shared." }
+  SEARCH: { visible: "stage in [searching, finished]", description: "The search: when it started, how many pensions have been found, and that answers keep arriving." }
+  STARTED: { text: started, description: When the search started. }
+  FOUND-COUNT: { text: found, description: "How many pensions have been found so far." }
+  ARRIVING: { visible: stage == searching, description: "Says answers arrive over days, that the saver can leave, and that they will be told what is found." }
+  FINISHED: { visible: stage == finished, description: "Says the search has finished." }
+  NONE: { visible: stage == finished and found-count == 0, description: "Says no pension was found, and offers adding an investment portfolio instead." }
+  ADD-PORTFOLIO: { description: "Starts adding an investment portfolio, when no pension was found." }
+  CANCEL: { visible: "stage in [explain, proving, not-proved]", description: "Leaves without searching, back to the overview." }
+  BACK: { visible: "stage in [declined, searching, finished]", description: Goes back to the overview of every pot. }

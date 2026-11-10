@@ -1,0 +1,10 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: FIND-PENSIONS
+  FIND-PENSIONS.FOUND: null
+state:
+  APP: { state: signed-in }
+  FIND-PENSIONS: { stage: finished, started: 10 November 2026, found-count: 0, found: No pensions found }
+describe: [FIND-PENSIONS.FINISHED, FIND-PENSIONS.ADD-PORTFOLIO]
+highlight: [FIND-PENSIONS.NONE]
