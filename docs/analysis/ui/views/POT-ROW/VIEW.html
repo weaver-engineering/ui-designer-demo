@@ -1,0 +1,25 @@
+<style>
+  [data-view="POT-ROW"] { display: grid; grid-template-columns: 4px 1fr auto; gap: var(--space-md); align-items: center; padding: var(--space-md) var(--space-lg); }
+  [data-view="POT-ROW"] .colour { align-self: stretch; border-radius: var(--radius-pill); background: var(--pot-1); }
+  [data-view="POT-ROW"][data-colour="pot-2"] .colour { background: var(--pot-2); }
+  [data-view="POT-ROW"][data-colour="pot-3"] .colour { background: var(--pot-3); }
+  [data-view="POT-ROW"][data-colour="pot-4"] .colour { background: var(--pot-4); }
+  [data-view="POT-ROW"][data-colour="pot-5"] .colour { background: var(--pot-5); }
+  [data-view="POT-ROW"][data-colour="pot-6"] .colour { background: var(--pot-6); }
+  [data-view="POT-ROW"] [data-component="NAME"] { font-weight: 600; }
+  [data-view="POT-ROW"] .sub { font-size: var(--text-sm); color: var(--text-secondary); }
+  [data-view="POT-ROW"] .value { text-align: right; }
+  [data-view="POT-ROW"] [data-component="LAST-KNOWN"] { color: var(--caution); }
+  [data-view="POT-ROW"][data-stale="true"] [data-component="VALUE"] { color: var(--text-secondary); }
+</style>
+<section data-view="POT-ROW" class="card">
+  <span class="colour"></span>
+  <div>
+    <div data-component="NAME">Pot name</div>
+    <div class="sub"><span data-component="PROVIDER">Provider</span> · <span data-component="KIND">kind</span></div>
+  </div>
+  <div class="value">
+    <div class="figure" data-component="VALUE">£0</div>
+    <div class="as-of"><span data-component="LAST-KNOWN" hidden>last known </span><span data-component="AS-OF">date</span></div>
+  </div>
+</section>

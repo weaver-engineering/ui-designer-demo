@@ -1,0 +1,35 @@
+# OVERVIEW
+
+<!-- ui-walkthrough: view begin. Generated from VIEW.yaml and VIEW.html; edit those, not this block. -->
+Every one of the saver's pots, each with its value and when that was, and what they add up to. With no pots yet, the two ways to start.
+
+![OVERVIEW as drawn, its slots showing their placeholders](VIEW.png)
+
+**Slots**
+
+| Slot | Holds | How many | Description |
+|---|---|---|---|
+| `POTS` | [POT-ROW](../POT-ROW/VIEW.md) | any number | A row for each pot. |
+
+**Components**
+
+| Component | Bindings | Description |
+|---|---|---|
+| `SUMMARY` | visible: `pot-count > 0` | What every pot adds up to, and when, once there are pots. |
+| `TOTAL` | text: `total` | What every pot adds up to. |
+| `AS-OF` | text: `as-of` | When the total is as of. |
+| `STALE` | visible: `stale-count > 0` | Says some pots' values could not be brought up to date, and are shown as last known. |
+| `FIND-PENSIONS` | visible: `pot-count > 0` | Starts finding the saver's pensions, or more of them. |
+| `ADD-PORTFOLIO` | visible: `pot-count > 0` | Starts adding an investment portfolio. |
+| `START` | visible: `pot-count == 0` | With no pots yet, explains the two ways to start: finding pensions and adding a portfolio. |
+| `START-FIND` |  | Starts finding the saver's pensions, from the explanation shown with no pots. |
+| `START-ADD` |  | Starts adding an investment portfolio, from the explanation shown with no pots. |
+<!-- ui-walkthrough: view end -->
+
+<!-- ui-walkthrough: begin. Generated from VIEW.html and VIEW.yaml; edit those, not this block. -->
+**Used by**
+
+* Sign in: 03 See where their pots stand ([desk](../../walkthroughs/sign-in/03-overview/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03-overview/STEP.phone.md))
+* Sign in: 03c Start with no pots ([desk](../../walkthroughs/sign-in/03c-no-pots/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03c-no-pots/STEP.phone.md))
+* Sign in: 03d See a value that is not up to date ([desk](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.desk.md) · [phone](../../walkthroughs/sign-in/03d-not-up-to-date/STEP.phone.md))
+<!-- ui-walkthrough: end -->

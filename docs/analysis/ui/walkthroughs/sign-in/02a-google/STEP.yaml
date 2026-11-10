@@ -1,0 +1,4 @@
+root: APP
+slots:
+  APP.SHOWS: SIGN-IN
+highlight: [SIGN-IN.GOOGLE]

@@ -1,0 +1,30 @@
+<style>
+  [data-view="SHELL"] { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+  [data-view="SHELL"] > header { display: flex; align-items: center; gap: var(--space-xl); height: 60px; padding: 0 var(--space-xl); background: var(--canvas); border-bottom: 1px solid var(--border-subtle); flex: none; }
+  [data-view="SHELL"] .brand { font-weight: 700; color: var(--accent); font-size: var(--text-lg); }
+  [data-view="SHELL"] nav { display: flex; gap: var(--space-xs); flex: 1; }
+  [data-view="SHELL"] nav a { padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); color: var(--text-secondary); font-weight: 600; }
+  [data-view="SHELL"][data-section="overview"] [data-component="NAV-OVERVIEW"],
+  [data-view="SHELL"][data-section="growth"] [data-component="NAV-GROWTH"],
+  [data-view="SHELL"][data-section="transfers"] [data-component="NAV-TRANSFERS"] { background: var(--accent-soft); color: var(--accent); }
+  [data-view="SHELL"] .who { display: flex; align-items: center; gap: var(--space-md); color: var(--text-secondary); font-size: var(--text-sm); }
+  [data-view="SHELL"] > [data-slot="MAIN"] { flex: 1; min-height: 0; overflow: hidden; }
+  @media (max-width: 600px) {
+    [data-view="SHELL"] > header { padding: 0 var(--space-lg); height: 52px; }
+    [data-view="SHELL"] [data-component="SAVER"] { display: none; }
+    [data-view="SHELL"] nav { position: absolute; left: 0; right: 0; bottom: 0; height: 60px; justify-content: space-around; align-items: center; background: var(--canvas); border-top: 1px solid var(--border-subtle); z-index: 1; }
+    [data-view="SHELL"] > [data-slot="MAIN"] { padding-bottom: 60px; }
+  }
+</style>
+<section data-view="SHELL">
+  <header>
+    <span class="brand">Pot Tracker</span>
+    <nav>
+      <a data-component="NAV-OVERVIEW">Overview</a>
+      <a data-component="NAV-GROWTH">Growth</a>
+      <a data-component="NAV-TRANSFERS">Transfers</a>
+    </nav>
+    <span class="who"><span data-component="SAVER">Sam Taylor</span><button class="quiet" data-component="SIGN-OUT">Sign out</button></span>
+  </header>
+  <main data-slot="MAIN"><div data-placeholder>MAIN</div></main>
+</section>

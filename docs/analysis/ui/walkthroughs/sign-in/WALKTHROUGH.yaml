@@ -1,0 +1,66 @@
+title: Sign in
+describes:
+  - title: Sign In
+    path: analysis/use-cases/sign-in/USE-CASE.md
+viewports: [desk, phone]
+steps:
+  01-go-to-pot-tracker:
+    title: Go to Pot Tracker
+    narrative: |
+      The saver goes to Pot Tracker. They are not signed in, so it shows only the sign-in: nothing of anyone's pots is on
+      the screen until they have identified themselves.
+    next:
+      - { step: 02-identify, label: Types their email address, via: { type: SIGN-IN.EMAIL } }
+      - { step: 02a-google, label: Chooses Google, via: { click: SIGN-IN.GOOGLE } }
+      - { step: 03b-forgotten-password, label: Has forgotten their password, via: { click: SIGN-IN.FORGOTTEN } }
+  02-identify:
+    title: Identify themselves
+    narrative: |
+      The saver gives their email address and password, and signs in. The password is typed and sent, never held by the
+      UI.
+    next:
+      - { step: 03-overview, label: Pot Tracker identifies them, via: { event: saver-identified } }
+      - { step: 03a-not-identified, label: Pot Tracker cannot identify them, via: { event: saver-not-identified } }
+      - { step: 03c-no-pots, label: "Identified, with no pots yet", via: { event: saver-identified-with-no-pots } }
+      - { step: 03d-not-up-to-date, label: "Identified, but a pot could not be brought up to date", via: { event: pot-not-brought-up-to-date } }
+  02a-google:
+    title: Choose Google
+    narrative: |
+      The saver chooses to identify themselves with their Google account. Google's own page is not this UI's, so the step
+      shows where the saver leaves from; they come back signed in.
+    next:
+      - { step: 03-overview, label: Comes back from Google, via: { event: saver-identified } }
+  03-overview:
+    title: See where their pots stand
+    narrative: |
+      The saver is signed in, and sees an overview of their pots: each one's value and when that was, and what they add up
+      to. Each pot carries its own colour, which it keeps wherever it is shown.
+    end: the saver is signed in, and sees where their pots stand.
+  03a-not-identified:
+    title: Cannot be identified
+    narrative: |
+      Pot Tracker cannot identify the saver from what they gave: the password is wrong, or the address is not one of its
+      users. They are told so without being told which, and offered signing up. The address they typed is kept; the
+      password is not.
+    next:
+      - { step: 02-identify, label: Tries again, via: { type: SIGN-IN.PASSWORD } }
+  03b-forgotten-password:
+    title: Reset a forgotten password
+    narrative: |
+      The saver has forgotten their password. They give their email address and are sent a link, told only that one has
+      been sent if the address has an account. Following the link from their email, they choose a new password, and are
+      back at signing in.
+    next:
+      - { step: 02-identify, label: Saves the new password and signs in, via: { click: RESET-PASSWORD.SAVE } }
+  03c-no-pots:
+    title: Start with no pots
+    narrative: |
+      The saver has no pots yet, so there is nothing to add up. They are offered the two ways to start, as on signing up:
+      finding their pensions, and adding an investment portfolio.
+    end: the saver is signed in, and offered the two ways to start.
+  03d-not-up-to-date:
+    title: See a value that is not up to date
+    narrative: |
+      One provider could not be reached, so one pot's value could not be brought up to date. It is shown as the value last
+      known, and when that was, and the overview says so. The total includes it as last known.
+    end: the saver is signed in, and knows which value is not up to date.

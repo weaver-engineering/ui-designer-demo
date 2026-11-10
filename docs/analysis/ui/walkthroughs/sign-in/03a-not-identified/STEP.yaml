@@ -1,0 +1,9 @@
+root: APP
+slots:
+  APP.SHOWS: SIGN-IN
+state:
+  SIGN-IN: { state: not-identified, email: sam.taylor@example.com }
+components:
+  SIGN-IN.PASSWORD: { text: Password }
+describe: [SIGN-IN.SIGN-UP]
+highlight: [SIGN-IN.NOT-IDENTIFIED]

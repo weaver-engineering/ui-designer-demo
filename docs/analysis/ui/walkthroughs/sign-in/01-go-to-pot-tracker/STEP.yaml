@@ -1,0 +1,10 @@
+root: APP
+slots:
+  APP.SHOWS: SIGN-IN
+state:
+  SIGN-IN: { state: identifying }
+components:
+  SIGN-IN.EMAIL: { text: "" }
+  SIGN-IN.PASSWORD: { text: "" }
+describe: [SIGN-IN.GOOGLE, SIGN-IN.FORGOTTEN]
+highlight: [SIGN-IN.EMAIL]

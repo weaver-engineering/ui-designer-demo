@@ -1,0 +1,33 @@
+<style>
+  [data-view="RESET-PASSWORD"] { display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: var(--space-xl) var(--space-lg); }
+  [data-view="RESET-PASSWORD"] .panel { width: 100%; max-width: 400px; box-sizing: border-box; display: flex; flex-direction: column; gap: var(--space-lg); padding: var(--space-2xl); }
+  [data-view="RESET-PASSWORD"] .brand { font-weight: 700; color: var(--accent); font-size: var(--text-lg); }
+  [data-view="RESET-PASSWORD"] .part { display: flex; flex-direction: column; gap: var(--space-md); }
+  [data-view="RESET-PASSWORD"] p { margin: 0; color: var(--text-secondary); }
+  [data-view="RESET-PASSWORD"] .field { display: flex; flex-direction: column; gap: var(--space-xs); }
+  [data-view="RESET-PASSWORD"] .input { padding: var(--space-sm) var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--canvas); color: var(--text-tertiary); }
+  [data-view="RESET-PASSWORD"] [data-component="EMAIL"] { color: var(--text); }
+  [data-view="RESET-PASSWORD"] [data-component="SENT-TO"] { font-weight: 600; color: var(--text); }
+  [data-view="RESET-PASSWORD"] [data-component="BACK"] { font-size: var(--text-sm); color: var(--accent); text-align: center; }
+  @media (max-width: 600px) { [data-view="RESET-PASSWORD"] { align-items: flex-start; } [data-view="RESET-PASSWORD"] .panel { padding: var(--space-xl) var(--space-lg); box-shadow: none; border: none; background: transparent; } }
+</style>
+<section data-view="RESET-PASSWORD">
+  <div class="panel card">
+    <div class="brand">Pot Tracker</div>
+    <h1>Reset your password</h1>
+    <div class="part" data-component="ASK">
+      <p>We'll email you a link to choose a new password.</p>
+      <div class="field"><label>Email address</label><div class="input" data-component="EMAIL">you@example.com</div></div>
+    </div>
+    <button data-component="SEND">Send the link</button>
+    <div class="part" data-component="SENT" hidden>
+      <p>If <span data-component="SENT-TO">you@example.com</span> has an account, we've sent it a link. Follow it to choose a new password. It works for an hour.</p>
+    </div>
+    <div class="part" data-component="CHOOSE" hidden>
+      <div class="field"><label>New password</label><div class="input">••••••••••••</div></div>
+      <div class="field"><label>New password again</label><div class="input">••••••••••••</div></div>
+    </div>
+    <button data-component="SAVE" hidden>Save and sign in</button>
+    <a data-component="BACK">Back to sign in</a>
+  </div>
+</section>

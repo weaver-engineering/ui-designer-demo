@@ -1,0 +1,17 @@
+root: APP
+slots:
+  APP.SHOWS: RESET-PASSWORD
+state:
+  RESET-PASSWORD: { stage: ask, email: sam.taylor@example.com }
+caption: The saver asks for a link
+highlight: [RESET-PASSWORD.SEND]
+screens:
+  - caption: "The link is sent, if the address has an account"
+    state:
+      RESET-PASSWORD: { stage: sent }
+    highlight: [RESET-PASSWORD.SENT]
+  - caption: Having followed the link, the saver chooses a new password
+    state:
+      RESET-PASSWORD: { stage: choose }
+    describe: [RESET-PASSWORD.CHOOSE]
+    highlight: [RESET-PASSWORD.SAVE]

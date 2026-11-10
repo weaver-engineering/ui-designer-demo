@@ -1,0 +1,22 @@
+description: "One pot in a list: its colour, its name, its provider and kind, and its value with when that was."
+types:
+  Pot:
+    name: string
+    provider: string
+    kind: string
+    value: string
+    as-of: string
+state:
+  pot: { type: Pot, description: The pot. }
+  colour: { type: "enum[pot-1, pot-2, pot-3, pot-4, pot-5, pot-6]", default: pot-1, description: "The pot's own colour, the same wherever it is shown." }
+  stale: { type: boolean, default: false, description: "Its value could not be brought up to date, so it is the last known." }
+components:
+  NAME: { text: pot.name, description: The name the saver knows the pot by. }
+  PROVIDER: { text: pot.provider, description: Who holds the pot. }
+  KIND: { text: pot.kind, description: "What kind of pot it is, in plain words." }
+  VALUE: { text: pot.value, description: "Its value, in pounds." }
+  AS-OF: { text: pot.as-of, description: When the value was brought up to date. }
+  LAST-KNOWN: { visible: stale, description: "Says the value is the last known, because it could not be brought up to date." }
+image:
+  width: 720
+  state: { pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: workplace pension, value: "£62,410", as-of: 10 Nov 2026 } }

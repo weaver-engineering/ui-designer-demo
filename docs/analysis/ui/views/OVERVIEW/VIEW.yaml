@@ -1,0 +1,21 @@
+description: "Every one of the saver's pots, each with its value and when that was, and what they add up to. With no pots yet, the two ways to start."
+state:
+  pot-count: { type: number, default: 0, description: How many pots the saver has. }
+  total: { type: string, description: "What every pot adds up to, in pounds." }
+  as-of: { type: string, description: The date the total is as of. }
+  stale-count: { type: number, default: 0, description: "How many pots' values could not be brought up to date." }
+slots:
+  POTS:
+    views: [POT-ROW]
+    many: true
+    description: A row for each pot.
+components:
+  SUMMARY: { visible: pot-count > 0, description: "What every pot adds up to, and when, once there are pots." }
+  TOTAL: { text: total, description: "What every pot adds up to." }
+  AS-OF: { text: as-of, description: "When the total is as of." }
+  STALE: { visible: stale-count > 0, description: "Says some pots' values could not be brought up to date, and are shown as last known." }
+  FIND-PENSIONS: { visible: pot-count > 0, description: "Starts finding the saver's pensions, or more of them." }
+  ADD-PORTFOLIO: { visible: pot-count > 0, description: Starts adding an investment portfolio. }
+  START: { visible: pot-count == 0, description: "With no pots yet, explains the two ways to start: finding pensions and adding a portfolio." }
+  START-FIND: { description: "Starts finding the saver's pensions, from the explanation shown with no pots." }
+  START-ADD: { description: "Starts adding an investment portfolio, from the explanation shown with no pots." }

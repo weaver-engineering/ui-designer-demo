@@ -1,0 +1,30 @@
+<style>
+  [data-view="SIGN-IN"] { display: flex; align-items: center; justify-content: center; box-sizing: border-box; padding: var(--space-xl) var(--space-lg); }
+  [data-view="SIGN-IN"] .panel { width: 100%; max-width: 400px; box-sizing: border-box; display: flex; flex-direction: column; gap: var(--space-lg); padding: var(--space-2xl); }
+  [data-view="SIGN-IN"] .brand { font-weight: 700; color: var(--accent); font-size: var(--text-lg); }
+  [data-view="SIGN-IN"] .notice { padding: var(--space-md); border-radius: var(--radius-sm); font-size: var(--text-sm); background: var(--error-soft); color: var(--error); }
+  [data-view="SIGN-IN"] .notice[data-component="AWAY"] { background: var(--canvas-subtle); color: var(--text-secondary); }
+  [data-view="SIGN-IN"] .field { display: flex; flex-direction: column; gap: var(--space-xs); }
+  [data-view="SIGN-IN"] .input { min-height: 1.45em; padding: var(--space-sm) var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--canvas); color: var(--text-tertiary); }
+  [data-view="SIGN-IN"] [data-component="EMAIL"] { color: var(--text); }
+  [data-view="SIGN-IN"] [data-component="FORGOTTEN"] { align-self: flex-end; font-size: var(--text-sm); color: var(--accent); }
+  [data-view="SIGN-IN"] .or { text-align: center; font-size: var(--text-sm); color: var(--text-tertiary); }
+  [data-view="SIGN-IN"] [data-component="SIGN-UP"] { text-align: center; font-size: var(--text-sm); color: var(--text-secondary); }
+  [data-view="SIGN-IN"] [data-component="SIGN-UP"] span { color: var(--accent); font-weight: 600; }
+  @media (max-width: 600px) { [data-view="SIGN-IN"] { align-items: flex-start; } [data-view="SIGN-IN"] .panel { padding: var(--space-xl) var(--space-lg); box-shadow: none; border: none; background: transparent; } }
+</style>
+<section data-view="SIGN-IN">
+  <div class="panel card">
+    <div class="brand">Pot Tracker</div>
+    <h1>Sign in</h1>
+    <div class="notice" data-component="NOT-IDENTIFIED" hidden>That email address and password don't match an account. Check them and try again, or sign up.</div>
+    <div class="notice" data-component="AWAY" hidden>You were signed out because you were away for 15 minutes. Sign in again to carry on.</div>
+    <div class="field"><label>Email address</label><div class="input" data-component="EMAIL">you@example.com</div></div>
+    <div class="field"><label>Password</label><div class="input" data-component="PASSWORD">••••••••••</div></div>
+    <a data-component="FORGOTTEN">Forgotten your password?</a>
+    <button data-component="SUBMIT">Sign in</button>
+    <div class="or">or</div>
+    <button class="secondary" data-component="GOOGLE">Continue with Google</button>
+    <div data-component="SIGN-UP">New to Pot Tracker? <span>Sign up</span></div>
+  </div>
+</section>

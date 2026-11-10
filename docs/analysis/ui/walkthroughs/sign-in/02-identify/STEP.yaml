@@ -1,0 +1,7 @@
+root: APP
+slots:
+  APP.SHOWS: SIGN-IN
+state:
+  SIGN-IN: { email: sam.taylor@example.com }
+describe: [SIGN-IN.EMAIL, SIGN-IN.PASSWORD]
+highlight: [SIGN-IN.SUBMIT]

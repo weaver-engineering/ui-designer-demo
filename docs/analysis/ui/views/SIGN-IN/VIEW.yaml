@@ -1,0 +1,19 @@
+description: The saver identifies themselves to Pot Tracker, with an email address and password or with Google. Nothing of anyone's pots is shown.
+state:
+  state: { type: "enum[identifying, not-identified, signed-out-away]", default: identifying, description: "not-identified when Pot Tracker answers so to what the saver gave; signed-out-away when they were signed out for being away 15 minutes." }
+  email: { type: string, description: "What the saver has typed as their email address, kept for another try." }
+components:
+  NOT-IDENTIFIED:
+    visible: state == not-identified
+    description: Tells the saver they could not be identified, without saying whether the email address or the password was wrong, and offers signing up.
+  AWAY:
+    visible: state == signed-out-away
+    description: Tells the saver they were signed out because they were away for 15 minutes.
+  EMAIL: { text: email, description: The email address the saver types. }
+  PASSWORD: { description: "The password the saver types. Never held as state, so a step shows it as dots." }
+  SUBMIT: { description: Identifies the saver with the email address and password. }
+  FORGOTTEN: { description: "Starts resetting the password, for a saver who has forgotten it." }
+  GOOGLE: { description: Identifies the saver with their Google account instead. }
+  SIGN-UP: { description: "Opens signing up, for a saver who is not yet one of Pot Tracker's users." }
+image:
+  width: 480

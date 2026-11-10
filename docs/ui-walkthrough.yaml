@@ -8,5 +8,5 @@ viewports:
   phone: 390x844
 publish:
   # Your own organisation and project on the demo, as Weaver Engineering gave them to you (see the README).
-  project: your-organisation/your-project
+  project: weaver-engineering/ui-designer-demo
   service: https://viewer.weaverengineering.co.uk

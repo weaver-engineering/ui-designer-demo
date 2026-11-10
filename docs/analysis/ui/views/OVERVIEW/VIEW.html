@@ -1,0 +1,41 @@
+<style>
+  [data-view="OVERVIEW"] { height: 100%; box-sizing: border-box; overflow: auto; padding: var(--space-2xl) var(--space-xl); }
+  [data-view="OVERVIEW"] .inner { max-width: 880px; margin: 0 auto; display: flex; flex-direction: column; gap: var(--space-lg); }
+  [data-view="OVERVIEW"] .head { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-lg); flex-wrap: wrap; }
+  [data-view="OVERVIEW"] .label { font-size: var(--text-sm); color: var(--text-secondary); }
+  [data-view="OVERVIEW"] [data-component="TOTAL"] { font-size: var(--text-figure); }
+  [data-view="OVERVIEW"] .actions { display: flex; gap: var(--space-sm); }
+  [data-view="OVERVIEW"] [data-component="STALE"] { padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); background: var(--caution-soft); color: var(--caution); font-size: var(--text-sm); }
+  [data-view="OVERVIEW"] [data-slot="POTS"] { display: flex; flex-direction: column; gap: var(--space-sm); }
+  [data-view="OVERVIEW"] [data-component="START"] { padding: var(--space-2xl); text-align: center; display: flex; flex-direction: column; gap: var(--space-md); align-items: center; }
+  [data-view="OVERVIEW"] [data-component="START"] p { margin: 0; color: var(--text-secondary); max-width: 460px; }
+  @media (max-width: 600px) {
+    [data-view="OVERVIEW"] { padding: var(--space-lg); }
+    [data-view="OVERVIEW"] .actions { width: 100%; }
+    [data-view="OVERVIEW"] .actions button { flex: 1; padding-left: var(--space-sm); padding-right: var(--space-sm); }
+    [data-view="OVERVIEW"] [data-component="START"] { padding: var(--space-xl) var(--space-lg); }
+    [data-view="OVERVIEW"] [data-component="START"] .actions { flex-direction: column; }
+  }
+</style>
+<section data-view="OVERVIEW">
+  <div class="inner">
+    <div class="head">
+      <div data-component="SUMMARY">
+        <div class="label">All your pots</div>
+        <div class="figure" data-component="TOTAL">£0</div>
+        <div class="as-of">as of <span data-component="AS-OF">today</span></div>
+      </div>
+      <div class="actions">
+        <button class="secondary" data-component="FIND-PENSIONS">Find my pensions</button>
+        <button class="secondary" data-component="ADD-PORTFOLIO">Add a portfolio</button>
+      </div>
+    </div>
+    <div data-component="STALE" hidden>Some values couldn't be brought up to date. They show the value last known, and when that was.</div>
+    <div data-slot="POTS"></div>
+    <div class="card" data-component="START" hidden>
+      <h2>Bring your pots together</h2>
+      <p>Find the pensions you have, including ones from old jobs, or add an ISA or investment account you hold with a platform.</p>
+      <div class="actions"><button data-component="START-FIND">Find my pensions</button><button class="secondary" data-component="START-ADD">Add a portfolio</button></div>
+    </div>
+  </div>
+</section>

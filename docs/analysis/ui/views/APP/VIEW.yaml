@@ -1,0 +1,7 @@
+description: The root of the UI. Signed out, it shows the sign-in, signing up, or resetting a password; signed in, the shell.
+state:
+  state: { type: "enum[signed-out, signed-in]", default: signed-out, description: "Signed in once Pot Tracker identifies the saver; signed out when they sign out, or after 15 minutes away." }
+slots:
+  SHOWS:
+    views: [SIGN-IN, SIGN-UP, RESET-PASSWORD, SHELL]
+    description: What fills the screen. Nothing of the saver's pots is in it until they are signed in.

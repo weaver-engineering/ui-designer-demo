@@ -1,0 +1,14 @@
+description: "The frame around everything a signed-in saver does: Pot Tracker's name, where they can go, who they are and signing out, and what they are doing in the middle. On a phone, where they can go moves to a bar at the bottom."
+state:
+  section: { type: "enum[overview, growth, transfers]", default: overview, description: "Where the saver is, marked in the navigation." }
+  saver: { type: string, default: Sam Taylor, description: The name of the saver signed in. }
+slots:
+  MAIN:
+    views: [OVERVIEW, FIND-PENSIONS]
+    description: What the saver is doing.
+components:
+  NAV-OVERVIEW: { description: "Goes to the overview of every pot." }
+  NAV-GROWTH: { description: Goes to comparing growth. }
+  NAV-TRANSFERS: { description: Goes to the saver's transfers. }
+  SAVER: { text: saver, description: Who is signed in. }
+  SIGN-OUT: { description: Signs the saver out of this device. }

@@ -1,0 +1,10 @@
+root: APP
+slots:
+  APP.SHOWS: SHELL
+  SHELL.MAIN: OVERVIEW
+  OVERVIEW.POTS: null
+state:
+  APP: { state: signed-in }
+  OVERVIEW: { pot-count: 0 }
+describe: [OVERVIEW.START-FIND, OVERVIEW.START-ADD]
+highlight: [OVERVIEW.START]

@@ -1,0 +1,8 @@
+<style>
+  [data-view="APP"] { height: 100vh; display: flex; flex-direction: column; background: var(--canvas-subtle); }
+  [data-view="APP"] > [data-slot="SHOWS"] { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  [data-view="APP"] > [data-slot="SHOWS"] > * { flex: 1; min-height: 0; }
+</style>
+<section data-view="APP">
+  <div data-slot="SHOWS"><div data-placeholder>SHOWS</div></div>
+</section>

@@ -1,0 +1,15 @@
+description: "The saver resets a forgotten password: asks for a link, is told it has been sent, and, having followed it, chooses a new password."
+state:
+  stage: { type: "enum[ask, sent, choose]", default: ask, description: "ask for the link; sent, waiting for the saver to follow it; choose a new password, having followed it." }
+  email: { type: string, description: The email address the link is sent to. }
+components:
+  ASK: { visible: stage == ask, description: Asks for the email address to send the link to. }
+  EMAIL: { text: email, description: The email address the saver types. }
+  SEND: { visible: stage == ask, description: Sends the link. }
+  SENT: { visible: stage == sent, description: "Says the link has been sent, if the address is a user's, and to follow it from their email." }
+  SENT-TO: { text: email, description: The address the link went to. }
+  CHOOSE: { visible: stage == choose, description: "Asks for the new password, twice." }
+  SAVE: { visible: stage == choose, description: "Saves the new password, and goes back to signing in." }
+  BACK: { visible: stage != choose, description: Goes back to signing in. }
+image:
+  width: 480
