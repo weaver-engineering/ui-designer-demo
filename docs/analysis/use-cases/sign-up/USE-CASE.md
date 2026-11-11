@@ -16,7 +16,7 @@ The saver becomes one of Pot Tracker's users, and can start bringing their pots 
 ## 2 Trigger
 
 The saver wants to see their pensions and investments in one place, and is not one of Pot Tracker's users
-([sign-in](../sign-in/USE-CASE.md) 3a).
+([sign-in](../sign-in/USE-CASE.md) 2b).
 
 ## 3 Preconditions
 

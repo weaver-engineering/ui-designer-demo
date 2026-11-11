@@ -47,11 +47,8 @@ ends.
 2a. The saver does not have what the provider asks for now: they leave it, and the possible match waits for them. The
 use case ends.
 
-3a. The saver does not know something the provider asks for, such as a membership number: they say they don't know, and
-send what they do.
-
-5a. The provider needs more: it asks a further question, such as to confirm a date of leaving. The saver is told, and
-answers. Go to 4.
+5a. The provider needs more: it asks a further question, such as which month they left, and may offer the answers to
+choose from. The saver is told, and answers. Go to 4.
 
 5b. The provider cannot match it to the saver from what they gave: they are told so, and why if the provider says.
 They may try again with different details, or leave it. Go to 2, or the use case ends.
@@ -74,7 +71,6 @@ The end-to-end test a UI slice delivering this use case must pass. Its walkthrou
   pot with its value.
 * **1a:** say it is not yours; see it gone.
 * **2a:** leave it; see it still waiting on your next sign-in.
-* **3a:** say you don't know the membership number; send the rest.
-* **5a:** be asked a further question; answer it; be told it is being checked again.
+* **5a:** be asked a further question; choose an answer; send it; be told it is being checked again.
 * **5b:** be told it could not be matched; try again with a different address.
 * **5c:** wait past the time the provider gave; be told it is late; remind it.

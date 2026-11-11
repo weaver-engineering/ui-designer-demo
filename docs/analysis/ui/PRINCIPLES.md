@@ -22,7 +22,7 @@ This page holds what the UI must be, before it is designed. **The view tree**, w
 2. **Plain words, never references.** A provider by its name, a pot by the name the saver knows it by, money in pounds.
    Never a scheme reference, a policy number where a name exists, or a code.
 3. **Every value has its date.** A value is shown with when it was last brought up to date, and one that could not be
-   is shown as the value last known, saying when ([sign-in](../use-cases/sign-in/USE-CASE.md) 3d).
+   is shown as the value last known, saying when ([sign-in](../use-cases/sign-in/USE-CASE.md) 3b).
 4. **A projection is never a promise.** It is shown in today's money, with its assumptions beside it, and as an
    illustration ([Projecting A Retirement Value](../domain/projecting-a-retirement-value.md)).
 5. **Nothing of the saver's money is shown to anyone else.** Before signing in, and after signing out, the screen holds

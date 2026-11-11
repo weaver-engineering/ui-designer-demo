@@ -37,16 +37,17 @@ The saver wants to check on their pensions and investments.
 
 2a. The saver chooses to identify themselves with their Google account: they identify themselves to Google. Go to 3.
 
-3a. The saver cannot identify themselves, whether the password is wrong or they are not one of Pot Tracker's users: they
-are told so, without being told which, and offered sign-up. Go to 2, or to [sign-up](../sign-up/USE-CASE.md).
+2b. The saver cannot be identified, whether the password is wrong, or they, or their Google account, are not one of
+Pot Tracker's users: they are told so, without being told which, and offered sign-up. Go to 2, or to
+[sign-up](../sign-up/USE-CASE.md).
 
-3b. The saver has forgotten their password: they ask to reset it, and are sent a link to the email address they gave;
+2c. The saver has forgotten their password: they ask to reset it, and are sent a link to the email address they gave;
 following it, they choose a new password. Go to 2.
 
-3c. The saver has no pots yet: they are offered the two ways to start, as on signing up
+3a. The saver has no pots yet: they are offered the two ways to start, as on signing up
 ([sign-up](../sign-up/USE-CASE.md) 5).
 
-3d. Some pots' values could not be brought up to date: each is shown with the value last known and when that was.
+3b. Some pots' values could not be brought up to date: each is shown with the value last known and when that was.
 
 ## 7 Open Questions (not resolved by this use case)
 
