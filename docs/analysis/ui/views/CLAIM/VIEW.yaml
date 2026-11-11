@@ -7,10 +7,11 @@ state:
   when: { type: string, description: "When the saver worked there, as typed." }
   address: { type: string, description: "The address the saver lived at then, as typed." }
   membership: { type: string, description: "The membership number the saver gives, if they have one." }
-  dont-know: { type: boolean, default: false, description: "The saver does not know their membership number." }
   answer-by: { type: string, description: "When the provider says it will answer." }
   question: { type: string, description: "The provider's further question." }
-  answer: { type: string, description: "The saver's answer to it, as typed." }
+  answer: { type: string, description: "The answer the saver has chosen." }
+  answer-options: { type: "list<string>", description: "The answers the provider offers to choose from." }
+  picking: { type: boolean, default: false, description: "The answers are open for the saver to choose from." }
   why: { type: string, description: "Why the provider could not match the pension to the saver, if it says." }
 slots:
   POT:
@@ -27,8 +28,7 @@ components:
   EMPLOYER: { text: employer, description: The employer the saver worked for while a member. }
   WHEN: { text: when, description: "When they worked there." }
   ADDRESS: { text: address, description: The address they lived at then. }
-  MEMBERSHIP: { text: membership, enabled: not dont-know, description: "Their membership number, if they have one." }
-  DONT-KNOW: { description: "Says the saver does not know their membership number, so the rest is sent without it." }
+  MEMBERSHIP: { text: membership, description: "Their membership number, if they have one." }
   PRIVATE: { visible: "stage in [ask, further]", description: "Says what the saver gives goes to the provider only, and Pot Tracker does not keep it." }
   SEND: { visible: stage == ask, description: Sends what the saver gave to the provider. }
   CHECKING: { visible: stage == checking, description: "Says the provider is checking, and when it says it will answer." }
@@ -38,7 +38,7 @@ components:
   REMIND: { visible: stage == late, description: Reminds the provider to answer. }
   FURTHER: { visible: stage == further, description: "The provider's further question, for the saver to answer." }
   QUESTION: { text: question, description: The provider's question. }
-  ANSWER: { text: answer, description: "The saver's answer." }
+  ANSWER: { pick: answer, options: answer-options, open: picking, unset: Choose a month, description: "The saver's answer, chosen from those the provider offers." }
   SEND-ANSWER: { visible: stage == further, description: Sends the answer to the provider. }
   NOT-MATCHED: { visible: stage == not-matched, description: "Says the provider could not match the pension to the saver, and why if it says." }
   WHY: { text: why, description: "Why, in the provider's words." }

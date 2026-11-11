@@ -28,9 +28,9 @@ are agreed.
   * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
     * *main*: [FIND-PENSIONS](../../../views/FIND-PENSIONS/VIEW.md)
 
-* **FIND-PENSIONS.CONSENT** (highlighted): Asks for the two agreements, separately, and says how long they last.
-* **FIND-PENSIONS.AGREE-SEARCH**: The saver agrees the service may search every UK pension provider for their pensions.
-* **FIND-PENSIONS.AGREE-SHARE**: The saver agrees Pot Tracker may receive what the providers share.
+* **FIND-PENSIONS.AGREE-SEARCH** (highlighted): The saver agrees the service may search every UK pension provider for their pensions.
+* **FIND-PENSIONS.AGREE-SHARE** (highlighted): The saver agrees Pot Tracker may receive what the providers share.
+* **FIND-PENSIONS.CONSENT**: Asks for the two agreements, separately, and says how long they last.
 * **FIND-PENSIONS.AGREE**: Starts the search; only once the saver has agreed to both.
 
 ### 2. Both agreed, so the search can start
@@ -44,4 +44,4 @@ are agreed.
     * *main*: [FIND-PENSIONS](../../../views/FIND-PENSIONS/VIEW.md)
 
 * **FIND-PENSIONS.AGREE** (highlighted): Starts the search; only once the saver has agreed to both.
-* **FIND-PENSIONS.DECLINE**: Declines: no search is made and nothing is shared.
+* **FIND-PENSIONS.DECLINE** (highlighted): Declines: no search is made and nothing is shared.

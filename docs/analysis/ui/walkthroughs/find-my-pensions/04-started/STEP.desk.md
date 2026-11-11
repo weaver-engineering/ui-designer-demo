@@ -32,4 +32,5 @@ providers answer over days, that they need not stay, and that they will be told 
 ## In this step
 
 * **FIND-PENSIONS.ARRIVING** (highlighted): Says answers arrive over days, that the saver can leave, and that they will be told what is found.
+* **SHELL.SIGN-OUT** (highlighted): Signs the saver out of this device.
 * **FIND-PENSIONS.SEARCH**: The search: when it started, how many pensions have been found, and that answers keep arriving.

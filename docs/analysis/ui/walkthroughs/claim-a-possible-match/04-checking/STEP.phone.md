@@ -12,9 +12,9 @@
 | Previous | Next |
 |:---|---:|
 | ← *Sends it* (clicks `CLAIM.SEND`) from [03 Give what they know](../03-give/STEP.phone.md) | *The provider confirms it is theirs* (when `provider-confirms-match` happens): [05 See it confirmed as theirs](../05-confirmed/STEP.phone.md) → |
-| ← *Sends the rest* (clicks `CLAIM.SEND`) from [03a Not know the membership number](../03a-dont-know/STEP.phone.md) | *The provider asks something more* (when `provider-asks-further-question` happens): [05a Answer a further question](../05a-further-question/STEP.phone.md) → |
-| ← *Sends the answer* (clicks `CLAIM.SEND-ANSWER`) from [05a Answer a further question](../05a-further-question/STEP.phone.md) | *The provider cannot match it* (when `provider-cannot-match` happens): [05b Be told it could not be matched](../05b-not-matched/STEP.phone.md) → |
-| ← *Reminds the provider* (clicks `CLAIM.REMIND`) from [05c Be told the provider is late](../05c-late/STEP.phone.md) | *The provider does not answer in time* (when `answer-date-passes` happens): [05c Be told the provider is late](../05c-late/STEP.phone.md) → |
+| ← *Sends the answer* (clicks `CLAIM.SEND-ANSWER`) from [05a Answer a further question](../05a-further-question/STEP.phone.md) | *The provider asks something more* (when `provider-asks-further-question` happens): [05a Answer a further question](../05a-further-question/STEP.phone.md) → |
+| ← *Reminds the provider* (clicks `CLAIM.REMIND`) from [05c Be told the provider is late](../05c-late/STEP.phone.md) | *The provider cannot match it* (when `provider-cannot-match` happens): [05b Be told it could not be matched](../05b-not-matched/STEP.phone.md) → |
+|  | *The provider does not answer in time* (when `answer-date-passes` happens): [05c Be told the provider is late](../05c-late/STEP.phone.md) → |
 
 The saver is told the provider is checking, and when it says it will answer, typically within ten working days. They
 need not wait: back on the overview the possible match says it is being checked, and until when.
@@ -30,7 +30,7 @@ need not wait: back on the overview the possible match says it is being checked,
     * *main*: [CLAIM](../../../views/CLAIM/VIEW.md)
 
 * **CLAIM.CHECKING** (highlighted): Says the provider is checking, and when it says it will answer.
-* **CLAIM.BACK**: Goes back to the overview of every pot.
+* **CLAIM.BACK** (highlighted): Goes back to the overview of every pot.
 
 ### 2. Back on the overview, the claim shows as being checked
 

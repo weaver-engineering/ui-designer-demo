@@ -10,17 +10,15 @@
 <path d="M298,97 L426,97" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M128,100.5 L64,100.5 L64,220 L128,220" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M426,104 L362,104 L362,220 L426,220" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
-<path d="M894,220 L958,220 L958,104 L1022,104" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1192,97 L1320,97" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1192,104 L1238.5,104 L1238.5,216.5 L1320,216.5" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1192,118 L1245.5,118 L1245.5,327.5 L1320,327.5" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1192,125 L1252.5,125 L1252.5,424.5 L1320,424.5" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1320,223.5 L1259.5,223.5 L1259.5,111 L1192,111" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
-<path d="M1320,320.5 L1266.5,320.5 L1266.5,26 L663.5,26 L663.5,111 L596,111" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
+<path d="M1320,320.5 L1266.5,320.5 L1266.5,26 L660,26 L660,104 L596,104" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M1320,431.5 L1273.5,431.5 L1273.5,132 L1192,132" fill="none" stroke="#9aa1ad" stroke-width="1.25" stroke-linejoin="round" marker-end="url(#arrow-line)"/>
 <path d="M596,97 L724,97" fill="none" stroke="#1f8a4c" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow-in)"/>
 <path d="M894,97 L1022,97" fill="none" stroke="#d9480f" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow-out)"/>
-<path d="M724,104 L656.5,104 L656.5,220 L724,220" fill="none" stroke="#d9480f" stroke-width="2.5" stroke-linejoin="round" marker-end="url(#arrow-out)"/>
 <circle cx="92" cy="93.5" r="3.5" fill="#9aa1ad"/>
 <path d="M92,93.5 L128,93.5" fill="none" stroke="#9aa1ad" stroke-width="1.25" marker-end="url(#arrow-line)"/>
 <rect x="128" y="71" width="170" height="52" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.25"/>
@@ -38,9 +36,6 @@
 <rect x="724" y="71" width="170" height="52" rx="6" fill="#1d2330" stroke="#1d2330" stroke-width="2"/>
 <text x="734" y="91" font-size="12" font-weight="bold" fill="#ffffff">03</text>
 <text x="734" y="109" font-size="12" fill="#ffffff">Give what they know</text>
-<rect x="724" y="194" width="170" height="52" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.25"/>
-<text x="734" y="214" font-size="12" font-weight="bold" fill="#1d2330">03a</text>
-<text x="734" y="232" font-size="12" fill="#1d2330">Not know the membership…</text>
 <rect x="1022" y="52" width="170" height="90" rx="6" fill="#ffffff" stroke="#9aa1ad" stroke-width="1.25"/>
 <text x="1032" y="72" font-size="12" font-weight="bold" fill="#1d2330">04</text>
 <text x="1032" y="90" font-size="12" fill="#1d2330">Be told the provider is…</text>
@@ -59,17 +54,15 @@
 <text x="362" y="93" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Claims it</text>
 <text x="64" y="164.25" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Knows it is not theirs</text>
 <text x="362" y="166" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Doesn't have it to ha…</text>
-<text x="958" y="166" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Sends the rest</text>
 <text x="1256" y="93" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">The provider confirms…</text>
 <text x="1238.5" y="164.25" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">The provider asks som…</text>
 <text x="1245.5" y="226.75" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">The provider cannot m…</text>
 <text x="1252.5" y="278.75" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">The provider does not…</text>
 <text x="1259.5" y="188.125" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Sends the answer</text>
-<text x="965" y="22" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Tries again with a di…</text>
+<text x="963.25" y="22" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Tries again with a di…</text>
 <text x="1273.5" y="375.6" font-size="11" text-anchor="middle" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Reminds the provider</text>
 <text x="660" y="93" font-size="11" text-anchor="middle" fill="#1f8a4c" stroke="#ffffff" stroke-width="3" paint-order="stroke">Gives what they know</text>
 <text x="958" y="93" font-size="11" text-anchor="middle" fill="#d9480f" stroke="#ffffff" stroke-width="3" paint-order="stroke">Sends it</text>
-<text x="656.5" y="166" font-size="11" text-anchor="middle" fill="#d9480f" stroke="#ffffff" stroke-width="3" paint-order="stroke">Doesn't know their me…</text>
 <text x="86" y="97.5" font-size="11" text-anchor="end" fill="#6b7385" stroke="#ffffff" stroke-width="3" paint-order="stroke">Start</text>
 </g>
 <path d="M16,481 L44,481" stroke="#1f8a4c" stroke-width="2.5" marker-end="url(#arrow-in)"/><text x="52" y="485" font-size="11" fill="#6b7385">into this step</text>

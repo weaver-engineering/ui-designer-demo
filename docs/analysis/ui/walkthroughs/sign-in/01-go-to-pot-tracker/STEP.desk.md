@@ -28,5 +28,5 @@ the screen until they have identified themselves.
 ## In this step
 
 * **SIGN-IN.EMAIL** (highlighted): The email address the saver types.
-* **SIGN-IN.GOOGLE**: Identifies the saver with their Google account instead.
-* **SIGN-IN.FORGOTTEN**: Starts resetting the password, for a saver who has forgotten it.
+* **SIGN-IN.GOOGLE** (highlighted): Identifies the saver with their Google account instead.
+* **SIGN-IN.FORGOTTEN** (highlighted): Starts resetting the password, for a saver who has forgotten it.

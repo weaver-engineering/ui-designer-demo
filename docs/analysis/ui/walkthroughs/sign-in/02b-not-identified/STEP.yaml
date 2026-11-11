@@ -6,4 +6,4 @@ state:
 components:
   SIGN-IN.PASSWORD: { text: Password }
 describe: [SIGN-IN.SIGN-UP]
-highlight: [SIGN-IN.NOT-IDENTIFIED]
+highlight: [SIGN-IN.NOT-IDENTIFIED, SIGN-IN.PASSWORD, SIGN-IN.GOOGLE]

@@ -7,11 +7,10 @@ state:
   APP: { state: signed-in }
   FIND-PENSIONS: { stage: consent, consent-until: 10 November 2027 }
 caption: Asked for the two agreements
-describe: [FIND-PENSIONS.AGREE-SEARCH, FIND-PENSIONS.AGREE-SHARE, FIND-PENSIONS.AGREE]
-highlight: [FIND-PENSIONS.CONSENT]
+describe: [FIND-PENSIONS.CONSENT, FIND-PENSIONS.AGREE]
+highlight: [FIND-PENSIONS.AGREE-SEARCH, FIND-PENSIONS.AGREE-SHARE]
 screens:
   - caption: "Both agreed, so the search can start"
     state:
       FIND-PENSIONS: { agreed-search: true, agreed-share: true }
-    describe: [FIND-PENSIONS.DECLINE]
-    highlight: [FIND-PENSIONS.AGREE]
+    highlight: [FIND-PENSIONS.AGREE, FIND-PENSIONS.DECLINE]

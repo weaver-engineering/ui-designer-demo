@@ -16,7 +16,6 @@ Describes [Claim A Possible Match](../../../use-cases/claim-a-possible-match/USE
 * [02 Be asked what the provider needs](02-claim/STEP.phone.md)
 * [02a Leave it for now](02a-leave/STEP.phone.md): ends the walkthrough
 * [03 Give what they know](03-give/STEP.phone.md)
-* [03a Not know the membership number](03a-dont-know/STEP.phone.md)
 * [04 Be told the provider is checking](04-checking/STEP.phone.md)
 * [05 See it confirmed as theirs](05-confirmed/STEP.phone.md): ends the walkthrough
 * [05a Answer a further question](05a-further-question/STEP.phone.md)

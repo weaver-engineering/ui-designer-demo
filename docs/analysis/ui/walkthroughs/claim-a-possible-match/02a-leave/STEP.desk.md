@@ -13,10 +13,25 @@
 |:---|---:|
 | ← *Doesn't have it to hand* (clicks `CLAIM.LEAVE`) from [02 Be asked what the provider needs](../02-claim/STEP.desk.md) | **End:** the possible match waits for the saver. |
 
-The saver does not have what the provider asks for to hand, and leaves it. The possible match waits for them, and is
-still on the overview when they next sign in.
+The saver does not have what the provider asks for to hand, and leaves it for now. The possible match waits for
+them, and is still on the overview when they next sign in.
 
-![02a Leave it for now](STEP.desk.png)
+### 1. Leaves it for now
+
+![02a Leave it for now, 1. Leaves it for now](STEP.desk.png)
+
+**Views**
+
+* [APP](../../../views/APP/VIEW.md)
+  * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
+    * *main*: [CLAIM](../../../views/CLAIM/VIEW.md)
+
+* **CLAIM.LEAVE** (highlighted): Leaves it for now: the possible match waits for the saver.
+* **CLAIM.ASK**: What the provider needs to be sure. The provider decides what that is.
+
+### 2. On their next sign-in, still waiting for them
+
+![02a Leave it for now, 2. On their next sign-in, still waiting for them](STEP-2.desk.png)
 
 **Views**
 
@@ -26,7 +41,5 @@ still on the overview when they next sign in.
       * *pots*: [POT-ROW](../../../views/POT-ROW/VIEW.md) × 4
       * *waiting*: [POSSIBLE-MATCH](../../../views/POSSIBLE-MATCH/VIEW.md)
 
-## In this step
-
-* **POSSIBLE-MATCH** (highlighted): A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and claiming it or saying it is not theirs. It is not a pot until the provider is sure.
+* **POSSIBLE-MATCH** (highlighted): A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and opening it to claim it. It is not a pot until the provider is sure.
 * **OVERVIEW.WAITING-HEAD**: Heads the possible matches waiting for the saver.

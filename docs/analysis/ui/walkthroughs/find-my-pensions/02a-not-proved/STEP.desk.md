@@ -27,5 +27,5 @@ causes it and how to try again. No search starts.
 
 ## In this step
 
-* **FIND-PENSIONS.NOT-PROVED** (highlighted): Says the search cannot start because the service could not confirm who the saver is, why that can happen, and how to try again.
-* **FIND-PENSIONS.TRY-AGAIN**: Goes back to the service to prove who the saver is again.
+* **FIND-PENSIONS.TRY-AGAIN** (highlighted): Goes back to the service to prove who the saver is again.
+* **FIND-PENSIONS.NOT-PROVED**: Says the search cannot start because the service could not confirm who the saver is, why that can happen, and how to try again.

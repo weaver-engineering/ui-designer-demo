@@ -7,8 +7,7 @@ state:
   APP: { state: signed-in }
   CLAIM: { stage: checking, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", answer-by: 25 November 2026 }
 caption: Told the provider is checking
-describe: [CLAIM.BACK]
-highlight: [CLAIM.CHECKING]
+highlight: [CLAIM.CHECKING, CLAIM.BACK]
 screens:
   - caption: "Back on the overview, the claim shows as being checked"
     slots:

@@ -27,7 +27,7 @@ says, and may try again with different details, such as another address, or leav
 
 ## In this step
 
-* **CLAIM.NOT-MATCHED** (highlighted): Says the provider could not match the pension to the saver, and why if it says.
+* **CLAIM.TRY-AGAIN** (highlighted): Goes back to giving the provider what it asks for, to try different details.
+* **CLAIM.NOT-MATCHED**: Says the provider could not match the pension to the saver, and why if it says.
 * **CLAIM.WHY**: Why, in the provider's words.
-* **CLAIM.TRY-AGAIN**: Goes back to giving the provider what it asks for, to try different details.
 * **CLAIM.LEAVE**: Leaves it for now: the possible match waits for the saver.

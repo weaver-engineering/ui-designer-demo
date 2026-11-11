@@ -12,7 +12,6 @@
 | Previous | Next |
 |:---|---:|
 | ← *Gives what they know* (types in `CLAIM.EMPLOYER`) from [02 Be asked what the provider needs](../02-claim/STEP.desk.md) | *Sends it* (clicks `CLAIM.SEND`): [04 Be told the provider is checking](../04-checking/STEP.desk.md) → |
-|  | *Doesn't know their membership number* (clicks `CLAIM.DONT-KNOW`): [03a Not know the membership number](../03a-dont-know/STEP.desk.md) → |
 
 The saver gives the employer, when they worked there and their address then, and sends it to the provider.
 

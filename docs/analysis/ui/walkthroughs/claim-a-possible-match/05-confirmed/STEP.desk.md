@@ -28,6 +28,7 @@ its value, marked as found by the search. The possible match is gone.
       * *pot*: [POT-ROW](../../../views/POT-ROW/VIEW.md)
 
 * **CLAIM.CONFIRMED** (highlighted): Says the provider has confirmed the pension is the saver's, and shows it as one of their pots.
+* **CLAIM.BACK** (highlighted): Goes back to the overview of every pot.
 
 ### 2. On the overview, a pot, and the possible match gone
 

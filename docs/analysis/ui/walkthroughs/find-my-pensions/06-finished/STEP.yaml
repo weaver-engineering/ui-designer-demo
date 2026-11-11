@@ -9,8 +9,8 @@ state:
   POT-ROW#1: { colour: pot-3, found: new, pot: { name: Kestrel Engineering pension, provider: Castlegate Life, kind: "pot of money, from Kestrel Engineering", value: "£21,120", as-of: 12 Nov 2026 } }
   POT-ROW#2: { colour: pot-1, found: new, pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: "pot of money, from Northfield Retail", value: "£62,410", as-of: 10 Nov 2026 } }
 caption: Told the search has finished
-describe: [FIND-PENSIONS.FOUND-COUNT, FIND-PENSIONS.BACK]
-highlight: [FIND-PENSIONS.FINISHED]
+describe: [FIND-PENSIONS.FOUND-COUNT]
+highlight: [FIND-PENSIONS.FINISHED, FIND-PENSIONS.BACK]
 screens:
   - caption: "Back on the overview, the pensions found are among their pots"
     slots:

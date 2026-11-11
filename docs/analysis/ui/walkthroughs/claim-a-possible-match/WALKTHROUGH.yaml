@@ -30,8 +30,8 @@ steps:
   02a-leave:
     title: Leave it for now
     narrative: |
-      The saver does not have what the provider asks for to hand, and leaves it. The possible match waits for them, and is
-      still on the overview when they next sign in.
+      The saver does not have what the provider asks for to hand, and leaves it for now. The possible match waits for
+      them, and is still on the overview when they next sign in.
     end: the possible match waits for the saver.
   03-give:
     title: Give what they know
@@ -39,13 +39,6 @@ steps:
       The saver gives the employer, when they worked there and their address then, and sends it to the provider.
     next:
       - { step: 04-checking, label: Sends it, via: { click: CLAIM.SEND } }
-      - { step: 03a-dont-know, label: "Doesn't know their membership number", via: { click: CLAIM.DONT-KNOW } }
-  03a-dont-know:
-    title: Not know the membership number
-    narrative: |
-      The saver does not know their membership number. They say so, and send the rest.
-    next:
-      - { step: 04-checking, label: Sends the rest, via: { click: CLAIM.SEND } }
   04-checking:
     title: Be told the provider is checking
     narrative: |
@@ -65,8 +58,8 @@ steps:
   05a-further-question:
     title: Answer a further question
     narrative: |
-      The provider needs more, and asks a further question: here, to confirm when the saver left. They are told, and
-      answer it, and the provider checks again.
+      The provider needs more, and asks a further question: here, which month in 2014 the saver left, offering the
+      months to choose from. They are told, choose their answer and send it, and the provider checks again.
     next:
       - { step: 04-checking, label: Sends the answer, via: { click: CLAIM.SEND-ANSWER } }
   05b-not-matched:

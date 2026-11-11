@@ -33,6 +33,6 @@ provider's reason for not being sure, for the saver to claim when they choose. T
 
 ## In this step
 
-* **POSSIBLE-MATCH** (highlighted): A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and claiming it or saying it is not theirs. It is not a pot until the provider is sure.
+* **POSSIBLE-MATCH.CLAIM** (highlighted): Opens the possible match: why the provider is not sure, and claiming it or saying it is not the saver's.
+* **POSSIBLE-MATCH**: A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and opening it to claim it. It is not a pot until the provider is sure.
 * **POSSIBLE-MATCH.REASON**: Why the provider is not sure, in its own words.
-* **POSSIBLE-MATCH.CLAIM**: Starts claiming the pension: giving the provider what it needs to be sure.

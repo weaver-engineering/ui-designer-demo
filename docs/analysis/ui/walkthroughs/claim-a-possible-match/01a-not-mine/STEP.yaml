@@ -7,7 +7,8 @@ state:
   APP: { state: signed-in }
   CLAIM: { stage: dropped, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours." }
 caption: "Dropped, and the provider told"
-highlight: [CLAIM.DROPPED]
+describe: [CLAIM.DROPPED]
+highlight: [CLAIM.BACK]
 screens:
   - caption: Gone from the overview
     slots:

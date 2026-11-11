@@ -26,7 +26,8 @@ is gone from the overview.
   * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
     * *main*: [CLAIM](../../../views/CLAIM/VIEW.md)
 
-* **CLAIM.DROPPED** (highlighted): Says the possible match has been dropped and the provider told.
+* **CLAIM.BACK** (highlighted): Goes back to the overview of every pot.
+* **CLAIM.DROPPED**: Says the possible match has been dropped and the provider told.
 
 ### 2. Gone from the overview
 

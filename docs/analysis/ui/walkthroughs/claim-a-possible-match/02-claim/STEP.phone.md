@@ -28,6 +28,7 @@ They are told what they give goes to that provider only, and Pot Tracker does no
 
 ## In this step
 
-* **CLAIM.ASK** (highlighted): What the provider needs to be sure. The provider decides what that is.
+* **CLAIM.EMPLOYER** (highlighted): The employer the saver worked for while a member.
+* **CLAIM.LEAVE** (highlighted): Leaves it for now: the possible match waits for the saver.
+* **CLAIM.ASK**: What the provider needs to be sure. The provider decides what that is.
 * **CLAIM.PRIVATE**: Says what the saver gives goes to the provider only, and Pot Tracker does not keep it.
-* **CLAIM.LEAVE**: Leaves it for now: the possible match waits for the saver.

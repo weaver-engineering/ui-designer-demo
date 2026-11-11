@@ -8,5 +8,5 @@ state:
   FIND-PENSIONS: { stage: searching, started: 10 November 2026, found-count: 2, found: 2 pensions found }
   POSSIBLE-MATCH: { match: { provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", received: 11 Nov 2026 } }
   POT-ROW: { colour: pot-1, found: new, pot: { name: Northfield Retail pension, provider: Harbourline Pensions, kind: "pot of money, from Northfield Retail", value: "£62,410", as-of: 10 Nov 2026 } }
-describe: [POSSIBLE-MATCH.REASON, POSSIBLE-MATCH.CLAIM]
-highlight: [POSSIBLE-MATCH]
+describe: [POSSIBLE-MATCH, POSSIBLE-MATCH.REASON]
+highlight: [POSSIBLE-MATCH.CLAIM]

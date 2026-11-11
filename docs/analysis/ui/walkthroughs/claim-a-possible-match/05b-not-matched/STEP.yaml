@@ -6,5 +6,5 @@ slots:
 state:
   APP: { state: signed-in }
   CLAIM: { stage: not-matched, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", why: "The address you gave isn't one we hold for this member." }
-describe: [CLAIM.WHY, CLAIM.TRY-AGAIN, CLAIM.LEAVE]
-highlight: [CLAIM.NOT-MATCHED]
+describe: [CLAIM.NOT-MATCHED, CLAIM.WHY, CLAIM.LEAVE]
+highlight: [CLAIM.TRY-AGAIN]

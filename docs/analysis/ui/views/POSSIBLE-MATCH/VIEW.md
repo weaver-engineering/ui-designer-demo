@@ -1,7 +1,7 @@
 # POSSIBLE-MATCH
 
 <!-- ui-walkthrough: view begin. Generated from VIEW.yaml and VIEW.html; edit those, not this block. -->
-A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and claiming it or saying it is not theirs. It is not a pot until the provider is sure.
+A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and opening it to claim it. It is not a pot until the provider is sure.
 
 ![POSSIBLE-MATCH as drawn, its slots showing their placeholders](VIEW.png)
 
@@ -16,8 +16,7 @@ A pension a provider may hold for the saver but is not sure is theirs: who the p
 | `ANSWER-BY` | text: `answer-by` | When the provider says it will answer. |
 | `LATE` | visible: `progress == late` | Says the provider has not answered by when it said. |
 | `SEE-CLAIM` | visible: `progress != waiting` | Goes to the claim. |
-| `CLAIM` | visible: `progress == waiting` | Starts claiming the pension: giving the provider what it needs to be sure. |
-| `NOT-MINE` | visible: `progress == waiting` | Says the pension is not the saver's, so the possible match is dropped. |
+| `CLAIM` | visible: `progress == waiting` | Opens the possible match: why the provider is not sure, and claiming it or saying it is not the saver's. |
 <!-- ui-walkthrough: view end -->
 
 <!-- ui-walkthrough: begin. Generated from VIEW.html and VIEW.yaml; edit those, not this block. -->

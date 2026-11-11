@@ -31,8 +31,8 @@ the overview the pots it found are among their pots, each marked so.
       * *found*: [POT-ROW](../../../views/POT-ROW/VIEW.md) × 2
 
 * **FIND-PENSIONS.FINISHED** (highlighted): Says the search has finished.
+* **FIND-PENSIONS.BACK** (highlighted): Goes back to the overview of every pot.
 * **FIND-PENSIONS.FOUND-COUNT**: How many pensions have been found so far.
-* **FIND-PENSIONS.BACK**: Goes back to the overview of every pot.
 
 ### 2. Back on the overview, the pensions found are among their pots
 

@@ -8,11 +8,14 @@
   [data-view="CLAIM"] .field { display: flex; flex-direction: column; gap: var(--space-xs); }
   [data-view="CLAIM"] .input { min-height: 1.45em; padding: var(--space-sm) var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--canvas); }
   [data-view="CLAIM"] .input:empty::before { content: "\00a0"; }
-  [data-view="CLAIM"][data-dont-know] [data-component="MEMBERSHIP"] { background: var(--canvas-subtle); color: var(--text-tertiary); }
-  [data-view="CLAIM"] .tick { display: flex; gap: var(--space-sm); align-items: center; font-size: var(--text-sm); }
-  [data-view="CLAIM"] .box { width: 16px; height: 16px; border: 1.5px solid var(--border); border-radius: 4px; background: var(--canvas); color: var(--on-accent); font-size: 12px; line-height: 16px; text-align: center; }
-  [data-view="CLAIM"][data-dont-know] [data-component="DONT-KNOW"] .box { background: var(--accent); border-color: var(--accent); }
-  [data-view="CLAIM"][data-dont-know] [data-component="DONT-KNOW"] .box::after { content: "✓"; }
+  [data-view="CLAIM"] .pick { position: relative; }
+  [data-view="CLAIM"] .pick-value { display: flex; justify-content: space-between; }
+  [data-view="CLAIM"] .pick[data-unset] [data-pick-value] { color: var(--text-tertiary); }
+  [data-view="CLAIM"] .caret { color: var(--text-secondary); }
+  [data-view="CLAIM"] .options { position: absolute; left: 0; right: 0; top: 100%; z-index: 2; list-style: none; margin: var(--space-xs) 0 0; padding: var(--space-xs) 0; box-shadow: var(--shadow-overlay); }
+  [data-view="CLAIM"] .options li { padding: var(--space-xs) var(--space-md); }
+  [data-view="CLAIM"] .options li[data-chosen] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+  [data-view="CLAIM"] .options li[data-unset] { color: var(--text-tertiary); }
   [data-view="CLAIM"] [data-component="PRIVATE"] { font-size: var(--text-sm); color: var(--text-secondary); }
   [data-view="CLAIM"] .waiting { display: flex; gap: var(--space-md); align-items: center; }
   [data-view="CLAIM"] .dot { width: 10px; height: 10px; border-radius: var(--radius-pill); background: var(--accent); flex: none; box-shadow: 0 0 0 4px var(--accent-soft); }
@@ -34,7 +37,7 @@
     <div class="panel card" data-component="REVIEW">
       <p>This provider may hold a pension for you, but isn't sure it's yours. It says:</p>
       <blockquote data-component="REASON">Why the provider is not sure.</blockquote>
-      <p>Claim it to give the provider what it needs to be sure. If it isn't yours, say so and we'll tell the provider.</p>
+      <p>To claim it the provider needs some additional details from you. Claim it if you believe it is yours, and answer their questions. If it isn't yours, say so and we'll tell the provider.</p>
       <div class="actions"><button data-component="CLAIM">Claim it</button><button class="secondary" data-component="NOT-MINE">It's not mine</button></div>
     </div>
     <div class="panel card" data-component="ASK" hidden>
@@ -42,14 +45,15 @@
       <div class="field"><label>Who did you work for while you were a member?</label><div class="input" data-component="EMPLOYER"></div></div>
       <div class="field"><label>When did you work there?</label><div class="input" data-component="WHEN"></div></div>
       <div class="field"><label>Your address while you worked there</label><div class="input" data-component="ADDRESS"></div></div>
-      <div class="field"><label>Your membership number, if you have one</label><div class="input" data-component="MEMBERSHIP"></div>
-        <span class="tick" data-component="DONT-KNOW"><span class="box"></span>I don't know it</span></div>
+      <div class="field"><label>Your membership number, if you have one</label><div class="input" data-component="MEMBERSHIP"></div></div>
       <div class="actions"><button data-component="SEND">Send to the provider</button></div>
     </div>
     <div class="panel card" data-component="FURTHER" hidden>
       <h2>The provider has a further question</h2>
       <blockquote data-component="QUESTION">The provider's question.</blockquote>
-      <div class="field"><label>Your answer</label><div class="input" data-component="ANSWER"></div></div>
+      <div class="field"><label>Your answer</label>
+        <div class="pick" data-component="ANSWER"><div class="input pick-value"><span data-pick-value>Choose a month</span><span class="caret">▾</span></div>
+          <ul class="options card" data-pick-options hidden><li data-pick-option>Month</li></ul></div></div>
       <div class="actions"><button data-component="SEND-ANSWER">Send your answer</button></div>
     </div>
     <div data-component="PRIVATE" hidden>What you give goes to this provider only, through the pension-finding service. Pot Tracker doesn't keep it.</div>

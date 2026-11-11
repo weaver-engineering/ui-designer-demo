@@ -30,6 +30,7 @@ the saver may remind the provider, or leave it to answer in its own time.
       * *waiting*: [POSSIBLE-MATCH](../../../views/POSSIBLE-MATCH/VIEW.md)
 
 * **POSSIBLE-MATCH.LATE** (highlighted): Says the provider has not answered by when it said.
+* **POSSIBLE-MATCH.SEE-CLAIM** (highlighted): Goes to the claim.
 
 ### 2. On the claim, a reminder to send, or leave it
 

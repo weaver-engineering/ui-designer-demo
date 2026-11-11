@@ -29,7 +29,8 @@ They choose it, and see what the provider has told them: its name, and why it is
       * *pots*: [POT-ROW](../../../views/POT-ROW/VIEW.md) × 4
       * *waiting*: [POSSIBLE-MATCH](../../../views/POSSIBLE-MATCH/VIEW.md)
 
-* **POSSIBLE-MATCH** (highlighted): A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and claiming it or saying it is not theirs. It is not a pot until the provider is sure.
+* **POSSIBLE-MATCH.CLAIM** (highlighted): Opens the possible match: why the provider is not sure, and claiming it or saying it is not the saver's.
+* **POSSIBLE-MATCH**: A pension a provider may hold for the saver but is not sure is theirs: who the provider is, why it is not sure, and opening it to claim it. It is not a pot until the provider is sure.
 
 ### 2. Chosen: what the provider said, and why it is not sure
 
@@ -42,5 +43,5 @@ They choose it, and see what the provider has told them: its name, and why it is
     * *main*: [CLAIM](../../../views/CLAIM/VIEW.md)
 
 * **CLAIM.CLAIM** (highlighted): Claims the pension: goes on to what the provider needs to be sure.
+* **CLAIM.NOT-MINE** (highlighted): Says the pension is not the saver's: the possible match is dropped, and the provider told.
 * **CLAIM.REASON**: Why the provider is not sure.
-* **CLAIM.NOT-MINE**: Says the pension is not the saver's: the possible match is dropped, and the provider told.

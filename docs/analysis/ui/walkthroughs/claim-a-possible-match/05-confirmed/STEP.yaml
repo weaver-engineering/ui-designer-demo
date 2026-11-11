@@ -8,7 +8,7 @@ state:
   CLAIM: { stage: confirmed, provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours." }
   POT-ROW: { colour: pot-5, found: new, pot: { name: Ardmore Foods pension, provider: Ferris & Lowe, kind: "pot of money, from Ardmore Foods", value: "£9,840", as-of: 24 Nov 2026 } }
 caption: "Told it is confirmed, and is one of their pots"
-highlight: [CLAIM.CONFIRMED]
+highlight: [CLAIM.CONFIRMED, CLAIM.BACK]
 screens:
   - caption: "On the overview, a pot, and the possible match gone"
     slots:

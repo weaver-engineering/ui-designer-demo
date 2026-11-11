@@ -13,7 +13,7 @@ state:
   POT-ROW#4: { colour: pot-4, pot: { name: My SIPP, provider: Brightvest, kind: self-invested personal pension, value: "£61,795", as-of: 24 Nov 2026 } }
   POSSIBLE-MATCH: { match: { provider: Ferris & Lowe, reason: "We hold a pension for a Sam Taylor with your date of birth, at an address we can't match to yours.", received: 11 Nov 2026 }, progress: late, answer-by: 25 Nov 2026 }
 caption: "On the overview, the claim says it is late"
-highlight: [POSSIBLE-MATCH.LATE]
+highlight: [POSSIBLE-MATCH.LATE, POSSIBLE-MATCH.SEE-CLAIM]
 screens:
   - caption: "On the claim, a reminder to send, or leave it"
     slots:

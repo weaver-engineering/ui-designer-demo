@@ -6,5 +6,5 @@ slots:
 state:
   APP: { state: signed-in }
   FIND-PENSIONS: { stage: not-proved }
-describe: [FIND-PENSIONS.TRY-AGAIN]
-highlight: [FIND-PENSIONS.NOT-PROVED]
+describe: [FIND-PENSIONS.NOT-PROVED]
+highlight: [FIND-PENSIONS.TRY-AGAIN]

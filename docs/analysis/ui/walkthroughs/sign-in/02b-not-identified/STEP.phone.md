@@ -28,4 +28,6 @@ signing up. An address they typed is kept; the password is not.
 ## In this step
 
 * **SIGN-IN.NOT-IDENTIFIED** (highlighted): Tells the saver they could not be identified, without saying whether the email address or the password was wrong, and offers signing up.
+* **SIGN-IN.PASSWORD** (highlighted): The password the saver types. Never held as state, so a step shows it as dots.
+* **SIGN-IN.GOOGLE** (highlighted): Identifies the saver with their Google account instead.
 * **SIGN-IN.SIGN-UP**: Opens signing up, for a saver who is not yet one of Pot Tracker's users.

@@ -13,10 +13,12 @@
 |:---|---:|
 | ← *The provider asks something more* (when `provider-asks-further-question` happens) from [04 Be told the provider is checking](../04-checking/STEP.phone.md) | *Sends the answer* (clicks `CLAIM.SEND-ANSWER`): [04 Be told the provider is checking](../04-checking/STEP.phone.md) → |
 
-The provider needs more, and asks a further question: here, to confirm when the saver left. They are told, and
-answer it, and the provider checks again.
+The provider needs more, and asks a further question: here, which month in 2014 the saver left, offering the
+months to choose from. They are told, choose their answer and send it, and the provider checks again.
 
-![05a Answer a further question](STEP.phone.png)
+### 1. Asked which month, with the months to choose from
+
+![05a Answer a further question, 1. Asked which month, with the months to choose from](STEP.phone.png)
 
 **Views**
 
@@ -24,8 +26,18 @@ answer it, and the provider checks again.
   * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
     * *main*: [CLAIM](../../../views/CLAIM/VIEW.md)
 
-## In this step
+* **CLAIM.ANSWER** (highlighted): The saver's answer, chosen from those the provider offers.
+* **CLAIM.QUESTION**: The provider's question.
+
+### 2. Chooses March and sends it
+
+![05a Answer a further question, 2. Chooses March and sends it](STEP-2.phone.png)
+
+**Views**
+
+* [APP](../../../views/APP/VIEW.md)
+  * *shows*: [SHELL](../../../views/SHELL/VIEW.md)
+    * *main*: [CLAIM](../../../views/CLAIM/VIEW.md)
 
 * **CLAIM.SEND-ANSWER** (highlighted): Sends the answer to the provider.
-* **CLAIM.QUESTION**: The provider's question.
-* **CLAIM.ANSWER**: The saver's answer.
+* **CLAIM.ANSWER**: The saver's answer, chosen from those the provider offers.
