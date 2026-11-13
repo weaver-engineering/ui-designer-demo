@@ -149,3 +149,8 @@ Invitations come from whoever told you about UI Designer: ask them, and they wil
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Licence
+
+The sample is yours to fork, clone and use to evaluate UI Designer, and nothing more: see [LICENSE](LICENSE). Copyright
+2026 Weaver Engineering.
