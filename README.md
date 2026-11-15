@@ -58,7 +58,9 @@ If Playwright says it does not support Chromium on your system, as it can on a v
 [Playwright's system requirements](https://playwright.dev/docs/intro#system-requirements). Only `render` needs the
 browser: `check` and `publish` run on Node alone.
 
-The skill is not public. Keep the zip out of your fork: a fork of a public repository is public.
+The skill is not public. Keep the zip out of your fork: a fork of a public repository is public. It is licensed under
+PolyForm Shield 1.0.0, not under this repository's licence: see `LICENSE` in the zip, now
+`~/.claude/skills/ui-walkthrough/LICENSE`.
 
 ### 3. Sign in to the viewer
 
@@ -153,4 +155,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## Licence
 
 The sample is yours to fork, clone and use to evaluate UI Designer, and nothing more: see [LICENSE](LICENSE). Copyright
-2026 Weaver Engineering.
+2026 Weaver Engineering. The skill has a licence of its own, in its zip (Getting started, step 2).
